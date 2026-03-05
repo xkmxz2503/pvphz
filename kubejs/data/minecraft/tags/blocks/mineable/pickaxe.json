@@ -1,0 +1,22 @@
+{
+  "values": [
+"vscontrolcraft:chunk_loader",
+"vscontrolcraft:propeller_controller",
+"vscontrolcraft:propeller",
+"vscontrolcraft:transmitter",
+"vscontrolcraft:receiver",
+"vscontrolcraft:wing_controller",
+"vscontrolcraft:spinalyzer",
+"vscontrolcraft:camera",
+"vscontrolcraft:servo",
+"vscontrolcraft:joint",
+"vscontrolcraft:sphere_hinge",
+"vscontrolcraft:revolute_joint",
+"vscontrolcraft:pivot",
+"vscontrolcraft:slider",
+"vscontrolcraft:anchor",
+"vscontrolcraft:terminal",
+"vscontrolcraft:jet",
+"vscontrolcraft:spatial_anchor"
+  ]
+}

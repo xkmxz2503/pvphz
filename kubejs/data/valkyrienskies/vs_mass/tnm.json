@@ -1,0 +1,22 @@
+[
+  {
+    "block":"vs_tournament:thruster",
+    "mass": 4200,
+    "friction": 0.3
+   },
+   {
+    "block":"vs_tournament:tiny_thruster",
+    "mass": 900,
+    "friction": 0.3
+   },
+   {
+    "block":"vs_tournament:prop_big",
+    "mass": 7000,
+    "friction": 0.2
+   },
+   {
+    "block":"vs_tournament:prop_small",
+    "mass": 1500,
+    "friction": 0.2
+   }
+]

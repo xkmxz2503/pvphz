@@ -1,0 +1,20 @@
+{
+  "values": [
+    "create:andesite_casing",
+"create:brass_casing",
+"create:copper_casing",
+"create:andesite_door",
+"create:brass_door",
+"create:copper_door",
+"create:train_door",
+"create:train_trapdoor",
+"create:framed_glass_door",
+"create:framed_glass_trapdoor",
+"create:andesite_ladder",
+"create:brass_ladder",
+"create:copper_ladder",
+"create:andesite_bars",
+"create:brass_bars",
+"create:copper_bars"
+  ]
+}

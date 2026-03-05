@@ -1,0 +1,24 @@
+{
+  "values": [
+    "create:copycat_step",
+    "create:copycat_panel",
+    "copycats:copycat_slope",
+    "copycats:copycat_stairs",
+    "copycats:copycat_vertical_stairs",
+    "copycats:copycat_wall",
+    "copycats:copycat_vertical_step",
+    "copycats:copycat_beam",
+    "copycats:copycat_slice",
+    "copycats:copycat_vertical_slice",
+    "copycats:copycat_layer",
+    "copycats:copycat_half_panel",
+    "copycats:copycat_pane",
+    "copycats:copycat_slope_layer",
+    "copycats:copycat_vertical_slope",
+    "copycats:copycat_slab",
+    "copycats:copycat_half_layer",
+    "copycats:copycat_vertical_half_layer",
+    "copycats:copycat_stacked_half_layer",
+    "copycats:copycat_board"
+  ]
+}

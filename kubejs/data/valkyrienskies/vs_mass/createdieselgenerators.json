@@ -1,0 +1,62 @@
+[
+    {
+        "block": "createdieselgenerators:chip_wood_block",
+        "mass": 100.0,
+        "friction": 0.4
+    },
+    {
+        "block": "createdieselgenerators:chip_wood_beam",
+        "mass": 400.0,
+        "friction": 0.4
+    },
+    {
+        "block": "createdieselgenerators:chip_wood_slab",
+        "mass": 50.0,
+        "friction": 0.4
+    },
+    {
+        "block": "createdieselgenerators:chip_wood_stairs",
+        "mass": 75.0,
+        "friction": 0.4
+    },
+    {
+        "block": "createdieselgenerators:diesel_engine",
+        "mass": 152.5,
+        "friction": 0.4
+    },
+    {
+        "block": "createdieselgenerators:large_diesel_engine",
+        "mass": 207.5,
+        "friction": 0.4
+    },
+    {
+        "block": "createdieselgenerators:huge_diesel_engine",
+        "mass": 425.0,
+        "friction": 0.4
+    },
+    {
+        "block": "createdieselgenerators:oil_barrel",
+        "mass": 412.5,
+        "friction": 0.4
+    },
+    {
+        "block": "createdieselgenerators:canister",
+        "mass": 212.5,
+        "friction": 0.4
+    },
+    {
+        "block": "createdieselgenerators:asphalt_block",
+        "mass": 212.5,
+        "friction": 0.4
+    },
+    {
+        "block": "createdieselgenerators:asphalt_slab",
+        "mass": 106.0,
+        "friction": 0.4
+    },
+    {
+        "block": "createdieselgenerators:asphalt_stairs",
+        "mass": 160.0,
+        "friction": 0.4
+    }
+]

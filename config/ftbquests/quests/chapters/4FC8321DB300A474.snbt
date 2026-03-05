@@ -1,0 +1,492 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4FC8321DB300A474"
+	group: "0588C05ED77E8B81"
+	icon: {
+		Count: 1
+		id: "createbigcannons:ap_shot"
+		tag: { }
+	}
+	id: "4FC8321DB300A474"
+	order_index: 12
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3E067291D7F8B727"]
+			description: [
+				"整合包内大范围修改并添加了很多炮弹种类，包括一些自制炮弹。"
+				"本图鉴会介绍各种炮弹类型的功能和特性"
+			]
+			id: "19C0F361FD928E25"
+			tasks: [{
+				id: "33A1C9044B3C8AF5"
+				type: "checkmark"
+			}]
+			title: "关于炮弹"
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["19C0F361FD928E25"]
+			description: [
+				"整合包修改了炮弹的穿甲判定机制，有如下变化："
+				"-&6跳弹时不再破坏方块&r"
+				"-&6弹头质量*穿透力大于装甲韧性时，不会跳弹&r"
+				""
+				"因此，对于使用动能的炮弹，可以用大角度的装甲将其弹开以&e完全规避&r伤害。每一种炮弹都有初始跳弹角，当入射角大于这个角度时才会有概率发生跳弹，角度越大，概率越大。"
+				""
+				"对于方块韧性过低的装甲，如抗爆类，穿甲弹会形成&c碾压&r，炮弹命中后无论入射角度都不会跳弹，且破坏方块后的衰竭更低。因此，这种装甲在受到穿甲弹攻击时会承受巨大伤害。"
+				""
+				"所有炮弹默认具有0.01的&6阻力系数&r和20m/tick^2的&6重力加速度&r"
+			]
+			id: "3F6433C09AF1A29F"
+			subtitle: "并非宇宙常数"
+			tasks: [{
+				id: "2A9A8540545BFDCF"
+				type: "checkmark"
+			}]
+			title: "穿甲机制的修改"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3F6433C09AF1A29F"]
+			description: ["这些炮弹主要依靠自身动能和击穿机制造成伤害，威力受距离和入射角的影响很大"]
+			icon: {
+				Count: 1
+				id: "createbigcannons:ap_shot"
+				tag: { }
+			}
+			id: "7E9C370B7A8F61FE"
+			tasks: [{
+				id: "3948072D8C61CED5"
+				type: "checkmark"
+			}]
+			title: "动能类炮弹"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3F6433C09AF1A29F"]
+			description: [
+				"这类炮弹同时具有穿透和爆炸伤害，威力受到距离和引信设置的影响。"
+				"不同延时碰炸引信的长度会造成不同的破坏效果"
+			]
+			icon: {
+				Count: 1
+				id: "cbcmoreshells:sap_shell"
+				tag: { }
+			}
+			id: "27AF71C87411907C"
+			tasks: [{
+				id: "2E6F2698850DB776"
+				type: "checkmark"
+			}]
+			title: "混合类炮弹"
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3F6433C09AF1A29F"]
+			description: [
+				"这类炮弹主要依靠自身爆炸造成伤害，受距离影响不大。"
+				"这类炮弹不会发生跳弹，但不具备穿透能力。"
+			]
+			icon: {
+				Count: 1
+				id: "createbigcannons:he_shell"
+				tag: { }
+			}
+			id: "648D2FD6EF0E0835"
+			tasks: [{
+				id: "4A8D37DA7AC0D3F7"
+				type: "checkmark"
+			}]
+			title: "爆炸类炮弹"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"7E9C370B7A8F61FE"
+				"648D2FD6EF0E0835"
+				"27AF71C87411907C"
+			]
+			description: [
+				"这类炮弹不需要也不能有额外发射药，因此具有极高的射速且不需要退壳。"
+				"炮弹的初速度固定相当于3药。弹头本身的属性也更弱一些。"
+			]
+			id: "746BDE0505C078D2"
+			tasks: [{
+				id: "5E356EF2CF1BFE68"
+				type: "checkmark"
+			}]
+			title: "无壳炮弹"
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["746BDE0505C078D2"]
+			description: ["这种炮弹具有更大的阻力和更低的重力，因此在出膛后弹道平直，但衰竭迅速，适合近距离使用以及搭配飞机。"]
+			id: "7B7D854FB5238E80"
+			tasks: [{
+				id: "7D242795BA2E93B8"
+				type: "checkmark"
+			}]
+			title: "炮射火箭弹"
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E9C370B7A8F61FE"]
+			description: [
+				"弹头质量：14"
+				"碾压装甲韧性：25"
+				"起始跳弹角：45度"
+				"常规的动能炮弹，穿透能力强，能够碾压大多数抗爆装甲"
+			]
+			icon: {
+				Count: 1
+				id: "createbigcannons:ap_shot"
+				tag: { }
+			}
+			id: "6360B85B627AB154"
+			tasks: [{
+				id: "43867C151A5D0509"
+				type: "checkmark"
+			}]
+			title: "穿甲弹"
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7E9C370B7A8F61FE"]
+			description: [
+				"弹头质量：12"
+				"碾压装甲韧性：25"
+				"起始跳弹角：65度"
+				"具有特殊跳弹角的动能炮弹，穿透稍弱一些，能够碾压大多数抗爆装甲"
+				"这种炮弹在击穿一定韧性的装甲后会产生少量破片进一步造成伤害"
+			]
+			icon: {
+				Count: 1
+				id: "cbcmoreshells:apbc_shot"
+				tag: { }
+			}
+			id: "292403D101A7E7A7"
+			tasks: [{
+				id: "78133C9C9E3156DF"
+				type: "checkmark"
+			}]
+			title: "风帽穿甲弹"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7E9C370B7A8F61FE"]
+			description: [
+				"弹头质量：12.5"
+				"碾压装甲韧性：35"
+				"起始跳弹角：45度"
+				"空气阻力：0.012"
+				"重力：40m/tick^2"
+				"更重且阻力更大的炮弹，具有高抛的弹道，穿透力略弱于穿甲弹，能够碾压大部分均衡类装甲"
+				"这种炮弹在击穿一定韧性的装甲后会产生少量破片进一步造成伤害"
+			]
+			icon: {
+				Count: 1
+				id: "cbcmoreshells:ap_super_heavy_shot"
+				tag: { }
+			}
+			id: "0F20C46CF10E8EC0"
+			tasks: [{
+				id: "64E5EB4059D6E962"
+				type: "checkmark"
+			}]
+			title: "超重穿甲弹"
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7E9C370B7A8F61FE"]
+			description: [
+				"弹头质量：6"
+				"碾压装甲韧性：16"
+				"起始跳弹角：45度"
+				"较弱的动能类炮弹，穿甲能力一般，能够碾压部分抗爆装甲"
+			]
+			icon: {
+				Count: 1
+				id: "createbigcannons:solid_shot"
+				tag: { }
+			}
+			id: "197B8383FDD5D76A"
+			tasks: [{
+				id: "39917E0B040C3982"
+				type: "checkmark"
+			}]
+			title: "硬头炮弹"
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["648D2FD6EF0E0835"]
+			description: [
+				"爆炸威力：7"
+				"最普通的高爆弹，除了炸还是炸"
+			]
+			icon: {
+				Count: 1
+				id: "createbigcannons:he_shell"
+				tag: { }
+			}
+			id: "3D7885163500BA63"
+			tasks: [{
+				id: "2A330DB9387DD4AD"
+				type: "checkmark"
+			}]
+			title: "高爆弹"
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["648D2FD6EF0E0835"]
+			description: [
+				"爆炸威力：4.5"
+				"沙子滞销，救救我们"
+			]
+			icon: {
+				Count: 1
+				id: "cbcmoreshells:inferior_he_shell"
+				tag: { }
+			}
+			id: "7B25E8E4101EF813"
+			tasks: [{
+				id: "79BBDBAB05F94A21"
+				type: "checkmark"
+			}]
+			title: "劣质高爆"
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["648D2FD6EF0E0835"]
+			description: [
+				"爆炸威力：8"
+				"威力略强于高爆弹"
+			]
+			icon: {
+				Count: 1
+				id: "cbcmoreshells:hesh_shell"
+				tag: { }
+			}
+			id: "73E798102FEA486D"
+			tasks: [{
+				id: "37A78575E5A40961"
+				type: "checkmark"
+			}]
+			title: "碎甲弹"
+			x: 7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["648D2FD6EF0E0835"]
+			description: [
+				"爆炸威力：6+高差/15且小于18"
+				"重力：16m/tick^2"
+				"威力会跟着炮弹爬升而升高，对高空中的载具有很大的杀伤力"
+			]
+			icon: {
+				Count: 1
+				id: "cbcmoreshells:antiair_he_shell"
+				tag: { }
+			}
+			id: "7BEE55F6C63B2B19"
+			tasks: [{
+				id: "169C76B1F8AB57A8"
+				type: "checkmark"
+			}]
+			title: "防空高爆"
+			x: 7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["27AF71C87411907C"]
+			description: [
+				"弹头质量：4"
+				"碾压装甲韧性：10"
+				"起始跳弹角：75度"
+				"爆炸威力：5.0"
+				"具有少量穿透能力和不少爆炸伤害的炮弹，大部分情况下能击穿一层装甲。具有很高的起始跳弹角。"
+			]
+			icon: {
+				Count: 1
+				id: "cbcmoreshells:sap_shell"
+				tag: { }
+			}
+			id: "52F71F31158966CB"
+			subtitle: "出生登场"
+			tasks: [{
+				id: "01C777DBBC96248D"
+				type: "checkmark"
+			}]
+			title: "半穿甲弹"
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["27AF71C87411907C"]
+			description: [
+				"弹头质量：9.5"
+				"碾压装甲韧性：19"
+				"起始跳弹角：45度"
+				"爆炸威力：3"
+				"具有一定穿透能力并追加爆炸伤害的炮弹，能够碾压部分抗爆装甲。"
+			]
+			icon: {
+				Count: 1
+				id: "createbigcannons:ap_shell"
+				tag: { }
+			}
+			id: "3E0369517EA9B3D6"
+			tasks: [{
+				id: "1A24EF22BFDA66EF"
+				type: "checkmark"
+			}]
+			title: "穿甲榴弹"
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["746BDE0505C078D2"]
+			description: [
+				"弹头质量：7"
+				"碾压装甲韧性：19"
+				"起始跳弹角：60度"
+				"无壳版本的穿甲弹，具有特殊跳弹角，能够碾压部分抗爆装甲。"
+			]
+			icon: {
+				Count: 1
+				id: "cbcmoreshells:shelless_ap_shot"
+				tag: { }
+			}
+			id: "37C98ABAD85918CA"
+			tasks: [{
+				id: "3AC4C55B3621683A"
+				type: "checkmark"
+			}]
+			title: "无壳穿甲弹"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["746BDE0505C078D2"]
+			description: [
+				"爆炸威力：5"
+				"无壳版本的高爆弹。"
+			]
+			icon: {
+				Count: 1
+				id: "cbcmoreshells:shelless_he_shell"
+				tag: { }
+			}
+			id: "246572E7871EFDA6"
+			tasks: [{
+				id: "7D60A6CC26F6BAA5"
+				type: "checkmark"
+			}]
+			title: "无壳高爆弹"
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["746BDE0505C078D2"]
+			description: [
+				"弹头质量：3"
+				"起始跳弹角：75度"
+				"爆炸威力：3.5"
+				"无壳版本的半穿甲弹，对轻装甲目标会有很大伤害。"
+			]
+			icon: {
+				Count: 1
+				id: "cbcmoreshells:shelless_sap_shell"
+				tag: { }
+			}
+			id: "3323B81D9F41B414"
+			tasks: [{
+				id: "375EFB67876B3699"
+				type: "checkmark"
+			}]
+			title: "无壳半穿甲弹"
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7E9C370B7A8F61FE"]
+			description: [
+				"弹头质量：11"
+				"碾压装甲韧性：16"
+				"起始跳弹角：45度"
+				"具有2个额外装药的动能类炮弹，初速度快于其他炮弹，能够碾压部分抗穿装甲。"
+			]
+			icon: {
+				Count: 1
+				id: "cbcmoreshells:apfsds_shot"
+				tag: { }
+			}
+			id: "6890B976A3978B5D"
+			tasks: [{
+				id: "7D2316E5D893193D"
+				type: "checkmark"
+			}]
+			title: "APFSDS"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7B7D854FB5238E80"]
+			description: [
+				"爆炸威力：6.5"
+				"炮射火箭版本的高爆弹。"
+			]
+			icon: {
+				Count: 1
+				id: "cbcmoreshells:he_cannon_rocket"
+				tag: { }
+			}
+			id: "7C70CB1D06CC1DAB"
+			tasks: [{
+				id: "7967699B0BFEECB6"
+				type: "checkmark"
+			}]
+			title: "炮射低烟高爆火箭"
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7B7D854FB5238E80"]
+			description: [
+				"弹头质量：7.5"
+				"碾压装甲韧性：16"
+				"起始跳弹角：60度"
+				"爆炸威力：4"
+				"炮射火箭版本的穿甲榴弹，具有一定的穿透力和爆炸威力，带有特殊跳弹角，碾压部分抗爆装甲。"
+			]
+			icon: {
+				Count: 1
+				id: "cbcmoreshells:aphe_cannon_rocket"
+				tag: { }
+			}
+			id: "126533CB203CDB69"
+			tasks: [{
+				id: "4F340A7AE9E0E7E0"
+				type: "checkmark"
+			}]
+			title: "炮射低烟高爆穿甲火箭"
+			x: 10.0d
+			y: -1.0d
+		}
+	]
+	title: "炮弹图鉴"
+}

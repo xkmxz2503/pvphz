@@ -1,0 +1,44 @@
+#ehh
+shouldGenerateAI = true
+#ahh
+#Range: > 1
+maxAICount = 6
+#ahh
+#Range: > 1
+PlayersPerAI = 4
+#ohh
+#Range: > 200
+generationGap = 1800
+#emm
+#Range: > 48
+generationDistance = 180
+#huh
+#Range: > 1
+tradeRefreshPeriod = 5
+#huh
+#Range: > 1
+worldEventRefreshPeriod = 3
+#huh
+#Range: 0.5 ~ 1.0
+reputationThreshold = 0.7
+#huh
+#Range: 0.01 ~ 1.0
+infamousRaidChance = 0.4
+#huh
+#Range: > 0
+airStrikeHeight = 110
+#huh
+#Range: 1.0 ~ 20.0
+floaterConstant = 3.7
+#huh
+#Range: 1.0 ~ 500.0
+floaterCoefficient = 28.0
+#ahh
+#Range: > 1
+maxAINearby = 2
+#huh
+#Range: 0.0 ~ 1.0
+randomEventChance = 0.5
+#ehh
+aiNoCollision = true
+

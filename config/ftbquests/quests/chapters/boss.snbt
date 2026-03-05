@@ -1,0 +1,111 @@
+{
+	consume_items: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "boss"
+	group: "7B14CD2B3339D3C6"
+	hide_quest_until_deps_visible: true
+	icon: "minecraft:compass"
+	id: "629C8E6E87497CDC"
+	images: [
+		{
+			height: 6.0d
+			image: "pictures:textures/quests/admiral_cainiao.png"
+			rotation: 0.0d
+			width: 12.72d
+			x: -2.0d
+			y: 5.5d
+		}
+		{
+			height: 6.0d
+			image: "pictures:textures/quests/maxmere.png"
+			rotation: 0.0d
+			width: 10.6d
+			x: -2.0d
+			y: 12.0d
+		}
+	]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			can_repeat: true
+			dependencies: ["576ED4296F70CFA8"]
+			description: [
+				"超级战列舰，由&b很难猜到是谁&r的海军上将命名，所需世界等级：4"
+				"&4强度参考系数&r：223"
+				"主炮："
+				"- 四座双联装6药大炮（AP） 射程600m"
+				"特殊机制："
+				"- &e远距离射速衰竭（距离目标50m时射速开始衰竭，达到350m停止衰竭）&r"
+				"副炮："
+				"- 每侧三座单装大炮（HE） 射程250m"
+				"- 每侧一座无护甲单装大炮（葡萄）"
+				"- 每侧一座防空炮（HE）"
+				"特殊机制："
+				"&5- 对空火力特化 （防空炮射速和威力随目标高度增高而增加）&r"
+				"主炮&e装甲防护强&r"
+				"主炮&e穿透力强&r"
+				"主炮&e精度较高&r"
+				"&4近距离&r火力很强"
+				"强化的防登船系统，神秘的&5幻术师&r在此执勤"
+				"带有5个疲劳方块，3个驱逐方块"
+				"特殊战利品："
+				"- &b尤里卡气球&r"
+				"- &6电脑&r"
+				"- &6控制组件&r"
+			]
+			hide: true
+			icon: "minecraft:compass"
+			id: "02F834A29AFF96F5"
+			shape: "diamond"
+			subtitle: "这是谁的船呢，好难猜啊"
+			tasks: [{
+				id: "62BD4FA22143C2C3"
+				type: "checkmark"
+			}]
+			title: "\"凯尼奥海军上将\""
+			x: -2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["576ED4296F70CFA8"]
+			description: [
+				"超级战列巡洋舰，需求世界等级：4"
+				"强度参考系数：244"
+				"主武器："
+				"-四座三联装大炮（AP）射程500m"
+				"特殊机制："
+				"- &e远距离射速衰竭（距离目标50m时射速开始衰竭，达到350m停止衰竭）&r"
+				"-单侧各两座三联装鱼雷 射程250m"
+				"副炮："
+				"-单侧各两座双联装防空炮"
+				"特殊机制："
+				"&5- 对空火力特化 （防空炮射速和威力随目标高度增高而增加）&r"
+				"&6主炮投射量很高&r"
+				"&9炮雷合击&r"
+				"&c炮塔防护很强&r"
+				"炮塔下方有额外的传动结构"
+				"没有对海副炮"
+				"核心舱防护很强"
+				"增强的防登船系统"
+				"带有4个疲劳方块，4个驱逐方块"
+				"神秘的幻术师在此出没"
+				"特殊战利品："
+				"&e-鱼雷&r"
+				"&e-电脑&r"
+			]
+			icon: "minecraft:compass"
+			id: "2F72C10F3C2EE867"
+			shape: "diamond"
+			tasks: [{
+				id: "18B3C11D658B29FA"
+				type: "checkmark"
+			}]
+			title: "马克斯米尔"
+			x: -2.0d
+			y: 14.5d
+		}
+	]
+	title: "超级战舰"
+}

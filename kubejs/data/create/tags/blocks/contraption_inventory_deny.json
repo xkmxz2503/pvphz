@@ -1,0 +1,7 @@
+{
+  "values": [
+    "minecraft:spawner",
+    "computercraft:computer_command",
+    "createaddition:electric_motor"
+  ]
+}

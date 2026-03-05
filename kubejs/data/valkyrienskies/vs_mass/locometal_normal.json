@@ -1,0 +1,257 @@
+[
+  {
+    "block":"railways:plated_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:flat_slashed_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:flat_riveted_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:white_plated_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:white_flat_slashed_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:white_flat_riveted_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:light_gray_plated_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:light_gray_flat_slashed_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:light_gray_flat_riveted_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:gray_plated_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:gray_flat_slashed_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:gray_flat_riveted_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:black_plated_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:black_flat_slashed_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:black_flat_riveted_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:brown_plated_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:brown_flat_slashed_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:brown_flat_riveted_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:red_plated_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:red_flat_slashed_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:red_flat_riveted_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:orange_plated_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:orange_flat_slashed_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:orange_flat_riveted_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:yellow_plated_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:yellow_flat_slashed_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:yellow_flat_riveted_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:lime_plated_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:lime_flat_slashed_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:lime_flat_riveted_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:green_plated_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:green_flat_slashed_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:green_flat_riveted_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:cyan_plated_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:cyan_flat_slashed_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:cyan_flat_riveted_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:light_blue_plated_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:light_blue_flat_slashed_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:light_blue_flat_riveted_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:blue_plated_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:blue_flat_slashed_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:blue_flat_riveted_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:purple_plated_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:purple_flat_slashed_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:purple_flat_riveted_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:magenta_plated_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:magenta_flat_slashed_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:magenta_flat_riveted_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:pink_plated_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:pink_flat_slashed_locometal",
+    "mass": 780,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:pink_flat_riveted_locometal",
+    "mass": 780,
+    "friction": 0.3
+   }
+]

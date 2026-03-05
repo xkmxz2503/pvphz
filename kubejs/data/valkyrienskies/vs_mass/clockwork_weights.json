@@ -1,0 +1,62 @@
+[
+  {
+    "block": "create:adjustable_chain_gearshift",
+    "mass": 125.0,
+    "friction": 0.4
+  },
+  {
+    "block": "vs_clockwork:gyro",
+    "mass": 705.0,
+    "friction": 0.4
+  },
+  {
+    "block": "vs_clockwork:alt_meter",
+    "mass": 50.0,
+    "friction": 0.4
+  },
+  {
+    "block": "vs_clockwork:redstone_resistor",
+    "mass": 107.5,
+    "friction": 0.4
+  },
+  {
+    "block": "vs_clockwork:flap_bearing",
+    "mass": 75.0,
+    "friction": 0.4
+  },
+  {
+    "block": "vs_clockwork:propeller_bearing",
+    "mass": 152.5,
+    "friction": 0.4
+  },
+  {
+    "block": "vs_clockwork:phys_bearing",
+    "mass": 195,
+    "friction": 0.4
+  },
+  {
+    "block": "vs_clockwork:command_seat",
+    "mass": 147.5,
+    "friction": 0.4
+  },
+  {
+    "block": "vs_clockwork:wanderlite_deepslate_ore",
+    "mass": 133.5,
+    "friction": 0.6
+  },
+  {
+    "block": "vs_clockwork:wanderlite_end_ore",
+    "mass": 141.5,
+    "friction": 0.6
+  },
+  {
+    "block": "create:copycat_panel",
+    "mass": 28.5,
+    "friction": 0.4
+  },
+  {
+    "block": "create:copycat_step",
+    "mass": 28.5,
+    "friction": 0.4
+  }
+]

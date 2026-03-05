@@ -1,0 +1,22 @@
+[
+  {
+    "fluid": "minecraft:water",
+    "density": 490.0,
+    "dragCoefficient": 0.4
+  },
+  {
+    "fluid": "minecraft:flowing_water",
+    "density": 490.0,
+    "dragCoefficient": 0.4
+  },
+  {
+    "fluid": "minecraft:lava",
+    "density": 1000.0,
+    "dragCoefficient": 1.0
+  },
+  {
+    "fluid": "minecraft:flowing_lava",
+    "density": 1000.0,
+    "dragCoefficient": 1.0
+  }
+]

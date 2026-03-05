@@ -1,0 +1,8659 @@
+{
+	consume_items: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "562CC472484C263C"
+	group: ""
+	icon: "minecraft:heart_of_the_sea"
+	id: "562CC472484C263C"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			can_repeat: false
+			dependencies: ["3AD9EFD63887D6B6"]
+			description: ["初始的世界中只有不具备防登船机制的个别普通船"]
+			hide: true
+			icon: "minecraft:heart_of_the_sea"
+			id: "221C5102E171ACA0"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/tellraw @p {\"text\": \"[不愿透露姓名的菜鸟1053]我们注意到您有出海探险的打算，本公司提供付费定位服务，可在任务列表中购买并同时开启图鉴，祝您旅途愉快\",\"color\": \"aqua\"}"
+					elevate_perms: true
+					icon: "create:clipboard"
+					id: "793593AB909F6BD8"
+					title: "可购买定位与图鉴服务"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p complete 1A7510681BF04987"
+					elevate_perms: true
+					icon: {
+						Count: 1
+						id: "createbigcannons:smoke_shell"
+						tag: { }
+					}
+					id: "3CF695B46253173A"
+					title: "可使用烟雾发生器"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "6E0535C5C8E92BD0"
+				type: "dimension"
+			}]
+			title: "出海"
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"70F24848AC1659A7"
+				"0C957116C3196B02"
+			]
+			description: [
+				"当你修好船只并完成海试以后，就可以远征了。"
+				""
+				"先使用&6大炮&r击毁敌方的主炮，再使用机炮清理&e刷怪笼和那些长得像刷怪笼的方块&r，这样便可以安全登船搜刮战利品。"
+				""
+				"进攻时不要太过于靠近敌舰，会遭受防登船方块带来的负面效果。"
+				""
+				"切记，不要逞强，及时修理。当你遇到棘手的对手时，可以使用本章节开始时提供的&7电子烟雾发生器&r，强制卸载掉所有区块以逃离敌方火炮的锁定（如果靠的太近会无效）。"
+				""
+				"同时，&2普通军舰图鉴&r已开启，可以用于查阅普通类别的敌军信息，并使用绿宝石定位目标。"
+			]
+			icon: "minecraft:compass"
+			id: "6D92CBEA18052F70"
+			rewards: [{
+				auto: "enabled"
+				description: ""
+				icon: "minecraft:writable_book"
+				id: "20D3D222BD20449C"
+				title: "开启普通军舰图鉴"
+				type: "toast"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "455D1DA3086CEE9B"
+				type: "checkmark"
+			}]
+			title: "出征之时"
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["21EBD76DFD7AC77B"]
+			description: [
+				"在本整合包中，野怪船也划分了等级，精英船相较于普通船只拥有更高的配置规格，也更难打。"
+				""
+				"精英船只也有一份图鉴，可以用于查询细节。不过，在此之前，交点路费。"
+				""
+				"&5奇怪的士力架&r，&5奇怪的瓶子&r这种物品是野怪掉落的战利品，通常用于世界等级升级，或者从一些商人那购买特殊物品。"
+				""
+				"&b[已解锁精英船只图鉴]&r"
+			]
+			icon: "minecraft:compass"
+			id: "681CAE20B3F0A013"
+			rewards: [{
+				auto: "enabled"
+				description: ""
+				icon: "minecraft:writable_book"
+				id: "577B27525CFA68AA"
+				title: "开启精英军舰图鉴"
+				type: "toast"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "6DBCE0D7F4388B9A"
+					points: false
+					type: "xp"
+					value: 2L
+				}
+				{
+					count: 5L
+					id: "0C9C4D7EFB66B07B"
+					item: "warshiparise:mysterious_snicker"
+					type: "item"
+				}
+			]
+			title: "怎么这里也有精英怪？"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["35A43FB264A8386C"]
+			description: [
+				"整合包中除了会生成敌对船只以外，也会生成非敌对的船，包括商船和一些别的。这些船只上通常会有商人存在，一些船上会有特色商人，具体内容可以从图鉴中了解。"
+				""
+				"&b[解锁商船图鉴]&r"
+			]
+			icon: "minecraft:compass"
+			id: "2FF010E495FBCD58"
+			rewards: [{
+				auto: "enabled"
+				description: ""
+				icon: "minecraft:writable_book"
+				id: "49305463C3A858DC"
+				title: "开启商船图鉴"
+				type: "toast"
+			}]
+			shape: "diamond"
+			tasks: [{
+				count: 3L
+				id: "5F091B24EA261619"
+				item: "warshiparise:mysterious_snicker"
+				type: "item"
+			}]
+			title: "海上小卖部"
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["1A7510681BF04987"]
+			description: [
+				"卸载所有强制加载区块，当玩家在被模拟距离外的载具攻击时可以主动脱离战斗"
+				"可以重复使用"
+				"可能误伤&6区块加载器&r，但是保命要紧，对吧"
+			]
+			hide: true
+			icon: {
+				Count: 1
+				id: "createbigcannons:smoke_shell"
+				tag: { }
+			}
+			id: "3D70665E74EB81FD"
+			progression_mode: "flexible"
+			rewards: [{
+				auto: "disabled"
+				command: "/forceload remove all"
+				elevate_perms: true
+				icon: {
+					Count: 1
+					id: "createbigcannons:smoke_shell"
+					tag: {
+						Enchantments: [{
+							id: ""
+							lvl: 0
+						}]
+					}
+				}
+				id: "6F0D991DF1BF1696"
+				title: "释放电子烟雾"
+				type: "command"
+			}]
+			shape: "rsquare"
+			subtitle: "维新派，比传统烟雾好使"
+			tasks: [{
+				consume_items: true
+				count: 24L
+				id: "5CE78DFCF036C5E1"
+				item: {
+					Count: 1
+					id: "createbigcannons:smoke_shell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "电子烟雾发生器"
+			x: -6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["221C5102E171ACA0"]
+			id: "1A7510681BF04987"
+			invisible: true
+			shape: "square"
+			tasks: [{
+				id: "431784E8F985B68A"
+				title: "启动发烟器"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["221C5102E171ACA0"]
+			description: ["找到废弃船坞后，会在任务中解锁船坞地图说明，请跟随地图指引搜索物资并修复船只"]
+			id: "37218C21910FDBE8"
+			rewards: [
+				{
+					count: 64
+					id: "7555A4C0E3FB7416"
+					item: "immersiveengineering:casull"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "28666D99F3FD463D"
+					item: "minecraft:baked_potato"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "28E22E81EC5970E4"
+					item: {
+						Count: 1
+						id: "createbigcannons:machine_gun_round"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/gamestage add @a 1"
+					elevate_perms: true
+					icon: "minecraft:heart_of_the_sea"
+					id: "63C543BF5F9423B7"
+					title: "世界等级升级为1"
+					type: "command"
+				}
+			]
+			subtitle: "我收下了>_>"
+			tasks: [{
+				id: "3062F78DDC280DED"
+				structure: "warshiparise:starter_land"
+				title: "找到废弃船坞"
+				type: "structure"
+			}]
+			title: "发现废弃船坞"
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["221C5102E171ACA0"]
+			id: "31C3CB9F44D71E54"
+			rewards: [{
+				count: 64
+				id: "7B80163518C2BF39"
+				item: {
+					Count: 1
+					id: "createbigcannons:machine_gun_round"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "这么快就打完了？"
+			tasks: [{
+				consume_items: true
+				count: 384L
+				id: "54ED85BDCD583476"
+				item: "minecraft:kelp"
+				type: "item"
+			}]
+			title: "救济粮"
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2DA6A94622CA79DF"]
+			description: [""]
+			hide: true
+			icon: "minecraft:book"
+			id: "576ED4296F70CFA8"
+			rewards: [{
+				auto: "enabled"
+				description: ""
+				icon: "minecraft:writable_book"
+				id: "0BAD09C939544493"
+				title: "开启BOSS军舰图鉴"
+				type: "toast"
+			}]
+			shape: "square"
+			tasks: [{
+				consume_items: true
+				count: 40L
+				icon: "minecraft:emerald"
+				id: "3BA23640F081DC38"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "超级战舰图鉴"
+			x: 19.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["37218C21910FDBE8"]
+			description: ["在这个等级中，世界将会刷新一些基础的小怪，并且具有防登船机制"]
+			hide: false
+			icon: "createbigcannons:bronze_quickfiring_breech"
+			id: "20BB44E0D9137A54"
+			rewards: [{
+				id: "3C0FBF91D67122FF"
+				item: "vs_clockwork:physics_infuser"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "162EF85AFA742C76"
+				title: "到达主世界"
+				type: "dimension"
+			}]
+			title: "世界等级1"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2D2CE96B1DA43C31"]
+			description: [
+				"这个等级中，世界将刷新更多的精英怪和一些具有防空能力的船只，具体细节可以在图鉴中查看。"
+				""
+				"这个等级中，您将会接触更多战斗方式，包括飞机和炮塔，以及一个强大且实用的东西——&e预制结构&r。"
+				""
+				"同时，可以获取&e4装药弹道射表&r，用于远距离攻击"
+			]
+			hide: false
+			icon: "createbigcannons:steel_quickfiring_breech"
+			id: "4A9BA84BB9D9625C"
+			rewards: [{
+				auto: "enabled"
+				command: "/gamestage add @a 2"
+				elevate_perms: true
+				icon: "minecraft:heart_of_the_sea"
+				id: "6CB144D8331B38D2"
+				title: "世界等级2"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "78B762F4A43DA179"
+				type: "checkmark"
+			}]
+			title: "世界等级2"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4A9BA84BB9D9625C"]
+			description: [
+				"预制结构，使用一种特殊的&9机械动力蓝图&r，搭配特制的蓝图加农炮使用。"
+				""
+				"蓝图的使用方式和机械动力没有区别，完成部署后放入&e造船厂加农炮中&r。之后蓝图会转换为一种&9特殊蓝图&r，&c取出后不可再放回，因此请勿在打印完成前取出或摧毁加农炮&r。普通的蓝图在这种加农炮中无法使用。"
+				""
+				"造船厂蓝图加农炮不会替换任何已有方块，无论如何选择模式。"
+				""
+				"同时，蓝图可以&6直接在瓦尔基里结构上部署&r。使用船舵物理化一块小板子，然后使用蓝图对着板子右键，可以看见结构的投影跟随板子在动，然后就可以放入加农炮中。需要注意的是，&e造船厂蓝图加农炮&r需要&6也存在于这块板子上&r。如果显示区块未加载，在板子上多朝着投影搭点方块。"
+				""
+				"预制载具的蓝图会在名称上有标注。"
+				""
+				"{@pagebreak}"
+				"预制载具和零件主要有如下获取方式："
+				"-商人购买"
+				"-科技树研发"
+				""
+				"商船中有小概率刷新出售预制船的商人，研发局的科技树中也能完成任务获得预制船。还有一些商人会出售预制零件。同时，一些商人出售的补给箱也有小概率开出预制船。"
+				""
+				"部分预制船还带有配套的维修包，能够在战斗环境下快速自动修理。"
+			]
+			hide: true
+			icon: "warshiparise:shipdock_schematicannon"
+			id: "35A43FB264A8386C"
+			rewards: [{
+				id: "57055E76426BED6F"
+				item: "warshiparise:shipdock_schematicannon"
+				type: "item"
+			}]
+			subtitle: "下次还填非常好吃"
+			tasks: [{
+				id: "0472A180CA5E6506"
+				type: "checkmark"
+			}]
+			title: "预制结构！"
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"581A369C4CB18F5A"
+				"1E16C9EC0B4D9EC5"
+				"39C1D347E4D64197"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"在这个世界等级中，将会刷新更多强力的精英怪，以及具有远程攻击机制的船只"
+				"玩家需要强大的战舰来应对，并需要使用&6弹道数据表&r进行远距离攻击"
+				"&6远程攻击机制&r："
+				"这类船的火力会随距离大幅度变化，一般分为两类"
+				"- &6射速衰竭&r（射速随距离急剧衰竭）"
+				"- &2散步衰竭&r（基础散步随距离急剧衰竭）"
+				"进攻这类船只时，近距离和远距离的&4生存压力&r差距非常大"
+				"同时，注意来自水下的威胁"
+				""
+				"玩家在这个等级中可以获取&4火控&r和&e控制工艺零件&r，这将极大地加强战斗效率"
+			]
+			hide: false
+			icon: "minecraft:spyglass"
+			id: "0720CC22285BDBA6"
+			rewards: [{
+				auto: "enabled"
+				command: "/gamestage add @a 3"
+				elevate_perms: true
+				icon: "minecraft:heart_of_the_sea"
+				id: "2B6893AD13FDFF5A"
+				title: "世界等级3"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "79068CDB3A2E96AD"
+					type: "checkmark"
+				}
+				{
+					consume_items: true
+					count: 8L
+					id: "09106D64AC668739"
+					item: "warshiparise:mysterious_snicker"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 5L
+					id: "1A5E658BBFF674A1"
+					item: "warshiparise:mysterious_bottle"
+					type: "item"
+				}
+			]
+			title: "世界等级3"
+			x: 11.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3110EB632223CE41"]
+			description: [
+				"极光号上带有弹道射表，这是一本记录距离和角度关系的书，可以极大提高远距离射击校准的效率。"
+				"请击败极光号并尝试从战利品中开出弹道射表。"
+				""
+				"&b[解锁弹道表使用教程]&r"
+			]
+			icon: "create:display_board"
+			id: "6EDFE0637BF0AD5A"
+			rewards: [{
+				description: ""
+				icon: "minecraft:writable_book"
+				id: "506B1CE90BB296DA"
+				title: "开启弹道射表教程"
+				type: "toast"
+			}]
+			subtitle: "能智工人火控"
+			tasks: [{
+				id: "056C1EE5C042D923"
+				item: "warshiparise:aurora_proof"
+				type: "item"
+			}]
+			title: "远距离作战"
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["762AAA4EADA35B79"]
+			description: [
+				"世界等级3里开始大量出现带有远程机制的野怪："
+				"-射程能够达到火炮理论射程"
+				"-射速在远处慢，靠近以后急剧增加"
+				"-主炮下方带有额外的传动结构"
+				""
+				"这类野怪能够在很远的距离攻击玩家，并且靠近时火力会得到巨大提升，因此从中远距离攻击是最佳选择。同时，这些船的火炮下方带有额外传动，如果其中一处被击毁，整个火炮都会瘫痪。因此，从远处攻击并造成有效伤害的难度有所降低。"
+				""
+				"请先击败这些野怪中最容易打的。"
+			]
+			hide: false
+			id: "125BB5748214038D"
+			rewards: [{
+				count: 32
+				id: "502F374C76B04433"
+				item: {
+					Count: 1
+					id: "createbigcannons:big_cartridge"
+					tag: {
+						Power: 5
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5C444530966ED3B9"
+				item: "warshiparise:archer_proof"
+				type: "item"
+			}]
+			title: "请勿靠近"
+			x: 13.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"0BC5FCC52B7DD553"
+				"5E85FF336FD96600"
+				"29732A1946CFDAD1"
+			]
+			description: ["这个世界等级中，世界将会刷新更多强力的船和强大的超级战舰"]
+			icon: "computercraft:monitor_advanced"
+			id: "2DA6A94622CA79DF"
+			rewards: [{
+				auto: "enabled"
+				command: "/gamestage add @a 4"
+				elevate_perms: true
+				icon: "minecraft:heart_of_the_sea"
+				id: "38B5B33119BD2358"
+				title: "世界等级4"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "3C6C232F2DF8709D"
+					type: "checkmark"
+				}
+				{
+					consume_items: true
+					count: 16L
+					id: "5C688DA64EA9F281"
+					item: "warshiparise:mysterious_bottle"
+					type: "item"
+				}
+			]
+			title: "世界等级4"
+			x: 17.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0720CC22285BDBA6"]
+			description: [
+				"船舵提供的推力和速度都很有限，并且操作手感笨重。当你的载具升级到一定程度时，也许你会开始寻求一些改进方案甚至脱离船舵"
+				""
+				"&6螺旋桨轴承&r是一个很好的选择，它消耗应力并提供大量推力"
+				"你需要在轴承前面放置风帆并将它组装为一个&6机械动力结构&r"
+				"螺旋桨轴承消耗应力&4很大&r，通常你需要一个&6蒸汽机&r作为动力来源"
+				"螺旋桨轴承提供的推力能够很好地加速或停止载具，你可以利用这种机动性来躲避炮弹"
+			]
+			icon: "vs_clockwork:propeller_bearing"
+			id: "33B6AFB97A83586D"
+			subtitle: "弹射起步"
+			tasks: [{
+				id: "19D529298E89E864"
+				item: "vs_clockwork:propeller_bearing"
+				type: "item"
+			}]
+			title: "机动改进"
+			x: 11.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4A9BA84BB9D9625C"]
+			description: [
+				"并不是所有的时候都需要从水面上发动攻击，如果，我是说，如果真的可以把&e飞机&r放到船上，会不会又是另一种攻击方式呢？"
+				"沉浸式飞机不仅可以用于侦察，也能装上&4炸弹&r进行投弹，这些炸弹为&4爆炸伤害&r，并且威力低于高爆弹"
+				"这些飞机似乎有些&b脆弱&r"
+				"使用飞机进行攻击需要&2一定的技巧&r，不过好消息是，您不需要飞行执照！"
+				"可以直接在物理化的方块上放下，放下船以后记得清除胶水"
+				"&6可用炸弹种类&r："
+				"- 高爆弹"
+				"- 投放式迫击炮弹"
+			]
+			icon: "immersive_aircraft:biplane"
+			id: "10EA14AE019F4283"
+			rewards: [
+				{
+					id: "7E97E3026D9EE23C"
+					item: {
+						Count: 1
+						id: "create:minecart_contraption"
+						tag: {
+							Contraption: {
+								Actors: [
+									{
+										Data: { }
+										FirstMovement: 0b
+										Motion: [
+											0.0d
+											0.0d
+											0.0d
+										]
+										Pos: {
+											X: 5
+											Y: 1
+											Z: -6
+										}
+										RelativeMotion: [
+											0.0d
+											0.0d
+											0.0d
+										]
+										Stall: 0b
+									}
+									{
+										Data: { }
+										FirstMovement: 0b
+										Motion: [
+											0.0d
+											0.0d
+											0.0d
+										]
+										Pos: {
+											X: 5
+											Y: 1
+											Z: -7
+										}
+										RelativeMotion: [
+											0.0d
+											0.0d
+											0.0d
+										]
+										Stall: 0b
+									}
+									{
+										Data: {
+											Open: 0b
+										}
+										FirstMovement: 0b
+										Motion: [
+											0.0d
+											0.0d
+											0.0d
+										]
+										Pos: {
+											X: 3
+											Y: 5
+											Z: 9
+										}
+										RelativeMotion: [
+											0.0d
+											0.0d
+											0.0d
+										]
+										Stall: 0b
+									}
+									{
+										Data: { }
+										FirstMovement: 0b
+										Motion: [
+											0.0d
+											0.0d
+											0.0d
+										]
+										Pos: {
+											X: 3
+											Y: 6
+											Z: 9
+										}
+										RelativeMotion: [
+											0.0d
+											0.0d
+											0.0d
+										]
+										Stall: 0b
+									}
+								]
+								Anchor: {
+									X: -1853
+									Y: 94
+									Z: 504
+								}
+								Blocks: {
+									BlockList: [
+										{
+											Pos: 549755822084L
+											State: 0
+										}
+										{
+											Pos: 0L
+											State: 1
+										}
+										{
+											Pos: 824633729028L
+											State: 0
+										}
+										{
+											Pos: 549755813888L
+											State: 2
+										}
+										{
+											Pos: 1099511635972L
+											State: 3
+										}
+										{
+											Pos: 824633720832L
+											State: 2
+										}
+										{
+											Pos: 1374389542916L
+											State: 4
+										}
+										{
+											Pos: 1099511627776L
+											State: 5
+										}
+										{
+											Pos: 1649267449860L
+											State: 3
+										}
+										{
+											Pos: 1374389534720L
+											State: 5
+										}
+										{
+											Pos: 1924145356804L
+											State: 4
+										}
+										{
+											Pos: 1649267441664L
+											State: 5
+										}
+										{
+											Pos: 2199023263748L
+											State: 3
+										}
+										{
+											Pos: 1924145348608L
+											State: 5
+										}
+										{
+											Pos: 2473901170692L
+											State: 3
+										}
+										{
+											Pos: 2748779008002L
+											State: 3
+										}
+										{
+											Pos: 2199023255552L
+											State: 5
+										}
+										{
+											Pos: 2748779077636L
+											State: 3
+										}
+										{
+											Pos: 2473901162496L
+											State: 2
+										}
+										{
+											Pos: 3023656984580L
+											State: 0
+										}
+										{
+											Pos: 2748779069440L
+											State: 2
+										}
+										{
+											Pos: 1099511566338L
+											State: 3
+										}
+										{
+											Pos: 824633790466L
+											State: 3
+										}
+										{
+											Pos: 2473901232130L
+											State: 3
+										}
+										{
+											Pos: 274877923337L
+											State: 6
+										}
+										{
+											Pos: 549755830281L
+											State: 7
+										}
+										{
+											Pos: 274877915141L
+											State: 8
+										}
+										{
+											Pos: 824633737225L
+											State: 9
+										}
+										{
+											Pos: 1L
+											State: 10
+										}
+										{
+											Pos: 549755822085L
+											State: 7
+										}
+										{
+											Pos: 274877906945L
+											State: 10
+										}
+										{
+											Pos: 824633729029L
+											State: 11
+										}
+										{
+											Pos: 549755813889L
+											State: 2
+										}
+										{
+											Data: {
+												Items: [{
+													Count: 2b
+													Slot: 0b
+													id: "create:steam_engine"
+												}]
+												id: "minecraft:barrel"
+											}
+											Pos: 1374389534721L
+											State: 12
+										}
+										{
+											Pos: 2748779008001L
+											State: 2
+										}
+										{
+											Pos: 2473901101057L
+											State: 2
+										}
+										{
+											Pos: 2748779069441L
+											State: 2
+										}
+										{
+											Pos: 1374389473281L
+											State: 2
+										}
+										{
+											Pos: 1099511566337L
+											State: 2
+										}
+										{
+											Pos: 549755883523L
+											State: 7
+										}
+										{
+											Pos: 2748779139075L
+											State: 7
+										}
+										{
+											Pos: 274877923338L
+											State: 13
+										}
+										{
+											Pos: 549755830282L
+											State: 7
+										}
+										{
+											Pos: 274877915142L
+											State: 8
+										}
+										{
+											Pos: 824633737226L
+											State: 14
+										}
+										{
+											Pos: 549755822086L
+											State: 7
+										}
+										{
+											Pos: 824633729030L
+											State: 11
+										}
+										{
+											Pos: 549755813890L
+											State: 3
+										}
+										{
+											Pos: 3298534830084L
+											State: 0
+										}
+										{
+											Pos: 3023656923140L
+											State: 3
+										}
+										{
+											Pos: 2199023194112L
+											State: 2
+										}
+										{
+											Pos: 2748779016196L
+											State: 3
+										}
+										{
+											Pos: 2748779069442L
+											State: 3
+										}
+										{
+											Pos: 1924145287168L
+											State: 2
+										}
+										{
+											Pos: 2473901109252L
+											State: 3
+										}
+										{
+											Pos: 1649267380224L
+											State: 2
+										}
+										{
+											Pos: 2199023202308L
+											State: 4
+										}
+										{
+											Pos: 1924145295364L
+											State: 3
+										}
+										{
+											Pos: 1649267388420L
+											State: 4
+										}
+										{
+											Pos: 1374389481476L
+											State: 3
+										}
+										{
+											Pos: 1099511574532L
+											State: 3
+										}
+										{
+											Pos: 824633667588L
+											State: 3
+										}
+										{
+											Pos: 274877976580L
+											State: 0
+										}
+										{
+											Pos: 549755760644L
+											State: 0
+										}
+										{
+											Pos: 549755883524L
+											State: 3
+										}
+										{
+											Pos: 824633790468L
+											State: 3
+										}
+										{
+											Pos: 1099511697412L
+											State: 3
+										}
+										{
+											Pos: 1374389604356L
+											State: 4
+										}
+										{
+											Pos: 1099511689216L
+											State: 2
+										}
+										{
+											Pos: 1649267511300L
+											State: 3
+										}
+										{
+											Pos: 1374389596160L
+											State: 2
+										}
+										{
+											Pos: 1924145418244L
+											State: 4
+										}
+										{
+											Pos: 1649267503104L
+											State: 2
+										}
+										{
+											Pos: 2199023325188L
+											State: 3
+										}
+										{
+											Pos: 1924145410048L
+											State: 2
+										}
+										{
+											Pos: 2473901232132L
+											State: 3
+										}
+										{
+											Pos: 2199023316992L
+											State: 2
+										}
+										{
+											Pos: 2748779139076L
+											State: 3
+										}
+										{
+											Pos: 3023657046020L
+											State: 0
+										}
+										{
+											Pos: 549755830283L
+											State: 15
+										}
+										{
+											Pos: 274877915143L
+											State: 8
+										}
+										{
+											Pos: 549755822087L
+											State: 7
+										}
+										{
+											Pos: 824633729031L
+											State: 11
+										}
+										{
+											Pos: 549755813891L
+											State: 7
+										}
+										{
+											Pos: 3023656923139L
+											State: 7
+										}
+										{
+											Pos: 2748779069443L
+											State: 7
+										}
+										{
+											Pos: 2199023202307L
+											State: 16
+										}
+										{
+											Pos: 1924145295363L
+											State: 16
+										}
+										{
+											Pos: 1649267388419L
+											State: 16
+										}
+										{
+											Pos: 824633667587L
+											State: 7
+										}
+										{
+											Pos: 824633782273L
+											State: 2
+										}
+										{
+											Pos: 1649267503105L
+											State: 17
+										}
+										{
+											Pos: 2473901223937L
+											State: 2
+										}
+										{
+											Pos: 274877915144L
+											State: 18
+										}
+										{
+											Pos: 549755822088L
+											State: 4
+										}
+										{
+											Pos: 274877906948L
+											State: 0
+										}
+										{
+											Pos: 824633729032L
+											State: 19
+										}
+										{
+											Pos: 549755813892L
+											State: 3
+										}
+										{
+											Pos: 824633720836L
+											State: 3
+										}
+										{
+											Pos: 1099511627780L
+											State: 3
+										}
+										{
+											Pos: 1374389534724L
+											State: 4
+										}
+										{
+											Pos: 1649267441668L
+											State: 3
+										}
+										{
+											Pos: 1924145348612L
+											State: 4
+										}
+										{
+											Pos: 2199023255556L
+											State: 3
+										}
+										{
+											Pos: 3023656923138L
+											State: 3
+										}
+										{
+											Pos: 2473901162500L
+											State: 3
+										}
+										{
+											Pos: 2748779016194L
+											State: 17
+										}
+										{
+											Pos: 2748779069444L
+											State: 3
+										}
+										{
+											Pos: 3023656976388L
+											State: 0
+										}
+										{
+											Pos: 2199023202306L
+											State: 16
+										}
+										{
+											Data: {
+												ScrollValue: 8
+												id: "create:chassis"
+											}
+											Pos: 1924145295362L
+											State: 20
+										}
+										{
+											Pos: 1649267388418L
+											State: 16
+										}
+										{
+											Pos: 1099511574530L
+											State: 17
+										}
+										{
+											Pos: 824633667586L
+											State: 3
+										}
+										{
+											Pos: 824633782274L
+											State: 3
+										}
+										{
+											Pos: 2473901223938L
+											State: 3
+										}
+										{
+											Pos: 2473901047812L
+											State: 0
+										}
+										{
+											Pos: 2199023140868L
+											State: 4
+										}
+										{
+											Pos: 1924145233924L
+											State: 0
+										}
+										{
+											Pos: 1649267326980L
+											State: 4
+										}
+										{
+											Pos: 1374389420036L
+											State: 0
+										}
+										{
+											Pos: 2748779016193L
+											State: 2
+										}
+										{
+											Pos: 2473901109249L
+											State: 2
+										}
+										{
+											Pos: 2199023202305L
+											State: 16
+										}
+										{
+											Pos: 1924145295361L
+											State: 16
+										}
+										{
+											Pos: 1649267388417L
+											State: 16
+										}
+										{
+											Pos: 1374389481473L
+											State: 2
+										}
+										{
+											Pos: 1099511574529L
+											State: 2
+										}
+										{
+											Pos: 549755875331L
+											State: 7
+										}
+										{
+											Pos: 2748779130883L
+											State: 7
+										}
+										{
+											Pos: 2199023140867L
+											State: 7
+										}
+										{
+											Pos: 1924145233923L
+											State: 7
+										}
+										{
+											Pos: 1649267326979L
+											State: 7
+										}
+										{
+											Pos: 3298534838276L
+											State: 0
+										}
+										{
+											Pos: 3023656931332L
+											State: 3
+										}
+										{
+											Pos: 2199023202304L
+											State: 2
+										}
+										{
+											Pos: 2748779024388L
+											State: 3
+										}
+										{
+											Pos: 1924145295360L
+											State: 2
+										}
+										{
+											Pos: 2473901117444L
+											State: 21
+										}
+										{
+											Pos: 1649267388416L
+											State: 2
+										}
+										{
+											Pos: 2199023210500L
+											State: 21
+										}
+										{
+											Pos: 1924145303556L
+											State: 21
+										}
+										{
+											Pos: 1649267396612L
+											State: 21
+										}
+										{
+											Pos: 1374389489668L
+											State: 21
+										}
+										{
+											Pos: 1099511582724L
+											State: 3
+										}
+										{
+											Pos: 824633675780L
+											State: 3
+										}
+										{
+											Pos: 274877968388L
+											State: 0
+										}
+										{
+											Pos: 549755768836L
+											State: 0
+										}
+										{
+											Pos: 549755875332L
+											State: 3
+										}
+										{
+											Pos: 824633782276L
+											State: 3
+										}
+										{
+											Pos: 1099511689220L
+											State: 21
+										}
+										{
+											Pos: 1374389596164L
+											State: 21
+										}
+										{
+											Pos: 1099511681024L
+											State: 2
+										}
+										{
+											Pos: 1649267503108L
+											State: 21
+										}
+										{
+											Pos: 1374389587968L
+											State: 2
+										}
+										{
+											Pos: 1924145410052L
+											State: 21
+										}
+										{
+											Pos: 1649267494912L
+											State: 2
+										}
+										{
+											Pos: 2199023316996L
+											State: 21
+										}
+										{
+											Pos: 1924145401856L
+											State: 2
+										}
+										{
+											Pos: 2473901223940L
+											State: 3
+										}
+										{
+											Pos: 2199023308800L
+											State: 2
+										}
+										{
+											Pos: 2748779130884L
+											State: 3
+										}
+										{
+											Pos: 3023657037828L
+											State: 0
+										}
+										{
+											Pos: 3023656931331L
+											State: 7
+										}
+										{
+											Pos: 824633675779L
+											State: 7
+										}
+										{
+											Pos: 824633774081L
+											State: 2
+										}
+										{
+											Pos: 2473901215745L
+											State: 2
+										}
+										{
+											Pos: 3023656931330L
+											State: 3
+										}
+										{
+											Data: {
+												Angle: 0.0f
+												Inverted: 0b
+												RotSpeed: 0.0f
+												Running: 0b
+												ScrollValue: 0
+												Speed: 0.0f
+												id: "vs_clockwork:propeller_bearing"
+											}
+											Pos: 1924145303554L
+											State: 22
+										}
+										{
+											Pos: 824633675778L
+											State: 3
+										}
+										{
+											Pos: 549755867138L
+											State: 3
+										}
+										{
+											Pos: 2748778962948L
+											State: 0
+										}
+										{
+											Pos: 2748779122690L
+											State: 3
+										}
+										{
+											Pos: 2473901056004L
+											State: 0
+										}
+										{
+											Pos: 2199023149060L
+											State: 4
+										}
+										{
+											Pos: 1924145242116L
+											State: 3
+										}
+										{
+											Pos: 1649267335172L
+											State: 4
+										}
+										{
+											Pos: 1374389428228L
+											State: 0
+										}
+										{
+											Pos: 1099511521284L
+											State: 0
+										}
+										{
+											Pos: 3023656931329L
+											State: 2
+										}
+										{
+											Pos: 2748779024385L
+											State: 2
+										}
+										{
+											Pos: 1099511582721L
+											State: 2
+										}
+										{
+											Pos: 824633675777L
+											State: 2
+										}
+										{
+											Pos: 549755867139L
+											State: 7
+										}
+										{
+											Pos: 2748779122691L
+											State: 7
+										}
+										{
+											Pos: 2473901056003L
+											State: 7
+										}
+										{
+											Pos: 1374389428227L
+											State: 7
+										}
+										{
+											Pos: 3298534846468L
+											State: 0
+										}
+										{
+											Pos: 2473901117440L
+											State: 2
+										}
+										{
+											Pos: 3023656939524L
+											State: 3
+										}
+										{
+											Pos: 2199023210496L
+											State: 2
+										}
+										{
+											Pos: 2748779032580L
+											State: 3
+										}
+										{
+											Pos: 1924145303552L
+											State: 2
+										}
+										{
+											Pos: 2473901125636L
+											State: 21
+										}
+										{
+											Pos: 1649267396608L
+											State: 2
+										}
+										{
+											Pos: 2199023218692L
+											State: 21
+										}
+										{
+											Pos: 1374389489664L
+											State: 2
+										}
+										{
+											Pos: 1924145311748L
+											State: 21
+										}
+										{
+											Pos: 1649267404804L
+											State: 21
+										}
+										{
+											Pos: 1374389497860L
+											State: 21
+										}
+										{
+											Pos: 1099511590916L
+											State: 3
+										}
+										{
+											Pos: 824633683972L
+											State: 3
+										}
+										{
+											Pos: 274877960196L
+											State: 0
+										}
+										{
+											Pos: 549755777028L
+											State: 0
+										}
+										{
+											Pos: 549755867140L
+											State: 0
+										}
+										{
+											Pos: 824633774084L
+											State: 3
+										}
+										{
+											Pos: 1099511681028L
+											State: 21
+										}
+										{
+											Pos: 824633765888L
+											State: 2
+										}
+										{
+											Pos: 1374389587972L
+											State: 21
+										}
+										{
+											Pos: 1099511672832L
+											State: 5
+										}
+										{
+											Pos: 1649267494916L
+											State: 21
+										}
+										{
+											Pos: 1374389579776L
+											State: 5
+										}
+										{
+											Pos: 1924145401860L
+											State: 21
+										}
+										{
+											Pos: 1649267486720L
+											State: 5
+										}
+										{
+											Pos: 2199023308804L
+											State: 21
+										}
+										{
+											Pos: 1924145393664L
+											State: 5
+										}
+										{
+											Pos: 2473901215748L
+											State: 3
+										}
+										{
+											Pos: 2199023300608L
+											State: 5
+										}
+										{
+											Pos: 2748779122692L
+											State: 3
+										}
+										{
+											Pos: 2473901056002L
+											State: 3
+										}
+										{
+											Pos: 2473901207552L
+											State: 2
+										}
+										{
+											Pos: 3023657029636L
+											State: 0
+										}
+										{
+											Pos: 2199023149058L
+											State: 3
+										}
+										{
+											Pos: 1649267335170L
+											State: 3
+										}
+										{
+											Pos: 1374389428226L
+											State: 3
+										}
+										{
+											Pos: 3023656939523L
+											State: 7
+										}
+										{
+											Data: {
+												Speed: 0.0f
+												id: "create:simple_kinetic"
+											}
+											Pos: 2473901125635L
+											State: 23
+										}
+										{
+											Data: {
+												FrequencyFirst: {
+													Count: 1b
+													id: "minecraft:air"
+													tag: { }
+												}
+												FrequencyLast: {
+													Count: 1b
+													id: "minecraft:air"
+													tag: { }
+												}
+												LastKnownPosition: -507424614191007L
+												Receive: 0
+												ReceivedChanged: 0b
+												Transmit: 0
+												Transmitter: 1b
+												id: "create:redstone_link"
+											}
+											Pos: 2199023218691L
+											State: 24
+										}
+										{
+											Pos: 824633683971L
+											State: 7
+										}
+										{
+											Pos: 274877960197L
+											State: 25
+										}
+										{
+											Pos: 549755867141L
+											State: 7
+										}
+										{
+											Pos: 824633774085L
+											State: 26
+										}
+										{
+											Pos: 549755858945L
+											State: 2
+										}
+										{
+											Pos: 2199023149057L
+											State: 2
+										}
+										{
+											Pos: 2748779114497L
+											State: 2
+										}
+										{
+											Pos: 1924145242113L
+											State: 2
+										}
+										{
+											Pos: 1649267335169L
+											State: 2
+										}
+										{
+											Pos: 1649267556355L
+											State: 7
+										}
+										{
+											Pos: 3023656939522L
+											State: 3
+										}
+										{
+											Data: {
+												HasAttachedComputer: 0b
+												ScrollValue: 256
+												Speed: 0.0f
+												id: "create:rotation_speed_controller"
+											}
+											Pos: 2473901125634L
+											State: 27
+										}
+										{
+											Data: {
+												Speed: 0.0f
+												id: "create_connected:inverted_clutch"
+											}
+											Pos: 2199023218690L
+											State: 28
+										}
+										{
+											Data: {
+												Speed: 0.0f
+												id: "create:gearbox"
+											}
+											Pos: 1924145311746L
+											State: 29
+										}
+										{
+											Pos: 824633683970L
+											State: 3
+										}
+										{
+											Pos: 274877960198L
+											State: 30
+										}
+										{
+											Pos: 549755867142L
+											State: 7
+										}
+										{
+											Pos: 824633774086L
+											State: 31
+										}
+										{
+											Pos: 549755858946L
+											State: 3
+										}
+										{
+											Pos: 2748778971140L
+											State: 0
+										}
+										{
+											Pos: 2748779114498L
+											State: 3
+										}
+										{
+											Pos: 2473901064196L
+											State: 3
+										}
+										{
+											Pos: 2199023157252L
+											State: 4
+										}
+										{
+											Pos: 1924145250308L
+											State: 3
+										}
+										{
+											Pos: 1649267343364L
+											State: 4
+										}
+										{
+											Pos: 1374389436420L
+											State: 3
+										}
+										{
+											Pos: 1099511529476L
+											State: 0
+										}
+										{
+											Pos: 1374389649412L
+											State: 4
+										}
+										{
+											Pos: 1649267556356L
+											State: 0
+										}
+										{
+											Pos: 3023656939521L
+											State: 2
+										}
+										{
+											Pos: 1924145463300L
+											State: 4
+										}
+										{
+											Pos: 2748779032577L
+											State: 2
+										}
+										{
+											Pos: 1099511590913L
+											State: 2
+										}
+										{
+											Pos: 824633683969L
+											State: 2
+										}
+										{
+											Pos: 549755867143L
+											State: 32
+										}
+										{
+											Pos: 549755858947L
+											State: 7
+										}
+										{
+											Pos: 2748779114499L
+											State: 7
+										}
+										{
+											Pos: 2473901064195L
+											State: 7
+										}
+										{
+											Pos: 3023657021443L
+											State: 33
+										}
+										{
+											Pos: 3298534928387L
+											State: 26
+										}
+										{
+											Pos: 1374389436419L
+											State: 7
+										}
+										{
+											Pos: 3298534854660L
+											State: 0
+										}
+										{
+											Pos: 2473901125632L
+											State: 2
+										}
+										{
+											Pos: 3023656947716L
+											State: 3
+										}
+										{
+											Pos: 2199023218688L
+											State: 2
+										}
+										{
+											Pos: 2748779040772L
+											State: 3
+										}
+										{
+											Pos: 1924145311744L
+											State: 2
+										}
+										{
+											Pos: 2473901133828L
+											State: 3
+										}
+										{
+											Pos: 1649267404800L
+											State: 2
+										}
+										{
+											Pos: 2199023226884L
+											State: 4
+										}
+										{
+											Pos: 1374389497856L
+											State: 2
+										}
+										{
+											Pos: 1924145319940L
+											State: 3
+										}
+										{
+											Pos: 1649267412996L
+											State: 4
+										}
+										{
+											Pos: 1374389506052L
+											State: 3
+										}
+										{
+											Pos: 1099511599108L
+											State: 3
+										}
+										{
+											Pos: 549755867144L
+											State: 4
+										}
+										{
+											Pos: 824633692164L
+											State: 3
+										}
+										{
+											Pos: 274877952004L
+											State: 0
+										}
+										{
+											Pos: 549755785220L
+											State: 0
+										}
+										{
+											Pos: 549755858948L
+											State: 0
+										}
+										{
+											Pos: 824633765892L
+											State: 0
+										}
+										{
+											Pos: 1099511672836L
+											State: 3
+										}
+										{
+											Pos: 824633757696L
+											State: 2
+										}
+										{
+											Pos: 1374389579780L
+											State: 4
+										}
+										{
+											Pos: 1099511664640L
+											State: 5
+										}
+										{
+											Pos: 1649267486724L
+											State: 3
+										}
+										{
+											Pos: 1374389571584L
+											State: 5
+										}
+										{
+											Pos: 1924145393668L
+											State: 4
+										}
+										{
+											Pos: 1649267478528L
+											State: 5
+										}
+										{
+											Pos: 2199023300612L
+											State: 3
+										}
+										{
+											Pos: 1924145385472L
+											State: 5
+										}
+										{
+											Pos: 2473901207556L
+											State: 3
+										}
+										{
+											Pos: 2199023292416L
+											State: 5
+										}
+										{
+											Pos: 2748779114500L
+											State: 3
+										}
+										{
+											Pos: 2473901064194L
+											State: 3
+										}
+										{
+											Pos: 2473901199360L
+											State: 2
+										}
+										{
+											Pos: 3023657021444L
+											State: 0
+										}
+										{
+											Pos: 3298534928388L
+											State: 7
+										}
+										{
+											Pos: 1374389436418L
+											State: 3
+										}
+										{
+											Pos: 1649267548162L
+											State: 3
+										}
+										{
+											Pos: 3023656947715L
+											State: 7
+										}
+										{
+											Data: {
+												Speed: 0.0f
+												id: "create:simple_kinetic"
+											}
+											Pos: 2473901133827L
+											State: 34
+										}
+										{
+											Data: {
+												Boiler: {
+													ActiveHeat: 0
+													Engines: 0
+													PassiveHeat: 0b
+													Supply: 0.0f
+													Update: 0b
+													Whistles: 0
+												}
+												Controller: {
+													X: 4
+													Y: 2
+													Z: -7
+												}
+												Luminosity: 0
+												Owner: [I;
+													-2112253487
+													-268876289
+													-1568327221
+													1359702892
+												]
+												id: "create:fluid_tank"
+											}
+											Pos: 1649267412995L
+											State: 35
+										}
+										{
+											Data: {
+												Boiler: {
+													ActiveHeat: 0
+													Engines: 0
+													PassiveHeat: 0b
+													Supply: 0.0f
+													Update: 0b
+													Whistles: 0
+												}
+												Controller: {
+													X: 4
+													Y: 2
+													Z: -7
+												}
+												Luminosity: 0
+												Owner: [I;
+													-2112253487
+													-268876289
+													-1568327221
+													1359702892
+												]
+												id: "create:fluid_tank"
+											}
+											Pos: 1374389506051L
+											State: 35
+										}
+										{
+											Pos: 824633692163L
+											State: 7
+										}
+										{
+											Pos: 274877952005L
+											State: 7
+										}
+										{
+											Pos: 549755858949L
+											State: 7
+										}
+										{
+											Pos: 824633765893L
+											State: 7
+										}
+										{
+											Pos: 549755850753L
+											State: 2
+										}
+										{
+											Pos: 1649267478529L
+											State: 17
+										}
+										{
+											Pos: 2199023157249L
+											State: 2
+										}
+										{
+											Pos: 2748779106305L
+											State: 2
+										}
+										{
+											Pos: 1924145250305L
+											State: 2
+										}
+										{
+											Pos: 1649267343361L
+											State: 2
+										}
+										{
+											Pos: 1099511734275L
+											State: 7
+										}
+										{
+											Pos: 1374389641219L
+											State: 7
+										}
+										{
+											Pos: 1649267548163L
+											State: 3
+										}
+										{
+											Pos: 3023656947714L
+											State: 3
+										}
+										{
+											Pos: 1924145455107L
+											State: 7
+										}
+										{
+											Pos: 2199023362051L
+											State: 7
+										}
+										{
+											Data: {
+												Boiler: {
+													ActiveHeat: 0
+													Engines: 0
+													PassiveHeat: 0b
+													Supply: 0.0f
+													Update: 0b
+													Whistles: 0
+												}
+												Controller: {
+													X: 4
+													Y: 2
+													Z: -7
+												}
+												Luminosity: 0
+												Owner: [I;
+													-2112253487
+													-268876289
+													-1568327221
+													1359702892
+												]
+												id: "create:fluid_tank"
+											}
+											Pos: 1649267412994L
+											State: 36
+										}
+										{
+											Data: {
+												Boiler: {
+													ActiveHeat: 0
+													Engines: 0
+													PassiveHeat: 1b
+													Supply: 0.0f
+													Update: 1b
+													Whistles: 0
+												}
+												Controller: {
+													X: 4
+													Y: 2
+													Z: -7
+												}
+												Height: 2
+												Luminosity: 0
+												Owner: [I;
+													-2112253487
+													-268876289
+													-1568327221
+													1359702892
+												]
+												Size: 2
+												TankContent: {
+													Amount: 0
+													FluidName: "minecraft:empty"
+												}
+												Window: 0b
+												id: "create:fluid_tank"
+											}
+											Pos: 1374389506050L
+											State: 36
+										}
+										{
+											Pos: 824633692162L
+											State: 3
+										}
+										{
+											Pos: 274877952006L
+											State: 7
+										}
+										{
+											Pos: 824633765894L
+											State: 7
+										}
+										{
+											Pos: 549755850754L
+											State: 3
+										}
+										{
+											Pos: 3023656886276L
+											State: 0
+										}
+										{
+											Pos: 2748778979332L
+											State: 0
+										}
+										{
+											Pos: 2748779106306L
+											State: 3
+										}
+										{
+											Pos: 2473901072388L
+											State: 3
+										}
+										{
+											Pos: 3023657013250L
+											State: 37
+										}
+										{
+											Pos: 2199023165444L
+											State: 4
+										}
+										{
+											Pos: 3298534920194L
+											State: 38
+										}
+										{
+											Pos: 1924145258500L
+											State: 3
+										}
+										{
+											Pos: 1649267351556L
+											State: 4
+										}
+										{
+											Pos: 1374389444612L
+											State: 3
+										}
+										{
+											Pos: 1099511537668L
+											State: 0
+										}
+										{
+											Pos: 824633630724L
+											State: 0
+										}
+										{
+											Pos: 1099511734276L
+											State: 0
+										}
+										{
+											Pos: 1374389641220L
+											State: 4
+										}
+										{
+											Pos: 1649267548164L
+											State: 3
+										}
+										{
+											Pos: 3023656947713L
+											State: 2
+										}
+										{
+											Pos: 1924145455108L
+											State: 4
+										}
+										{
+											Pos: 2199023362052L
+											State: 0
+										}
+										{
+											Pos: 1924145319937L
+											State: 17
+										}
+										{
+											Data: {
+												burnTimeRemaining: 0
+												fuelLevel: 0
+												id: "create:blaze_heater"
+											}
+											Pos: 1649267412993L
+											State: 39
+										}
+										{
+											Pos: 1374389506049L
+											State: 21
+										}
+										{
+											Pos: 824633692161L
+											State: 2
+										}
+										{
+											Pos: 274877952007L
+											State: 32
+										}
+										{
+											Pos: 824633765895L
+											State: 32
+										}
+										{
+											Pos: 549755850755L
+											State: 7
+										}
+										{
+											Pos: 2748778979331L
+											State: 7
+										}
+										{
+											Pos: 2748779106307L
+											State: 7
+										}
+										{
+											Pos: 3023657013251L
+											State: 7
+										}
+										{
+											Pos: 3298534920195L
+											State: 7
+										}
+										{
+											Pos: 1099511537667L
+											State: 7
+										}
+										{
+											Pos: 2748779040768L
+											State: 2
+										}
+										{
+											Pos: 3298534862852L
+											State: 0
+										}
+										{
+											Pos: 1649267539969L
+											State: 2
+										}
+										{
+											Pos: 2473901133824L
+											State: 5
+										}
+										{
+											Pos: 3023656955908L
+											State: 3
+										}
+										{
+											Pos: 2199023226880L
+											State: 5
+										}
+										{
+											Pos: 2748779048964L
+											State: 3
+										}
+										{
+											Pos: 1924145319936L
+											State: 5
+										}
+										{
+											Pos: 2473901142020L
+											State: 3
+										}
+										{
+											Pos: 1649267412992L
+											State: 5
+										}
+										{
+											Pos: 2199023235076L
+											State: 4
+										}
+										{
+											Pos: 1374389506048L
+											State: 5
+										}
+										{
+											Pos: 1924145328132L
+											State: 3
+										}
+										{
+											Pos: 1099511599104L
+											State: 2
+										}
+										{
+											Pos: 1649267421188L
+											State: 4
+										}
+										{
+											Pos: 1374389514244L
+											State: 3
+										}
+										{
+											Pos: 274877952008L
+											State: 4
+										}
+										{
+											Pos: 1099511607300L
+											State: 3
+										}
+										{
+											Pos: 549755858952L
+											State: 7
+										}
+										{
+											Pos: 824633700356L
+											State: 3
+										}
+										{
+											Pos: 274877943812L
+											State: 0
+										}
+										{
+											Pos: 824633765896L
+											State: 4
+										}
+										{
+											Pos: 549755793412L
+											State: 0
+										}
+										{
+											Pos: 549755850756L
+											State: 0
+										}
+										{
+											Pos: 824633757700L
+											State: 0
+										}
+										{
+											Pos: 1099511664644L
+											State: 3
+										}
+										{
+											Pos: 824633749504L
+											State: 2
+										}
+										{
+											Pos: 1374389571588L
+											State: 4
+										}
+										{
+											Pos: 1099511656448L
+											State: 5
+										}
+										{
+											Pos: 1649267478532L
+											State: 3
+										}
+										{
+											Pos: 1374389563392L
+											State: 5
+										}
+										{
+											Pos: 1924145385476L
+											State: 4
+										}
+										{
+											Pos: 1649267470336L
+											State: 5
+										}
+										{
+											Pos: 2199023292420L
+											State: 3
+										}
+										{
+											Pos: 1924145377280L
+											State: 5
+										}
+										{
+											Pos: 2473901199364L
+											State: 3
+										}
+										{
+											Pos: 2199023284224L
+											State: 5
+										}
+										{
+											Pos: 2748779106308L
+											State: 3
+										}
+										{
+											Pos: 2473901072386L
+											State: 3
+										}
+										{
+											Pos: 2473901191168L
+											State: 2
+										}
+										{
+											Pos: 3023657013252L
+											State: 40
+										}
+										{
+											Data: {
+												CannonPitch: 0.0f
+												CannonYaw: 270.0f
+												Running: 0b
+												Speed: 0.0f
+												YawSpeed: 0.0f
+												id: "createbigcannons:cannon_mount"
+											}
+											Pos: 3298534920196L
+											State: 41
+										}
+										{
+											Pos: 1374389444610L
+											State: 3
+										}
+										{
+											Pos: 1374389633026L
+											State: 3
+										}
+										{
+											Pos: 3023656955907L
+											State: 7
+										}
+										{
+											Pos: 1924145446914L
+											State: 3
+										}
+										{
+											Data: {
+												Speed: 0.0f
+												id: "create:clutch"
+											}
+											Pos: 2473901142019L
+											State: 42
+										}
+										{
+											Pos: 824633700355L
+											State: 7
+										}
+										{
+											Pos: 274877943813L
+											State: 7
+										}
+										{
+											Data: {
+												ScrollValue: 0
+												id: "create:sliding_door"
+											}
+											Pos: 824633757701L
+											State: 43
+										}
+										{
+											Pos: 549755842561L
+											State: 2
+										}
+										{
+											Pos: 824633749505L
+											State: 44
+										}
+										{
+											Pos: 2473901072385L
+											State: 2
+										}
+										{
+											Pos: 2199023165441L
+											State: 2
+										}
+										{
+											Pos: 2748779098113L
+											State: 2
+										}
+										{
+											Pos: 1649267351553L
+											State: 2
+										}
+										{
+											Pos: 1374389444609L
+											State: 2
+										}
+										{
+											Pos: 1099511726083L
+											State: 7
+										}
+										{
+											Pos: 3023656955906L
+											State: 3
+										}
+										{
+											Pos: 2199023353859L
+											State: 7
+										}
+										{
+											Data: {
+												Owner: [I;
+													-2112253487
+													-268876289
+													-1568327221
+													1359702892
+												]
+												id: "create:fluid_pipe"
+												north: { }
+												south: { }
+											}
+											Pos: 1374389514242L
+											State: 45
+										}
+										{
+											Pos: 824633700354L
+											State: 3
+										}
+										{
+											Pos: 274877943814L
+											State: 7
+										}
+										{
+											Pos: 274877935618L
+											State: 3
+										}
+										{
+											Pos: 824633757702L
+											State: 46
+										}
+										{
+											Pos: 549755842562L
+											State: 44
+										}
+										{
+											Pos: 3023656894468L
+											State: 0
+										}
+										{
+											Pos: 2199023165440L
+											State: 2
+										}
+										{
+											Pos: 2748778987524L
+											State: 3
+										}
+										{
+											Pos: 2748779098114L
+											State: 3
+										}
+										{
+											Pos: 1924145258496L
+											State: 2
+										}
+										{
+											Pos: 2473901080580L
+											State: 3
+										}
+										{
+											Pos: 1649267351552L
+											State: 2
+										}
+										{
+											Pos: 2199023173636L
+											State: 4
+										}
+										{
+											Pos: 1924145266692L
+											State: 3
+										}
+										{
+											Pos: 1649267359748L
+											State: 4
+										}
+										{
+											Pos: 1374389452804L
+											State: 3
+										}
+										{
+											Pos: 1099511545860L
+											State: 3
+										}
+										{
+											Pos: 824633638916L
+											State: 0
+										}
+										{
+											Pos: 824633819140L
+											State: 0
+										}
+										{
+											Pos: 1099511726084L
+											State: 3
+										}
+										{
+											Pos: 1374389633028L
+											State: 4
+										}
+										{
+											Pos: 1649267539972L
+											State: 3
+										}
+										{
+											Pos: 3023656955905L
+											State: 2
+										}
+										{
+											Pos: 1924145446916L
+											State: 4
+										}
+										{
+											Pos: 1649267531776L
+											State: 2
+										}
+										{
+											Pos: 2199023353860L
+											State: 3
+										}
+										{
+											Pos: 2473901260804L
+											State: 0
+										}
+										{
+											Pos: 824633700353L
+											State: 2
+										}
+										{
+											Pos: 274877943815L
+											State: 7
+										}
+										{
+											Pos: 274877935619L
+											State: 7
+										}
+										{
+											Pos: 824633757703L
+											State: 7
+										}
+										{
+											Pos: 549755842563L
+											State: 44
+										}
+										{
+											Pos: 2748778987523L
+											State: 7
+										}
+										{
+											Pos: 2748779098115L
+											State: 7
+										}
+										{
+											Pos: 3023657005059L
+											State: 47
+										}
+										{
+											Pos: 3298534912003L
+											State: 11
+										}
+										{
+											Pos: 1099511545859L
+											State: 7
+										}
+										{
+											Pos: 1374389624833L
+											State: 2
+										}
+										{
+											Pos: 2748779048960L
+											State: 2
+										}
+										{
+											Pos: 3298534871044L
+											State: 0
+										}
+										{
+											Pos: 2473901142016L
+											State: 5
+										}
+										{
+											Pos: 3023656964100L
+											State: 3
+										}
+										{
+											Pos: 1924145438721L
+											State: 2
+										}
+										{
+											Pos: 2199023235072L
+											State: 5
+										}
+										{
+											Pos: 2748779057156L
+											State: 3
+										}
+										{
+											Pos: 1924145328128L
+											State: 5
+										}
+										{
+											Pos: 2473901150212L
+											State: 3
+										}
+										{
+											Pos: 1649267421184L
+											State: 5
+										}
+										{
+											Pos: 2199023243268L
+											State: 4
+										}
+										{
+											Pos: 1374389514240L
+											State: 5
+										}
+										{
+											Pos: 1924145336324L
+											State: 3
+										}
+										{
+											Pos: 1099511607296L
+											State: 2
+										}
+										{
+											Pos: 1649267429380L
+											State: 4
+										}
+										{
+											Pos: 1374389522436L
+											State: 3
+										}
+										{
+											Pos: 274877943816L
+											State: 4
+										}
+										{
+											Pos: 1099511615492L
+											State: 3
+										}
+										{
+											Pos: 549755850760L
+											State: 7
+										}
+										{
+											Pos: 824633708548L
+											State: 3
+										}
+										{
+											Pos: 274877935620L
+											State: 0
+										}
+										{
+											Pos: 824633757704L
+											State: 4
+										}
+										{
+											Pos: 549755801604L
+											State: 0
+										}
+										{
+											Pos: 549755842564L
+											State: 44
+										}
+										{
+											Pos: 824633749508L
+											State: 0
+										}
+										{
+											Pos: 549755834368L
+											State: 2
+										}
+										{
+											Pos: 1099511656452L
+											State: 3
+										}
+										{
+											Pos: 824633741312L
+											State: 2
+										}
+										{
+											Pos: 1374389563396L
+											State: 4
+										}
+										{
+											Pos: 1099511648256L
+											State: 5
+										}
+										{
+											Pos: 1649267470340L
+											State: 3
+										}
+										{
+											Pos: 1374389555200L
+											State: 5
+										}
+										{
+											Pos: 1924145377284L
+											State: 4
+										}
+										{
+											Pos: 1649267462144L
+											State: 5
+										}
+										{
+											Pos: 2199023284228L
+											State: 3
+										}
+										{
+											Pos: 1924145369088L
+											State: 5
+										}
+										{
+											Pos: 2473901191172L
+											State: 3
+										}
+										{
+											Pos: 2748778987522L
+											State: 3
+										}
+										{
+											Pos: 2199023276032L
+											State: 5
+										}
+										{
+											Pos: 2748779098116L
+											State: 3
+										}
+										{
+											Pos: 2473901182976L
+											State: 2
+										}
+										{
+											Pos: 3023657005060L
+											State: 0
+										}
+										{
+											Pos: 2748779089920L
+											State: 2
+										}
+										{
+											Pos: 3298534912004L
+											State: 7
+										}
+										{
+											Pos: 1099511545858L
+											State: 3
+										}
+										{
+											Pos: 1099511717890L
+											State: 3
+										}
+										{
+											Pos: 3023656964099L
+											State: 7
+										}
+										{
+											Pos: 2199023345666L
+											State: 3
+										}
+										{
+											Pos: 549755850761L
+											State: 7
+										}
+										{
+											Pos: 824633708547L
+											State: 7
+										}
+										{
+											Pos: 274877935621L
+											State: 7
+										}
+										{
+											Pos: 824633749509L
+											State: 7
+										}
+										{
+											Pos: 549755834369L
+											State: 2
+										}
+										{
+											Pos: 2473901080577L
+											State: 2
+										}
+										{
+											Pos: 2748779089921L
+											State: 2
+										}
+										{
+											Pos: 1374389452801L
+											State: 2
+										}
+										{
+											Pos: 824633810947L
+											State: 7
+										}
+										{
+											Pos: 3023656964098L
+											State: 3
+										}
+										{
+											Pos: 2473901252611L
+											State: 7
+										}
+										{
+											Pos: 1924145336322L
+											State: 48
+										}
+										{
+											Pos: 1649267429378L
+											State: 49
+										}
+										{
+											Pos: 1099511615490L
+											State: 2
+										}
+										{
+											Pos: 549755850762L
+											State: 7
+										}
+										{
+											Pos: 824633708546L
+											State: 3
+										}
+										{
+											Pos: 274877935622L
+											State: 7
+										}
+										{
+											Pos: 824633749510L
+											State: 7
+										}
+										{
+											Pos: 549755834370L
+											State: 3
+										}
+										{
+											Pos: 3023656902660L
+											State: 0
+										}
+										{
+											Pos: 2199023173632L
+											State: 2
+										}
+										{
+											Pos: 2748778995716L
+											State: 3
+										}
+										{
+											Pos: 2748779089922L
+											State: 3
+										}
+										{
+											Pos: 1924145266688L
+											State: 2
+										}
+										{
+											Pos: 2473901088772L
+											State: 3
+										}
+										{
+											Pos: 1649267359744L
+											State: 2
+										}
+										{
+											Pos: 2199023181828L
+											State: 4
+										}
+										{
+											Pos: 1924145274884L
+											State: 3
+										}
+										{
+											Pos: 1649267367940L
+											State: 4
+										}
+										{
+											Pos: 1374389460996L
+											State: 3
+										}
+										{
+											Pos: 1099511554052L
+											State: 3
+										}
+										{
+											Pos: 824633647108L
+											State: 0
+										}
+										{
+											Pos: 549755904004L
+											State: 0
+										}
+										{
+											Pos: 824633810948L
+											State: 0
+										}
+										{
+											Pos: 1099511717892L
+											State: 3
+										}
+										{
+											Pos: 1374389624836L
+											State: 4
+										}
+										{
+											Pos: 1649267531780L
+											State: 3
+										}
+										{
+											Pos: 3023656964097L
+											State: 2
+										}
+										{
+											Pos: 1374389616640L
+											State: 2
+										}
+										{
+											Pos: 1924145438724L
+											State: 4
+										}
+										{
+											Pos: 1649267523584L
+											State: 2
+										}
+										{
+											Pos: 2199023345668L
+											State: 3
+										}
+										{
+											Pos: 1924145430528L
+											State: 2
+										}
+										{
+											Pos: 2473901252612L
+											State: 0
+										}
+										{
+											Pos: 2748779159556L
+											State: 0
+										}
+										{
+											Pos: 1649267429377L
+											State: 2
+										}
+										{
+											Pos: 1374389522433L
+											State: 2
+										}
+										{
+											Pos: 1099511615489L
+											State: 2
+										}
+										{
+											Pos: 549755850763L
+											State: 7
+										}
+										{
+											Pos: 824633708545L
+											State: 2
+										}
+										{
+											Pos: 274877935623L
+											State: 7
+										}
+										{
+											Pos: 824633749511L
+											State: 7
+										}
+										{
+											Pos: 549755834371L
+											State: 7
+										}
+										{
+											Pos: 3023656902659L
+											State: 7
+										}
+										{
+											Pos: 2748779089923L
+											State: 7
+										}
+										{
+											Pos: 824633647107L
+											State: 7
+										}
+										{
+											Pos: 1099511709697L
+											State: 2
+										}
+										{
+											Pos: 3023656964096L
+											State: 2
+										}
+										{
+											Pos: 2748779057152L
+											State: 2
+										}
+										{
+											Pos: 3298534879236L
+											State: 0
+										}
+										{
+											Pos: 2473901150208L
+											State: 5
+										}
+										{
+											Pos: 3023656972292L
+											State: 3
+										}
+										{
+											Pos: 2199023243264L
+											State: 5
+										}
+										{
+											Pos: 2748779065348L
+											State: 3
+										}
+										{
+											Pos: 2199023337473L
+											State: 2
+										}
+										{
+											Pos: 1924145336320L
+											State: 5
+										}
+										{
+											Pos: 2473901158404L
+											State: 3
+										}
+										{
+											Pos: 1649267429376L
+											State: 5
+										}
+										{
+											Pos: 2199023251460L
+											State: 4
+										}
+										{
+											Pos: 1374389522432L
+											State: 5
+										}
+										{
+											Pos: 1924145344516L
+											State: 3
+										}
+										{
+											Pos: 1099511615488L
+											State: 2
+										}
+										{
+											Pos: 1649267437572L
+											State: 4
+										}
+										{
+											Pos: 549755850764L
+											State: 7
+										}
+										{
+											Pos: 824633708544L
+											State: 2
+										}
+										{
+											Pos: 1374389530628L
+											State: 3
+										}
+										{
+											Pos: 274877935624L
+											State: 4
+										}
+										{
+											Pos: 1099511623684L
+											State: 3
+										}
+										{
+											Pos: 549755842568L
+											State: 7
+										}
+										{
+											Pos: 824633716740L
+											State: 3
+										}
+										{
+											Pos: 274877927428L
+											State: 0
+										}
+										{
+											Pos: 824633749512L
+											State: 4
+										}
+										{
+											Pos: 549755809796L
+											State: 0
+										}
+										{
+											Pos: 549755834372L
+											State: 0
+										}
+										{
+											Pos: 824633741316L
+											State: 0
+										}
+										{
+											Pos: 549755826176L
+											State: 2
+										}
+										{
+											Pos: 1099511648260L
+											State: 3
+										}
+										{
+											Pos: 824633733120L
+											State: 2
+										}
+										{
+											Pos: 1374389555204L
+											State: 4
+										}
+										{
+											Pos: 1099511640064L
+											State: 5
+										}
+										{
+											Pos: 1649267462148L
+											State: 3
+										}
+										{
+											Pos: 1374389547008L
+											State: 5
+										}
+										{
+											Pos: 1924145369092L
+											State: 4
+										}
+										{
+											Pos: 1649267453952L
+											State: 5
+										}
+										{
+											Pos: 2199023276036L
+											State: 3
+										}
+										{
+											Pos: 1924145360896L
+											State: 5
+										}
+										{
+											Pos: 2473901182980L
+											State: 3
+										}
+										{
+											Pos: 2748778995714L
+											State: 3
+										}
+										{
+											Pos: 2199023267840L
+											State: 5
+										}
+										{
+											Pos: 2748779089924L
+											State: 3
+										}
+										{
+											Pos: 2473901174784L
+											State: 2
+										}
+										{
+											Pos: 3023656996868L
+											State: 0
+										}
+										{
+											Pos: 2748779081728L
+											State: 2
+										}
+										{
+											Pos: 1099511554050L
+											State: 3
+										}
+										{
+											Pos: 1099511709698L
+											State: 3
+										}
+										{
+											Pos: 3023656972291L
+											State: 7
+										}
+										{
+											Pos: 2199023337474L
+											State: 3
+										}
+										{
+											Data: {
+												EnableCT: 1b
+												Item: {
+													Count: 1b
+													id: "create:andesite_casing"
+												}
+												Material: {
+													Name: "create:andesite_casing"
+												}
+												id: "create:copycat"
+											}
+											Pos: 274877943821L
+											State: 50
+										}
+										{
+											Pos: 549755850765L
+											State: 7
+										}
+										{
+											Pos: 274877935625L
+											State: 51
+										}
+										{
+											Data: {
+												EnableCT: 1b
+												Item: {
+													Count: 1b
+													id: "create:andesite_casing"
+												}
+												Material: {
+													Name: "create:andesite_casing"
+												}
+												id: "create:copycat"
+											}
+											Pos: 824633757709L
+											State: 50
+										}
+										{
+											Pos: 549755842569L
+											State: 7
+										}
+										{
+											Pos: 824633716739L
+											State: 7
+										}
+										{
+											Pos: 274877927429L
+											State: 7
+										}
+										{
+											Pos: 824633749513L
+											State: 52
+										}
+										{
+											Pos: 824633741317L
+											State: 7
+										}
+										{
+											Pos: 549755826177L
+											State: 2
+										}
+										{
+											Pos: 1649267453953L
+											State: 17
+										}
+										{
+											Pos: 2473901088769L
+											State: 2
+										}
+										{
+											Pos: 2748779081729L
+											State: 2
+										}
+										{
+											Pos: 1374389460993L
+											State: 2
+										}
+										{
+											Pos: 824633802755L
+											State: 7
+										}
+										{
+											Pos: 3023656972290L
+											State: 3
+										}
+										{
+											Pos: 2473901244419L
+											State: 7
+										}
+										{
+											Pos: 549755850766L
+											State: 7
+										}
+										{
+											Pos: 1374389530626L
+											State: 53
+										}
+										{
+											Pos: 274877935626L
+											State: 54
+										}
+										{
+											Pos: 549755842570L
+											State: 7
+										}
+										{
+											Pos: 824633716738L
+											State: 3
+										}
+										{
+											Pos: 274877927430L
+											State: 7
+										}
+										{
+											Pos: 824633749514L
+											State: 55
+										}
+										{
+											Pos: 824633741318L
+											State: 7
+										}
+										{
+											Pos: 549755826178L
+											State: 3
+										}
+										{
+											Pos: 3298534817796L
+											State: 0
+										}
+										{
+											Pos: 3023656910852L
+											State: 3
+										}
+										{
+											Pos: 2199023181824L
+											State: 2
+										}
+										{
+											Pos: 2748779003908L
+											State: 3
+										}
+										{
+											Pos: 2748779081730L
+											State: 3
+										}
+										{
+											Pos: 1924145274880L
+											State: 2
+										}
+										{
+											Pos: 2473901096964L
+											State: 3
+										}
+										{
+											Pos: 1649267367936L
+											State: 2
+										}
+										{
+											Pos: 2199023190020L
+											State: 4
+										}
+										{
+											Pos: 1924145283076L
+											State: 3
+										}
+										{
+											Pos: 1649267376132L
+											State: 4
+										}
+										{
+											Pos: 1374389469188L
+											State: 3
+										}
+										{
+											Pos: 1099511562244L
+											State: 3
+										}
+										{
+											Pos: 824633655300L
+											State: 3
+										}
+										{
+											Pos: 549755748356L
+											State: 0
+										}
+										{
+											Pos: 549755895812L
+											State: 0
+										}
+										{
+											Pos: 824633802756L
+											State: 3
+										}
+										{
+											Pos: 1099511709700L
+											State: 3
+										}
+										{
+											Pos: 1374389616644L
+											State: 4
+										}
+										{
+											Pos: 1649267523588L
+											State: 3
+										}
+										{
+											Pos: 3023656972289L
+											State: 2
+										}
+										{
+											Pos: 1374389608448L
+											State: 2
+										}
+										{
+											Pos: 1924145430532L
+											State: 4
+										}
+										{
+											Pos: 1649267515392L
+											State: 2
+										}
+										{
+											Pos: 2199023337476L
+											State: 3
+										}
+										{
+											Pos: 1924145422336L
+											State: 2
+										}
+										{
+											Pos: 2473901244420L
+											State: 3
+										}
+										{
+											Pos: 2748779151364L
+											State: 0
+										}
+										{
+											Pos: 1924145344513L
+											State: 17
+										}
+										{
+											Pos: 549755850767L
+											State: 56
+										}
+										{
+											Pos: 549755842571L
+											State: 57
+										}
+										{
+											Pos: 824633716737L
+											State: 2
+										}
+										{
+											Pos: 274877927431L
+											State: 7
+										}
+										{
+											Pos: 824633741319L
+											State: 7
+										}
+										{
+											Pos: 549755826179L
+											State: 7
+										}
+										{
+											Pos: 3023656910851L
+											State: 7
+										}
+										{
+											Pos: 2748779081731L
+											State: 7
+										}
+										{
+											Pos: 824633655299L
+											State: 7
+										}
+										{
+											Pos: 1099511701505L
+											State: 2
+										}
+										{
+											Pos: 3023656972288L
+											State: 2
+										}
+										{
+											Pos: 2748779065344L
+											State: 2
+										}
+										{
+											Pos: 1649267515393L
+											State: 17
+										}
+										{
+											Pos: 2473901158400L
+											State: 5
+										}
+										{
+											Pos: 2199023251456L
+											State: 5
+										}
+										{
+											Pos: 2199023329281L
+											State: 2
+										}
+										{
+											Pos: 1924145344512L
+											State: 5
+										}
+										{
+											Pos: 1649267437568L
+											State: 5
+										}
+										{
+											Pos: 549755850768L
+											State: 56
+										}
+										{
+											Pos: 1374389530624L
+											State: 5
+										}
+										{
+											Pos: 1099511623680L
+											State: 2
+										}
+										{
+											Pos: 824633716736L
+											State: 2
+										}
+										{
+											Pos: 274877927432L
+											State: 4
+										}
+										{
+											Pos: 549755834376L
+											State: 7
+										}
+										{
+											Pos: 274877919236L
+											State: 0
+										}
+										{
+											Pos: 824633741320L
+											State: 4
+										}
+										{
+											Pos: 549755826180L
+											State: 0
+										}
+										{
+											Pos: 824633733124L
+											State: 0
+										}
+										{
+											Pos: 549755817984L
+											State: 2
+										}
+										{
+											Pos: 1099511640068L
+											State: 3
+										}
+										{
+											Pos: 824633724928L
+											State: 2
+										}
+										{
+											Pos: 1374389547012L
+											State: 4
+										}
+										{
+											Pos: 1099511631872L
+											State: 5
+										}
+										{
+											Pos: 1649267453956L
+											State: 3
+										}
+										{
+											Pos: 1374389538816L
+											State: 5
+										}
+										{
+											Pos: 1924145360900L
+											State: 4
+										}
+										{
+											Pos: 1649267445760L
+											State: 5
+										}
+										{
+											Pos: 2199023267844L
+											State: 3
+										}
+										{
+											Pos: 1924145352704L
+											State: 5
+										}
+										{
+											Pos: 2473901174788L
+											State: 3
+										}
+										{
+											Pos: 2748779003906L
+											State: 3
+										}
+										{
+											Pos: 2199023259648L
+											State: 5
+										}
+										{
+											Pos: 2748779081732L
+											State: 3
+										}
+										{
+											Pos: 2473901166592L
+											State: 2
+										}
+										{
+											Pos: 3023656988676L
+											State: 0
+										}
+										{
+											Pos: 2748779073536L
+											State: 2
+										}
+										{
+											Pos: 1099511562242L
+											State: 3
+										}
+										{
+											Pos: 824633794562L
+											State: 3
+										}
+										{
+											Pos: 2473901236226L
+											State: 3
+										}
+										{
+											Pos: 549755850769L
+											State: 17
+										}
+										{
+											Data: {
+												EnableCT: 1b
+												Item: {
+													Count: 1b
+													id: "create:andesite_casing"
+												}
+												Material: {
+													Name: "create:andesite_casing"
+												}
+												id: "create:copycat"
+											}
+											Pos: 274877935629L
+											State: 58
+										}
+										{
+											Data: {
+												EnableCT: 1b
+												Item: {
+													Count: 1b
+													id: "create:andesite_casing"
+												}
+												Material: {
+													Name: "create:andesite_casing"
+												}
+												id: "create:copycat"
+											}
+											Pos: 549755842573L
+											State: 58
+										}
+										{
+											Pos: 274877927433L
+											State: 7
+										}
+										{
+											Data: {
+												EnableCT: 1b
+												Item: {
+													Count: 1b
+													id: "create:andesite_casing"
+												}
+												Material: {
+													Name: "create:andesite_casing"
+												}
+												id: "create:copycat"
+											}
+											Pos: 824633749517L
+											State: 58
+										}
+										{
+											Pos: 274877919237L
+											State: 7
+										}
+										{
+											Pos: 824633741321L
+											State: 7
+										}
+										{
+											Pos: 824633733125L
+											State: 7
+										}
+										{
+											Pos: 549755817985L
+											State: 2
+										}
+										{
+											Pos: 2748779003905L
+											State: 2
+										}
+										{
+											Pos: 2473901096961L
+											State: 2
+										}
+										{
+											Pos: 2748779073537L
+											State: 2
+										}
+										{
+											Pos: 1374389469185L
+											State: 2
+										}
+										{
+											Pos: 1099511562241L
+											State: 2
+										}
+										{
+											Pos: 824633794563L
+											State: 7
+										}
+										{
+											Pos: 2473901236227L
+											State: 7
+										}
+										{
+											Pos: 274877927434L
+											State: 7
+										}
+										{
+											Pos: 274877919238L
+											State: 7
+										}
+										{
+											Pos: 824633741322L
+											State: 7
+										}
+										{
+											Pos: 824633733126L
+											State: 7
+										}
+										{
+											Pos: 549755817986L
+											State: 3
+										}
+										{
+											Pos: 3298534825988L
+											State: 0
+										}
+										{
+											Pos: 3023656919044L
+											State: 3
+										}
+										{
+											Pos: 2199023190016L
+											State: 2
+										}
+										{
+											Pos: 2748779012100L
+											State: 3
+										}
+										{
+											Pos: 2748779073538L
+											State: 3
+										}
+										{
+											Pos: 1924145283072L
+											State: 2
+										}
+										{
+											Pos: 2473901105156L
+											State: 3
+										}
+										{
+											Pos: 1649267376128L
+											State: 2
+										}
+										{
+											Pos: 2199023198212L
+											State: 4
+										}
+										{
+											Pos: 1924145291268L
+											State: 3
+										}
+										{
+											Pos: 1649267384324L
+											State: 4
+										}
+										{
+											Pos: 1374389477380L
+											State: 3
+										}
+										{
+											Pos: 1099511570436L
+											State: 3
+										}
+										{
+											Pos: 824633663492L
+											State: 3
+										}
+										{
+											Pos: 274877980676L
+											State: 0
+										}
+										{
+											Pos: 549755756548L
+											State: 0
+										}
+										{
+											Pos: 549755887620L
+											State: 0
+										}
+										{
+											Pos: 824633794564L
+											State: 3
+										}
+										{
+											Pos: 1099511701508L
+											State: 3
+										}
+										{
+											Pos: 1374389608452L
+											State: 4
+										}
+										{
+											Pos: 1099511693312L
+											State: 2
+										}
+										{
+											Pos: 1649267515396L
+											State: 3
+										}
+										{
+											Pos: 1374389600256L
+											State: 2
+										}
+										{
+											Pos: 1924145422340L
+											State: 4
+										}
+										{
+											Pos: 1649267507200L
+											State: 2
+										}
+										{
+											Pos: 2199023329284L
+											State: 3
+										}
+										{
+											Pos: 1924145414144L
+											State: 2
+										}
+										{
+											Pos: 2473901236228L
+											State: 3
+										}
+										{
+											Pos: 2199023321088L
+											State: 2
+										}
+										{
+											Pos: 2748779143172L
+											State: 0
+										}
+										{
+											Pos: 3023657050116L
+											State: 0
+										}
+										{
+											Pos: 274877927435L
+											State: 59
+										}
+										{
+											Pos: 274877919239L
+											State: 7
+										}
+										{
+											Pos: 824633741323L
+											State: 60
+										}
+										{
+											Pos: 824633733127L
+											State: 7
+										}
+										{
+											Pos: 549755817987L
+											State: 7
+										}
+										{
+											Pos: 3023656919043L
+											State: 7
+										}
+										{
+											Pos: 2748779073539L
+											State: 7
+										}
+										{
+											Pos: 2199023198211L
+											State: 16
+										}
+										{
+											Pos: 1924145291267L
+											State: 16
+										}
+										{
+											Pos: 1649267384323L
+											State: 16
+										}
+										{
+											Pos: 824633663491L
+											State: 7
+										}
+										{
+											Pos: 824633786369L
+											State: 2
+										}
+										{
+											Pos: 2473901228033L
+											State: 2
+										}
+										{
+											Pos: 274877919240L
+											State: 4
+										}
+										{
+											Pos: 549755826184L
+											State: 7
+										}
+										{
+											Pos: 274877911044L
+											State: 0
+										}
+										{
+											Pos: 824633733128L
+											State: 4
+										}
+										{
+											Pos: 549755817988L
+											State: 3
+										}
+										{
+											Pos: 824633724932L
+											State: 3
+										}
+										{
+											Pos: 1099511631876L
+											State: 3
+										}
+										{
+											Pos: 1374389538820L
+											State: 4
+										}
+										{
+											Pos: 1649267445764L
+											State: 3
+										}
+										{
+											Pos: 1924145352708L
+											State: 4
+										}
+										{
+											Pos: 2199023259652L
+											State: 3
+										}
+										{
+											Pos: 3023656919042L
+											State: 3
+										}
+										{
+											Pos: 2473901166596L
+											State: 3
+										}
+										{
+											Pos: 2748779073540L
+											State: 3
+										}
+										{
+											Pos: 3023656980484L
+											State: 0
+										}
+										{
+											Pos: 2199023198210L
+											State: 16
+										}
+										{
+											Data: {
+												ScrollValue: 8
+												id: "create:chassis"
+											}
+											Pos: 1924145291266L
+											State: 20
+										}
+										{
+											Pos: 1649267384322L
+											State: 16
+										}
+										{
+											Pos: 824633663490L
+											State: 3
+										}
+										{
+											Pos: 824633786370L
+											State: 3
+										}
+										{
+											Pos: 2473901228034L
+											State: 3
+										}
+										{
+											Pos: 2748779012097L
+											State: 2
+										}
+										{
+											Pos: 2473901105153L
+											State: 2
+										}
+										{
+											Pos: 2199023198209L
+											State: 16
+										}
+										{
+											Pos: 1924145291265L
+											State: 16
+										}
+										{
+											Pos: 1649267384321L
+											State: 16
+										}
+										{
+											Pos: 1374389477377L
+											State: 2
+										}
+										{
+											Pos: 1099511570433L
+											State: 2
+										}
+										{
+											Pos: 549755879427L
+											State: 7
+										}
+										{
+											Pos: 2748779134979L
+											State: 7
+										}
+										{
+											Pos: 3298534834180L
+											State: 0
+										}
+										{
+											Pos: 3023656927236L
+											State: 3
+										}
+										{
+											Pos: 2199023198208L
+											State: 2
+										}
+										{
+											Pos: 2748779020292L
+											State: 3
+										}
+										{
+											Pos: 1924145291264L
+											State: 2
+										}
+										{
+											Pos: 2473901113348L
+											State: 21
+										}
+										{
+											Pos: 1649267384320L
+											State: 2
+										}
+										{
+											Pos: 2199023206404L
+											State: 21
+										}
+										{
+											Pos: 1924145299460L
+											State: 21
+										}
+										{
+											Pos: 1649267392516L
+											State: 21
+										}
+										{
+											Pos: 1374389485572L
+											State: 21
+										}
+										{
+											Pos: 1099511578628L
+											State: 3
+										}
+										{
+											Pos: 824633671684L
+											State: 3
+										}
+										{
+											Pos: 274877972484L
+											State: 0
+										}
+										{
+											Pos: 549755764740L
+											State: 0
+										}
+										{
+											Pos: 549755879428L
+											State: 3
+										}
+										{
+											Pos: 824633786372L
+											State: 3
+										}
+										{
+											Pos: 1099511693316L
+											State: 21
+										}
+										{
+											Pos: 1374389600260L
+											State: 21
+										}
+										{
+											Pos: 1099511685120L
+											State: 2
+										}
+										{
+											Pos: 1649267507204L
+											State: 21
+										}
+										{
+											Pos: 1374389592064L
+											State: 2
+										}
+										{
+											Pos: 1924145414148L
+											State: 21
+										}
+										{
+											Pos: 1649267499008L
+											State: 2
+										}
+										{
+											Pos: 2199023321092L
+											State: 21
+										}
+										{
+											Pos: 1924145405952L
+											State: 2
+										}
+										{
+											Pos: 2473901228036L
+											State: 3
+										}
+										{
+											Pos: 2199023312896L
+											State: 2
+										}
+										{
+											Pos: 2748779134980L
+											State: 3
+										}
+										{
+											Pos: 3023657041924L
+											State: 0
+										}
+										{
+											Pos: 3023656927235L
+											State: 7
+										}
+										{
+											Pos: 2199023206403L
+											State: 16
+										}
+										{
+											Pos: 1924145299459L
+											State: 16
+										}
+										{
+											Pos: 1649267392515L
+											State: 16
+										}
+										{
+											Pos: 824633671683L
+											State: 7
+										}
+										{
+											Pos: 824633778177L
+											State: 2
+										}
+										{
+											Pos: 2473901219841L
+											State: 2
+										}
+										{
+											Pos: 3023656927234L
+											State: 3
+										}
+										{
+											Pos: 2199023206402L
+											State: 16
+										}
+										{
+											Data: {
+												ScrollValue: 8
+												id: "create:chassis"
+											}
+											Pos: 1924145299458L
+											State: 20
+										}
+										{
+											Pos: 1649267392514L
+											State: 16
+										}
+										{
+											Pos: 824633671682L
+											State: 3
+										}
+										{
+											Pos: 824633778178L
+											State: 3
+										}
+										{
+											Pos: 2473901219842L
+											State: 3
+										}
+										{
+											Pos: 2473901051908L
+											State: 0
+										}
+										{
+											Pos: 2199023144964L
+											State: 4
+										}
+										{
+											Pos: 1924145238020L
+											State: 3
+										}
+										{
+											Pos: 1649267331076L
+											State: 4
+										}
+										{
+											Pos: 1374389424132L
+											State: 0
+										}
+										{
+											Pos: 2748779020289L
+											State: 2
+										}
+										{
+											Pos: 2199023206401L
+											State: 16
+										}
+										{
+											Pos: 1924145299457L
+											State: 16
+										}
+										{
+											Pos: 1649267392513L
+											State: 16
+										}
+										{
+											Pos: 1099511578625L
+											State: 2
+										}
+										{
+											Pos: 549755871235L
+											State: 7
+										}
+										{
+											Pos: 2748779126787L
+											State: 7
+										}
+										{
+											Pos: 2473901051907L
+											State: 7
+										}
+										{
+											Pos: 1374389424131L
+											State: 7
+										}
+										{
+											Pos: 3298534842372L
+											State: 0
+										}
+										{
+											Pos: 2473901113344L
+											State: 2
+										}
+										{
+											Pos: 3023656935428L
+											State: 3
+										}
+										{
+											Pos: 2199023206400L
+											State: 2
+										}
+										{
+											Pos: 2748779028484L
+											State: 3
+										}
+										{
+											Pos: 1924145299456L
+											State: 2
+										}
+										{
+											Pos: 2473901121540L
+											State: 21
+										}
+										{
+											Pos: 1649267392512L
+											State: 2
+										}
+										{
+											Pos: 2199023214596L
+											State: 21
+										}
+										{
+											Pos: 1374389485568L
+											State: 2
+										}
+										{
+											Pos: 1924145307652L
+											State: 21
+										}
+										{
+											Pos: 1649267400708L
+											State: 21
+										}
+										{
+											Pos: 1374389493764L
+											State: 21
+										}
+										{
+											Pos: 1099511586820L
+											State: 3
+										}
+										{
+											Pos: 824633679876L
+											State: 3
+										}
+										{
+											Pos: 274877964292L
+											State: 0
+										}
+										{
+											Pos: 549755772932L
+											State: 0
+										}
+										{
+											Pos: 549755871236L
+											State: 3
+										}
+										{
+											Pos: 824633778180L
+											State: 3
+										}
+										{
+											Pos: 1099511685124L
+											State: 21
+										}
+										{
+											Pos: 824633769984L
+											State: 2
+										}
+										{
+											Pos: 1374389592068L
+											State: 21
+										}
+										{
+											Pos: 1099511676928L
+											State: 2
+										}
+										{
+											Pos: 1649267499012L
+											State: 21
+										}
+										{
+											Pos: 1374389583872L
+											State: 2
+										}
+										{
+											Pos: 1924145405956L
+											State: 21
+										}
+										{
+											Pos: 1649267490816L
+											State: 2
+										}
+										{
+											Pos: 2199023312900L
+											State: 21
+										}
+										{
+											Pos: 1924145397760L
+											State: 2
+										}
+										{
+											Pos: 2473901219844L
+											State: 3
+										}
+										{
+											Pos: 2199023304704L
+											State: 2
+										}
+										{
+											Pos: 2748779126788L
+											State: 3
+										}
+										{
+											Pos: 2473901211648L
+											State: 2
+										}
+										{
+											Pos: 3023657033732L
+											State: 0
+										}
+										{
+											Pos: 2199023144962L
+											State: 3
+										}
+										{
+											Pos: 1924145238018L
+											State: 3
+										}
+										{
+											Pos: 1649267331074L
+											State: 3
+										}
+										{
+											Pos: 3023656935427L
+											State: 7
+										}
+										{
+											Pos: 824633679875L
+											State: 7
+										}
+										{
+											Pos: 549755863041L
+											State: 2
+										}
+										{
+											Pos: 2748779118593L
+											State: 2
+										}
+										{
+											Pos: 3023656935426L
+											State: 3
+										}
+										{
+											Data: {
+												FrequencyFirst: {
+													Count: 1b
+													id: "minecraft:air"
+													tag: { }
+												}
+												FrequencyLast: {
+													Count: 1b
+													id: "minecraft:air"
+													tag: { }
+												}
+												LastKnownPosition: -507424614195104L
+												Receive: 0
+												ReceivedChanged: 0b
+												Transmit: 0
+												Transmitter: 1b
+												id: "create:redstone_link"
+											}
+											Pos: 2199023214594L
+											State: 61
+										}
+										{
+											Data: {
+												Speed: 0.0f
+												id: "create:gearshift"
+											}
+											Pos: 1924145307650L
+											State: 62
+										}
+										{
+											Pos: 824633679874L
+											State: 3
+										}
+										{
+											Pos: 549755863042L
+											State: 3
+										}
+										{
+											Pos: 2748778967044L
+											State: 0
+										}
+										{
+											Pos: 2748779118594L
+											State: 3
+										}
+										{
+											Pos: 2473901060100L
+											State: 3
+										}
+										{
+											Pos: 2199023153156L
+											State: 4
+										}
+										{
+											Pos: 1924145246212L
+											State: 3
+										}
+										{
+											Pos: 1649267339268L
+											State: 4
+										}
+										{
+											Pos: 1374389432324L
+											State: 3
+										}
+										{
+											Pos: 1099511525380L
+											State: 0
+										}
+										{
+											Pos: 1649267560452L
+											State: 0
+										}
+										{
+											Pos: 3023656935425L
+											State: 2
+										}
+										{
+											Pos: 2748779028481L
+											State: 2
+										}
+										{
+											Pos: 1099511586817L
+											State: 2
+										}
+										{
+											Pos: 824633679873L
+											State: 2
+										}
+										{
+											Pos: 549755863043L
+											State: 7
+										}
+										{
+											Pos: 2748779118595L
+											State: 7
+										}
+										{
+											Pos: 2473901060099L
+											State: 7
+										}
+										{
+											Pos: 1374389432323L
+											State: 7
+										}
+										{
+											Pos: 3298534850564L
+											State: 0
+										}
+										{
+											Pos: 2473901121536L
+											State: 2
+										}
+										{
+											Pos: 3023656943620L
+											State: 3
+										}
+										{
+											Pos: 2199023214592L
+											State: 2
+										}
+										{
+											Pos: 2748779036676L
+											State: 3
+										}
+										{
+											Pos: 1924145307648L
+											State: 2
+										}
+										{
+											Pos: 2473901129732L
+											State: 3
+										}
+										{
+											Pos: 1649267400704L
+											State: 2
+										}
+										{
+											Pos: 2199023222788L
+											State: 4
+										}
+										{
+											Pos: 1374389493760L
+											State: 2
+										}
+										{
+											Pos: 1924145315844L
+											State: 3
+										}
+										{
+											Pos: 1649267408900L
+											State: 4
+										}
+										{
+											Pos: 1374389501956L
+											State: 3
+										}
+										{
+											Pos: 1099511595012L
+											State: 3
+										}
+										{
+											Pos: 824633688068L
+											State: 3
+										}
+										{
+											Pos: 274877956100L
+											State: 0
+										}
+										{
+											Pos: 549755781124L
+											State: 0
+										}
+										{
+											Pos: 549755863044L
+											State: 0
+										}
+										{
+											Pos: 824633769988L
+											State: 0
+										}
+										{
+											Pos: 1099511676932L
+											State: 3
+										}
+										{
+											Pos: 824633761792L
+											State: 2
+										}
+										{
+											Pos: 1374389583876L
+											State: 4
+										}
+										{
+											Pos: 1099511668736L
+											State: 5
+										}
+										{
+											Pos: 1649267490820L
+											State: 3
+										}
+										{
+											Pos: 1374389575680L
+											State: 5
+										}
+										{
+											Pos: 1924145397764L
+											State: 4
+										}
+										{
+											Pos: 1649267482624L
+											State: 5
+										}
+										{
+											Pos: 2199023304708L
+											State: 3
+										}
+										{
+											Pos: 1924145389568L
+											State: 5
+										}
+										{
+											Pos: 2473901211652L
+											State: 3
+										}
+										{
+											Pos: 2199023296512L
+											State: 5
+										}
+										{
+											Pos: 2748779118596L
+											State: 3
+										}
+										{
+											Pos: 2473901060098L
+											State: 3
+										}
+										{
+											Pos: 2473901203456L
+											State: 2
+										}
+										{
+											Pos: 3023657025540L
+											State: 0
+										}
+										{
+											Pos: 1924145246210L
+											State: 17
+										}
+										{
+											Pos: 1374389432322L
+											State: 3
+										}
+										{
+											Pos: 1649267552258L
+											State: 3
+										}
+										{
+											Pos: 3023656943619L
+											State: 7
+										}
+										{
+											Data: {
+												Speed: 0.0f
+												id: "create:clutch"
+											}
+											Pos: 2473901129731L
+											State: 42
+										}
+										{
+											Pos: 824633688067L
+											State: 7
+										}
+										{
+											Pos: 274877956101L
+											State: 7
+										}
+										{
+											Pos: 549755863045L
+											State: 7
+										}
+										{
+											Pos: 824633769989L
+											State: 7
+										}
+										{
+											Pos: 549755854849L
+											State: 2
+										}
+										{
+											Pos: 2199023153153L
+											State: 2
+										}
+										{
+											Pos: 2748779110401L
+											State: 2
+										}
+										{
+											Pos: 1924145246209L
+											State: 2
+										}
+										{
+											Pos: 1649267339265L
+											State: 2
+										}
+										{
+											Pos: 1374389645315L
+											State: 7
+										}
+										{
+											Pos: 1649267552259L
+											State: 3
+										}
+										{
+											Pos: 3023656943618L
+											State: 3
+										}
+										{
+											Pos: 1924145459203L
+											State: 7
+										}
+										{
+											Pos: 824633688066L
+											State: 3
+										}
+										{
+											Pos: 274877956102L
+											State: 7
+										}
+										{
+											Pos: 824633769990L
+											State: 7
+										}
+										{
+											Pos: 549755854850L
+											State: 3
+										}
+										{
+											Pos: 2748778975236L
+											State: 0
+										}
+										{
+											Pos: 2748779110402L
+											State: 3
+										}
+										{
+											Pos: 2473901068292L
+											State: 3
+										}
+										{
+											Pos: 3023657017346L
+											State: 33
+										}
+										{
+											Pos: 2199023161348L
+											State: 4
+										}
+										{
+											Pos: 3298534924290L
+											State: 26
+										}
+										{
+											Pos: 1924145254404L
+											State: 3
+										}
+										{
+											Pos: 1649267347460L
+											State: 4
+										}
+										{
+											Pos: 1374389440516L
+											State: 3
+										}
+										{
+											Pos: 1099511533572L
+											State: 0
+										}
+										{
+											Pos: 1099511738372L
+											State: 0
+										}
+										{
+											Pos: 1374389645316L
+											State: 4
+										}
+										{
+											Pos: 1649267552260L
+											State: 0
+										}
+										{
+											Pos: 3023656943617L
+											State: 2
+										}
+										{
+											Pos: 1924145459204L
+											State: 4
+										}
+										{
+											Pos: 2199023366148L
+											State: 0
+										}
+										{
+											Pos: 824633688065L
+											State: 2
+										}
+										{
+											Pos: 274877956103L
+											State: 32
+										}
+										{
+											Pos: 824633769991L
+											State: 32
+										}
+										{
+											Pos: 549755854851L
+											State: 7
+										}
+										{
+											Pos: 2748778975235L
+											State: 7
+										}
+										{
+											Pos: 2748779110403L
+											State: 7
+										}
+										{
+											Pos: 3023657017347L
+											State: 7
+										}
+										{
+											Pos: 3298534924291L
+											State: 38
+										}
+										{
+											Pos: 1099511533571L
+											State: 7
+										}
+										{
+											Pos: 2748779036672L
+											State: 2
+										}
+										{
+											Pos: 3298534858756L
+											State: 0
+										}
+										{
+											Pos: 1649267544065L
+											State: 2
+										}
+										{
+											Pos: 2473901129728L
+											State: 2
+										}
+										{
+											Pos: 3023656951812L
+											State: 3
+										}
+										{
+											Pos: 2199023222784L
+											State: 2
+										}
+										{
+											Pos: 2748779044868L
+											State: 3
+										}
+										{
+											Pos: 1924145315840L
+											State: 2
+										}
+										{
+											Pos: 2473901137924L
+											State: 3
+										}
+										{
+											Pos: 1649267408896L
+											State: 2
+										}
+										{
+											Pos: 2199023230980L
+											State: 4
+										}
+										{
+											Pos: 1374389501952L
+											State: 2
+										}
+										{
+											Pos: 1924145324036L
+											State: 3
+										}
+										{
+											Pos: 1099511595008L
+											State: 2
+										}
+										{
+											Pos: 1649267417092L
+											State: 4
+										}
+										{
+											Pos: 1374389510148L
+											State: 3
+										}
+										{
+											Pos: 274877956104L
+											State: 4
+										}
+										{
+											Pos: 1099511603204L
+											State: 3
+										}
+										{
+											Pos: 549755863048L
+											State: 7
+										}
+										{
+											Pos: 824633696260L
+											State: 3
+										}
+										{
+											Pos: 274877947908L
+											State: 0
+										}
+										{
+											Pos: 824633769992L
+											State: 4
+										}
+										{
+											Pos: 549755789316L
+											State: 0
+										}
+										{
+											Pos: 549755854852L
+											State: 0
+										}
+										{
+											Pos: 824633761796L
+											State: 0
+										}
+										{
+											Pos: 1099511668740L
+											State: 3
+										}
+										{
+											Pos: 824633753600L
+											State: 2
+										}
+										{
+											Pos: 1374389575684L
+											State: 4
+										}
+										{
+											Pos: 1099511660544L
+											State: 5
+										}
+										{
+											Pos: 1649267482628L
+											State: 3
+										}
+										{
+											Pos: 1374389567488L
+											State: 5
+										}
+										{
+											Pos: 1924145389572L
+											State: 4
+										}
+										{
+											Pos: 1649267474432L
+											State: 5
+										}
+										{
+											Pos: 2199023296516L
+											State: 3
+										}
+										{
+											Pos: 1924145381376L
+											State: 5
+										}
+										{
+											Pos: 2473901203460L
+											State: 3
+										}
+										{
+											Pos: 2199023288320L
+											State: 5
+										}
+										{
+											Pos: 2748779110404L
+											State: 3
+										}
+										{
+											Pos: 2473901068290L
+											State: 3
+										}
+										{
+											Pos: 2473901195264L
+											State: 2
+										}
+										{
+											Pos: 3023657017348L
+											State: 0
+										}
+										{
+											Pos: 3298534924292L
+											State: 7
+										}
+										{
+											Pos: 1374389440514L
+											State: 3
+										}
+										{
+											Pos: 1374389637122L
+											State: 3
+										}
+										{
+											Pos: 1649267544066L
+											State: 3
+										}
+										{
+											Pos: 3023656951811L
+											State: 7
+										}
+										{
+											Pos: 1924145451010L
+											State: 3
+										}
+										{
+											Data: {
+												Speed: 0.0f
+												id: "create:simple_kinetic"
+											}
+											Pos: 2473901137923L
+											State: 34
+										}
+										{
+											Data: {
+												Boiler: {
+													ActiveHeat: 0
+													Engines: 0
+													PassiveHeat: 0b
+													Supply: 0.0f
+													Update: 0b
+													Whistles: 0
+												}
+												Controller: {
+													X: 4
+													Y: 2
+													Z: -7
+												}
+												Luminosity: 0
+												Owner: [I;
+													-2112253487
+													-268876289
+													-1568327221
+													1359702892
+												]
+												id: "create:fluid_tank"
+											}
+											Pos: 1649267417091L
+											State: 35
+										}
+										{
+											Data: {
+												Boiler: {
+													ActiveHeat: 0
+													Engines: 0
+													PassiveHeat: 0b
+													Supply: 0.0f
+													Update: 0b
+													Whistles: 0
+												}
+												Controller: {
+													X: 4
+													Y: 2
+													Z: -7
+												}
+												Luminosity: 0
+												Owner: [I;
+													-2112253487
+													-268876289
+													-1568327221
+													1359702892
+												]
+												id: "create:fluid_tank"
+											}
+											Pos: 1374389510147L
+											State: 35
+										}
+										{
+											Pos: 824633696259L
+											State: 7
+										}
+										{
+											Pos: 274877947909L
+											State: 7
+										}
+										{
+											Pos: 549755854853L
+											State: 17
+										}
+										{
+											Pos: 824633761797L
+											State: 7
+										}
+										{
+											Pos: 549755846657L
+											State: 2
+										}
+										{
+											Pos: 2199023161345L
+											State: 2
+										}
+										{
+											Pos: 2748779102209L
+											State: 2
+										}
+										{
+											Pos: 1924145254401L
+											State: 2
+										}
+										{
+											Pos: 1649267347457L
+											State: 2
+										}
+										{
+											Pos: 1099511730179L
+											State: 7
+										}
+										{
+											Pos: 3023656951810L
+											State: 3
+										}
+										{
+											Pos: 2199023357955L
+											State: 7
+										}
+										{
+											Data: {
+												Boiler: {
+													ActiveHeat: 0
+													Engines: 0
+													PassiveHeat: 0b
+													Supply: 0.0f
+													Update: 0b
+													Whistles: 0
+												}
+												Controller: {
+													X: 4
+													Y: 2
+													Z: -7
+												}
+												Luminosity: 0
+												Owner: [I;
+													-2112253487
+													-268876289
+													-1568327221
+													1359702892
+												]
+												id: "create:fluid_tank"
+											}
+											Pos: 1649267417090L
+											State: 36
+										}
+										{
+											Data: {
+												Boiler: {
+													ActiveHeat: 0
+													Engines: 0
+													PassiveHeat: 0b
+													Supply: 0.0f
+													Update: 0b
+													Whistles: 0
+												}
+												Controller: {
+													X: 4
+													Y: 2
+													Z: -7
+												}
+												Luminosity: 0
+												Owner: [I;
+													-2112253487
+													-268876289
+													-1568327221
+													1359702892
+												]
+												id: "create:fluid_tank"
+											}
+											Pos: 1374389510146L
+											State: 36
+										}
+										{
+											Pos: 824633696258L
+											State: 3
+										}
+										{
+											Pos: 274877947910L
+											State: 7
+										}
+										{
+											Pos: 274877939714L
+											State: 51
+										}
+										{
+											Pos: 824633761798L
+											State: 7
+										}
+										{
+											Pos: 549755846658L
+											State: 3
+										}
+										{
+											Pos: 3023656890372L
+											State: 0
+										}
+										{
+											Pos: 2748778983428L
+											State: 3
+										}
+										{
+											Pos: 2748779102210L
+											State: 3
+										}
+										{
+											Pos: 2473901076484L
+											State: 3
+										}
+										{
+											Pos: 3023657009154L
+											State: 47
+										}
+										{
+											Pos: 2199023169540L
+											State: 4
+										}
+										{
+											Pos: 3298534916098L
+											State: 11
+										}
+										{
+											Pos: 1924145262596L
+											State: 3
+										}
+										{
+											Pos: 1649267355652L
+											State: 4
+										}
+										{
+											Pos: 1374389448708L
+											State: 3
+										}
+										{
+											Pos: 1099511541764L
+											State: 3
+										}
+										{
+											Pos: 824633634820L
+											State: 0
+										}
+										{
+											Pos: 824633823236L
+											State: 0
+										}
+										{
+											Pos: 1099511730180L
+											State: 0
+										}
+										{
+											Pos: 1374389637124L
+											State: 4
+										}
+										{
+											Pos: 1649267544068L
+											State: 3
+										}
+										{
+											Pos: 3023656951809L
+											State: 2
+										}
+										{
+											Pos: 1924145451012L
+											State: 4
+										}
+										{
+											Pos: 1649267535872L
+											State: 2
+										}
+										{
+											Pos: 2199023357956L
+											State: 0
+										}
+										{
+											Pos: 2473901264900L
+											State: 0
+										}
+										{
+											Data: {
+												burnTimeRemaining: 0
+												fuelLevel: 0
+												id: "create:blaze_heater"
+											}
+											Pos: 1649267417089L
+											State: 39
+										}
+										{
+											Pos: 1374389510145L
+											State: 21
+										}
+										{
+											Pos: 824633696257L
+											State: 2
+										}
+										{
+											Pos: 274877947911L
+											State: 7
+										}
+										{
+											Pos: 274877939715L
+											State: 51
+										}
+										{
+											Pos: 824633761799L
+											State: 7
+										}
+										{
+											Pos: 549755846659L
+											State: 7
+										}
+										{
+											Pos: 2748778983427L
+											State: 7
+										}
+										{
+											Pos: 2748779102211L
+											State: 7
+										}
+										{
+											Pos: 3023657009155L
+											State: 7
+										}
+										{
+											Pos: 3298534916099L
+											State: 38
+										}
+										{
+											Pos: 1099511541763L
+											State: 7
+										}
+										{
+											Pos: 1374389628929L
+											State: 2
+										}
+										{
+											Pos: 2748779044864L
+											State: 2
+										}
+										{
+											Pos: 3298534866948L
+											State: 0
+										}
+										{
+											Pos: 1649267535873L
+											State: 17
+										}
+										{
+											Pos: 2473901137920L
+											State: 5
+										}
+										{
+											Pos: 3023656960004L
+											State: 3
+										}
+										{
+											Pos: 1924145442817L
+											State: 2
+										}
+										{
+											Pos: 2199023230976L
+											State: 5
+										}
+										{
+											Pos: 2748779053060L
+											State: 3
+										}
+										{
+											Pos: 1924145324032L
+											State: 5
+										}
+										{
+											Pos: 2473901146116L
+											State: 3
+										}
+										{
+											Pos: 1649267417088L
+											State: 5
+										}
+										{
+											Pos: 2199023239172L
+											State: 4
+										}
+										{
+											Pos: 1374389510144L
+											State: 5
+										}
+										{
+											Pos: 1924145332228L
+											State: 3
+										}
+										{
+											Pos: 1099511603200L
+											State: 2
+										}
+										{
+											Pos: 1649267425284L
+											State: 4
+										}
+										{
+											Pos: 1374389518340L
+											State: 3
+										}
+										{
+											Pos: 274877947912L
+											State: 4
+										}
+										{
+											Pos: 1099511611396L
+											State: 3
+										}
+										{
+											Pos: 549755854856L
+											State: 7
+										}
+										{
+											Pos: 824633704452L
+											State: 3
+										}
+										{
+											Pos: 274877939716L
+											State: 0
+										}
+										{
+											Pos: 824633761800L
+											State: 4
+										}
+										{
+											Pos: 549755797508L
+											State: 0
+										}
+										{
+											Pos: 549755846660L
+											State: 0
+										}
+										{
+											Pos: 824633753604L
+											State: 0
+										}
+										{
+											Pos: 1099511660548L
+											State: 3
+										}
+										{
+											Pos: 824633745408L
+											State: 2
+										}
+										{
+											Pos: 1374389567492L
+											State: 4
+										}
+										{
+											Pos: 1099511652352L
+											State: 5
+										}
+										{
+											Pos: 1649267474436L
+											State: 3
+										}
+										{
+											Pos: 1374389559296L
+											State: 5
+										}
+										{
+											Pos: 1924145381380L
+											State: 4
+										}
+										{
+											Pos: 1649267466240L
+											State: 5
+										}
+										{
+											Pos: 2199023288324L
+											State: 3
+										}
+										{
+											Pos: 1924145373184L
+											State: 5
+										}
+										{
+											Pos: 2473901195268L
+											State: 3
+										}
+										{
+											Pos: 2748778983426L
+											State: 3
+										}
+										{
+											Pos: 2199023280128L
+											State: 5
+										}
+										{
+											Pos: 2748779102212L
+											State: 3
+										}
+										{
+											Pos: 2473901187072L
+											State: 2
+										}
+										{
+											Pos: 3023657009156L
+											State: 0
+										}
+										{
+											Pos: 3298534916100L
+											State: 7
+										}
+										{
+											Pos: 1099511541762L
+											State: 3
+										}
+										{
+											Pos: 1099511721986L
+											State: 3
+										}
+										{
+											Pos: 1374389628930L
+											State: 3
+										}
+										{
+											Pos: 3023656960003L
+											State: 7
+										}
+										{
+											Pos: 1924145442818L
+											State: 3
+										}
+										{
+											Pos: 2199023349762L
+											State: 3
+										}
+										{
+											Data: {
+												Speed: 0.0f
+												id: "create:encased_shaft"
+											}
+											Pos: 2473901146115L
+											State: 63
+										}
+										{
+											Data: {
+												Speed: 0.0f
+												id: "create:encased_shaft"
+											}
+											Pos: 2199023239171L
+											State: 64
+										}
+										{
+											Data: {
+												Speed: 0.0f
+												id: "create:encased_shaft"
+											}
+											Pos: 1924145332227L
+											State: 64
+										}
+										{
+											Data: {
+												Speed: 0.0f
+												id: "create:encased_shaft"
+											}
+											Pos: 1649267425283L
+											State: 65
+										}
+										{
+											Data: {
+												Speed: 0.0f
+												id: "create_connected:encased_chain_cogwheel"
+											}
+											Pos: 1374389518339L
+											State: 66
+										}
+										{
+											Pos: 824633704451L
+											State: 7
+										}
+										{
+											Pos: 274877939717L
+											State: 7
+										}
+										{
+											Pos: 549755846661L
+											State: 44
+										}
+										{
+											Pos: 824633753605L
+											State: 7
+										}
+										{
+											Pos: 549755838465L
+											State: 2
+										}
+										{
+											Pos: 2473901076481L
+											State: 2
+										}
+										{
+											Pos: 2748779094017L
+											State: 2
+										}
+										{
+											Pos: 1924145262593L
+											State: 17
+										}
+										{
+											Pos: 1374389448705L
+											State: 2
+										}
+										{
+											Pos: 1099511721987L
+											State: 7
+										}
+										{
+											Pos: 3023656960002L
+											State: 3
+										}
+										{
+											Pos: 2199023349763L
+											State: 7
+										}
+										{
+											Data: {
+												Speed: 0.0f
+												id: "create:clutch"
+											}
+											Pos: 1649267425282L
+											State: 67
+										}
+										{
+											Data: {
+												Owner: [I;
+													-2112253487
+													-268876289
+													-1568327221
+													1359702892
+												]
+												Speed: 0.0f
+												id: "create:mechanical_pump"
+												north: { }
+												south: {
+													OpenEnd: {
+														Amount: 0
+														FluidName: "minecraft:empty"
+														Location: {
+															Face: "SOUTH"
+															Pos: {
+																X: -1849
+																Y: 96
+																Z: 500
+															}
+														}
+														Pulling: 0b
+													}
+												}
+											}
+											Pos: 1374389518338L
+											State: 68
+										}
+										{
+											Pos: 824633704450L
+											State: 3
+										}
+										{
+											Pos: 274877939718L
+											State: 7
+										}
+										{
+											Pos: 549755846662L
+											State: 44
+										}
+										{
+											Pos: 274877931522L
+											State: 6
+										}
+										{
+											Pos: 824633753606L
+											State: 7
+										}
+										{
+											Pos: 549755838466L
+											State: 3
+										}
+										{
+											Pos: 3023656898564L
+											State: 0
+										}
+										{
+											Pos: 2199023169536L
+											State: 2
+										}
+										{
+											Pos: 2748778991620L
+											State: 3
+										}
+										{
+											Pos: 2748779094018L
+											State: 3
+										}
+										{
+											Pos: 1924145262592L
+											State: 2
+										}
+										{
+											Pos: 2473901084676L
+											State: 3
+										}
+										{
+											Pos: 1649267355648L
+											State: 2
+										}
+										{
+											Pos: 2199023177732L
+											State: 4
+										}
+										{
+											Pos: 1924145270788L
+											State: 3
+										}
+										{
+											Pos: 1649267363844L
+											State: 4
+										}
+										{
+											Pos: 1374389456900L
+											State: 3
+										}
+										{
+											Pos: 1099511549956L
+											State: 3
+										}
+										{
+											Pos: 824633643012L
+											State: 0
+										}
+										{
+											Pos: 824633815044L
+											State: 0
+										}
+										{
+											Pos: 1099511721988L
+											State: 3
+										}
+										{
+											Pos: 1374389628932L
+											State: 4
+										}
+										{
+											Pos: 1649267535876L
+											State: 3
+										}
+										{
+											Pos: 3023656960001L
+											State: 2
+										}
+										{
+											Pos: 1924145442820L
+											State: 4
+										}
+										{
+											Pos: 1649267527680L
+											State: 2
+										}
+										{
+											Pos: 2199023349764L
+											State: 3
+										}
+										{
+											Pos: 2473901256708L
+											State: 0
+										}
+										{
+											Data: {
+												Speed: 0.0f
+												id: "create_connected:encased_chain_cogwheel"
+											}
+											Pos: 1649267425281L
+											State: 69
+										}
+										{
+											Pos: 824633704449L
+											State: 2
+										}
+										{
+											Pos: 274877939719L
+											State: 7
+										}
+										{
+											Pos: 549755846663L
+											State: 44
+										}
+										{
+											Pos: 274877931523L
+											State: 6
+										}
+										{
+											Pos: 824633753607L
+											State: 7
+										}
+										{
+											Pos: 549755838467L
+											State: 7
+										}
+										{
+											Pos: 2748778991619L
+											State: 7
+										}
+										{
+											Pos: 2748779094019L
+											State: 7
+										}
+										{
+											Pos: 1099511549955L
+											State: 7
+										}
+										{
+											Pos: 1099511713793L
+											State: 2
+										}
+										{
+											Pos: 1374389620737L
+											State: 2
+										}
+										{
+											Pos: 2748779053056L
+											State: 2
+										}
+										{
+											Pos: 3298534875140L
+											State: 0
+										}
+										{
+											Pos: 2473901146112L
+											State: 5
+										}
+										{
+											Pos: 3023656968196L
+											State: 3
+										}
+										{
+											Pos: 1924145434625L
+											State: 2
+										}
+										{
+											Pos: 2199023239168L
+											State: 5
+										}
+										{
+											Pos: 2748779061252L
+											State: 3
+										}
+										{
+											Pos: 2199023341569L
+											State: 2
+										}
+										{
+											Pos: 1924145332224L
+											State: 5
+										}
+										{
+											Pos: 2473901154308L
+											State: 3
+										}
+										{
+											Pos: 1649267425280L
+											State: 5
+										}
+										{
+											Pos: 2199023247364L
+											State: 4
+										}
+										{
+											Pos: 1374389518336L
+											State: 5
+										}
+										{
+											Pos: 1924145340420L
+											State: 3
+										}
+										{
+											Pos: 1099511611392L
+											State: 2
+										}
+										{
+											Pos: 1649267433476L
+											State: 4
+										}
+										{
+											Pos: 1374389526532L
+											State: 3
+										}
+										{
+											Pos: 274877939720L
+											State: 4
+										}
+										{
+											Pos: 1099511619588L
+											State: 3
+										}
+										{
+											Pos: 549755846664L
+											State: 44
+										}
+										{
+											Pos: 824633712644L
+											State: 3
+										}
+										{
+											Pos: 274877931524L
+											State: 0
+										}
+										{
+											Pos: 824633753608L
+											State: 4
+										}
+										{
+											Pos: 549755805700L
+											State: 0
+										}
+										{
+											Pos: 549755838468L
+											State: 0
+										}
+										{
+											Pos: 824633745412L
+											State: 0
+										}
+										{
+											Pos: 549755830272L
+											State: 2
+										}
+										{
+											Pos: 1099511652356L
+											State: 3
+										}
+										{
+											Pos: 824633737216L
+											State: 2
+										}
+										{
+											Pos: 1374389559300L
+											State: 4
+										}
+										{
+											Pos: 1099511644160L
+											State: 5
+										}
+										{
+											Pos: 1649267466244L
+											State: 3
+										}
+										{
+											Pos: 1374389551104L
+											State: 5
+										}
+										{
+											Pos: 1924145373188L
+											State: 4
+										}
+										{
+											Pos: 1649267458048L
+											State: 5
+										}
+										{
+											Pos: 2199023280132L
+											State: 3
+										}
+										{
+											Pos: 1924145364992L
+											State: 5
+										}
+										{
+											Pos: 2473901187076L
+											State: 3
+										}
+										{
+											Pos: 2748778991618L
+											State: 3
+										}
+										{
+											Pos: 2199023271936L
+											State: 5
+										}
+										{
+											Pos: 2748779094020L
+											State: 3
+										}
+										{
+											Pos: 2473901178880L
+											State: 2
+										}
+										{
+											Pos: 3023657000964L
+											State: 0
+										}
+										{
+											Pos: 2748779085824L
+											State: 2
+										}
+										{
+											Pos: 1099511549954L
+											State: 3
+										}
+										{
+											Pos: 1099511713794L
+											State: 3
+										}
+										{
+											Pos: 3023656968195L
+											State: 7
+										}
+										{
+											Pos: 2199023341570L
+											State: 3
+										}
+										{
+											Data: {
+												EnableCT: 1b
+												Item: {
+													Count: 1b
+													id: "create:andesite_casing"
+												}
+												Material: {
+													Name: "create:andesite_casing"
+												}
+												id: "create:copycat"
+											}
+											Pos: 274877947917L
+											State: 50
+										}
+										{
+											Data: {
+												EnableCT: 1b
+												Item: {
+													Count: 1b
+													id: "create:andesite_casing"
+												}
+												Material: {
+													Name: "create:andesite_casing"
+												}
+												id: "create:copycat"
+											}
+											Pos: 549755854861L
+											State: 50
+										}
+										{
+											Data: {
+												EnableCT: 1b
+												Item: {
+													Count: 1b
+													id: "create:andesite_casing"
+												}
+												Material: {
+													Name: "create:andesite_casing"
+												}
+												id: "create:copycat"
+											}
+											Pos: 824633761805L
+											State: 50
+										}
+										{
+											Pos: 549755846665L
+											State: 70
+										}
+										{
+											Pos: 824633712643L
+											State: 7
+										}
+										{
+											Pos: 274877931525L
+											State: 7
+										}
+										{
+											Pos: 824633745413L
+											State: 7
+										}
+										{
+											Pos: 549755830273L
+											State: 2
+										}
+										{
+											Pos: 2473901084673L
+											State: 2
+										}
+										{
+											Pos: 2748779085825L
+											State: 2
+										}
+										{
+											Pos: 1374389456897L
+											State: 2
+										}
+										{
+											Pos: 824633806851L
+											State: 7
+										}
+										{
+											Pos: 3023656968194L
+											State: 3
+										}
+										{
+											Pos: 2473901248515L
+											State: 7
+										}
+										{
+											Pos: 1649267433474L
+											State: 48
+										}
+										{
+											Pos: 1374389526530L
+											State: 71
+										}
+										{
+											Pos: 1099511619586L
+											State: 72
+										}
+										{
+											Pos: 549755846666L
+											State: 70
+										}
+										{
+											Pos: 824633712642L
+											State: 3
+										}
+										{
+											Pos: 274877931526L
+											State: 7
+										}
+										{
+											Pos: 824633745414L
+											State: 7
+										}
+										{
+											Pos: 549755830274L
+											State: 3
+										}
+										{
+											Pos: 3298534813700L
+											State: 0
+										}
+										{
+											Pos: 3023656906756L
+											State: 0
+										}
+										{
+											Pos: 2199023177728L
+											State: 2
+										}
+										{
+											Pos: 2748778999812L
+											State: 3
+										}
+										{
+											Pos: 2748779085826L
+											State: 3
+										}
+										{
+											Pos: 1924145270784L
+											State: 2
+										}
+										{
+											Pos: 2473901092868L
+											State: 3
+										}
+										{
+											Pos: 1649267363840L
+											State: 2
+										}
+										{
+											Pos: 2199023185924L
+											State: 4
+										}
+										{
+											Pos: 1924145278980L
+											State: 3
+										}
+										{
+											Pos: 1649267372036L
+											State: 4
+										}
+										{
+											Pos: 1374389465092L
+											State: 3
+										}
+										{
+											Pos: 1099511558148L
+											State: 3
+										}
+										{
+											Pos: 824633651204L
+											State: 0
+										}
+										{
+											Pos: 549755744260L
+											State: 0
+										}
+										{
+											Pos: 549755899908L
+											State: 0
+										}
+										{
+											Pos: 824633806852L
+											State: 3
+										}
+										{
+											Pos: 1099511713796L
+											State: 3
+										}
+										{
+											Pos: 1374389620740L
+											State: 4
+										}
+										{
+											Pos: 1649267527684L
+											State: 3
+										}
+										{
+											Pos: 3023656968193L
+											State: 2
+										}
+										{
+											Pos: 1374389612544L
+											State: 2
+										}
+										{
+											Pos: 1924145434628L
+											State: 4
+										}
+										{
+											Pos: 1649267519488L
+											State: 2
+										}
+										{
+											Pos: 2199023341572L
+											State: 3
+										}
+										{
+											Pos: 1924145426432L
+											State: 2
+										}
+										{
+											Pos: 2473901248516L
+											State: 3
+										}
+										{
+											Pos: 2748779155460L
+											State: 0
+										}
+										{
+											Pos: 1374389526529L
+											State: 2
+										}
+										{
+											Pos: 549755846667L
+											State: 70
+										}
+										{
+											Pos: 824633712641L
+											State: 2
+										}
+										{
+											Pos: 274877931527L
+											State: 7
+										}
+										{
+											Pos: 824633745415L
+											State: 7
+										}
+										{
+											Pos: 549755830275L
+											State: 7
+										}
+										{
+											Pos: 3023656906755L
+											State: 7
+										}
+										{
+											Pos: 2748779085827L
+											State: 7
+										}
+										{
+											Pos: 824633651203L
+											State: 7
+										}
+										{
+											Pos: 1099511705601L
+											State: 2
+										}
+										{
+											Pos: 3023656968192L
+											State: 2
+										}
+										{
+											Pos: 2748779061248L
+											State: 2
+										}
+										{
+											Pos: 2473901154304L
+											State: 5
+										}
+										{
+											Pos: 2199023247360L
+											State: 5
+										}
+										{
+											Pos: 2199023333377L
+											State: 2
+										}
+										{
+											Pos: 1924145340416L
+											State: 5
+										}
+										{
+											Pos: 1649267433472L
+											State: 5
+										}
+										{
+											Pos: 1374389526528L
+											State: 5
+										}
+										{
+											Pos: 1099511619584L
+											State: 2
+										}
+										{
+											Pos: 549755846668L
+											State: 70
+										}
+										{
+											Pos: 824633712640L
+											State: 2
+										}
+										{
+											Pos: 274877931528L
+											State: 4
+										}
+										{
+											Pos: 549755838472L
+											State: 7
+										}
+										{
+											Pos: 274877923332L
+											State: 0
+										}
+										{
+											Pos: 824633745416L
+											State: 4
+										}
+										{
+											Pos: 549755830276L
+											State: 0
+										}
+										{
+											Pos: 824633737220L
+											State: 0
+										}
+										{
+											Pos: 549755822080L
+											State: 2
+										}
+										{
+											Pos: 1099511644164L
+											State: 3
+										}
+										{
+											Pos: 824633729024L
+											State: 2
+										}
+										{
+											Pos: 1374389551108L
+											State: 4
+										}
+										{
+											Pos: 1099511635968L
+											State: 5
+										}
+										{
+											Pos: 1649267458052L
+											State: 3
+										}
+										{
+											Pos: 1374389542912L
+											State: 5
+										}
+										{
+											Pos: 1924145364996L
+											State: 4
+										}
+										{
+											Pos: 1649267449856L
+											State: 5
+										}
+										{
+											Pos: 2199023271940L
+											State: 3
+										}
+										{
+											Pos: 1924145356800L
+											State: 5
+										}
+										{
+											Pos: 2473901178884L
+											State: 3
+										}
+										{
+											Pos: 2748778999810L
+											State: 3
+										}
+										{
+											Pos: 2199023263744L
+											State: 5
+										}
+										{
+											Pos: 2748779085828L
+											State: 3
+										}
+										{
+											Pos: 2473901170688L
+											State: 2
+										}
+										{
+											Pos: 3023656992772L
+											State: 0
+										}
+										{
+											Pos: 2748779077632L
+											State: 2
+										}
+										{
+											Pos: 1099511558146L
+											State: 3
+										}
+										{
+											Pos: 824633798658L
+											State: 3
+										}
+										{
+											Pos: 2473901240322L
+											State: 3
+										}
+										{
+											Data: {
+												EnableCT: 1b
+												Item: {
+													Count: 1b
+													id: "create:andesite_casing"
+												}
+												Material: {
+													Name: "create:andesite_casing"
+												}
+												id: "create:copycat"
+											}
+											Pos: 274877939725L
+											State: 50
+										}
+										{
+											Pos: 274877931529L
+											State: 7
+										}
+										{
+											Data: {
+												EnableCT: 1b
+												Item: {
+													Count: 1b
+													id: "create:andesite_casing"
+												}
+												Material: {
+													Name: "create:andesite_casing"
+												}
+												id: "create:copycat"
+											}
+											Pos: 824633753613L
+											State: 50
+										}
+										{
+											Pos: 274877923333L
+											State: 7
+										}
+										{
+											Pos: 824633745417L
+											State: 7
+										}
+										{
+											Pos: 549755830277L
+											State: 17
+										}
+										{
+											Pos: 824633737221L
+											State: 7
+										}
+										{
+											Pos: 549755822081L
+											State: 2
+										}
+										{
+											Pos: 2748778999809L
+											State: 2
+										}
+										{
+											Pos: 2473901092865L
+											State: 2
+										}
+										{
+											Pos: 2748779077633L
+											State: 2
+										}
+										{
+											Pos: 1374389465089L
+											State: 2
+										}
+										{
+											Pos: 1099511558145L
+											State: 2
+										}
+										{
+											Pos: 824633798659L
+											State: 7
+										}
+										{
+											Pos: 2473901240323L
+											State: 7
+										}
+										{
+											Pos: 274877931530L
+											State: 7
+										}
+										{
+											Pos: 274877923334L
+											State: 7
+										}
+										{
+											Pos: 824633745418L
+											State: 7
+										}
+										{
+											Pos: 824633737222L
+											State: 32
+										}
+										{
+											Pos: 549755822082L
+											State: 3
+										}
+										{
+											Pos: 3298534821892L
+											State: 0
+										}
+										{
+											Pos: 3023656914948L
+											State: 3
+										}
+										{
+											Pos: 2199023185920L
+											State: 2
+										}
+										{
+											Pos: 2748779008004L
+											State: 3
+										}
+										{
+											Pos: 2748779077634L
+											State: 3
+										}
+										{
+											Pos: 1924145278976L
+											State: 2
+										}
+										{
+											Pos: 2473901101060L
+											State: 3
+										}
+										{
+											Pos: 1649267372032L
+											State: 2
+										}
+										{
+											Pos: 2199023194116L
+											State: 4
+										}
+										{
+											Pos: 1924145287172L
+											State: 3
+										}
+										{
+											Pos: 1649267380228L
+											State: 4
+										}
+										{
+											Pos: 1374389473284L
+											State: 3
+										}
+										{
+											Pos: 1099511566340L
+											State: 3
+										}
+										{
+											Pos: 824633659396L
+											State: 3
+										}
+										{
+											Pos: 549755752452L
+											State: 0
+										}
+										{
+											Pos: 549755891716L
+											State: 0
+										}
+										{
+											Pos: 824633798660L
+											State: 3
+										}
+										{
+											Pos: 1099511705604L
+											State: 3
+										}
+										{
+											Pos: 1374389612548L
+											State: 4
+										}
+										{
+											Pos: 1099511697408L
+											State: 2
+										}
+										{
+											Pos: 1649267519492L
+											State: 3
+										}
+										{
+											Pos: 1374389604352L
+											State: 2
+										}
+										{
+											Pos: 1924145426436L
+											State: 4
+										}
+										{
+											Pos: 1649267511296L
+											State: 2
+										}
+										{
+											Pos: 2199023333380L
+											State: 3
+										}
+										{
+											Pos: 1924145418240L
+											State: 2
+										}
+										{
+											Pos: 2473901240324L
+											State: 3
+										}
+										{
+											Pos: 2199023325184L
+											State: 2
+										}
+										{
+											Pos: 2748779147268L
+											State: 0
+										}
+										{
+											Pos: 274877931531L
+											State: 59
+										}
+										{
+											Pos: 274877923335L
+											State: 7
+										}
+										{
+											Pos: 824633745419L
+											State: 60
+										}
+										{
+											Pos: 824633737223L
+											State: 7
+										}
+										{
+											Pos: 549755822083L
+											State: 7
+										}
+										{
+											Pos: 3023656914947L
+											State: 7
+										}
+										{
+											Pos: 2748779077635L
+											State: 7
+										}
+										{
+											Pos: 824633659395L
+											State: 7
+										}
+										{
+											Pos: 824633790465L
+											State: 2
+										}
+										{
+											Pos: 2473901232129L
+											State: 2
+										}
+										{
+											Pos: 274877923336L
+											State: 4
+										}
+										{
+											Pos: 549755830280L
+											State: 7
+										}
+										{
+											Pos: 274877915140L
+											State: 0
+										}
+										{
+											Pos: 824633737224L
+											State: 4
+										}
+									]
+									Palette: [
+										{
+											Name: "create:cut_andesite"
+										}
+										{
+											Name: "create:minecart_anchor"
+											Properties: {
+												axis: "z"
+											}
+										}
+										{
+											Name: "railways:red_flat_slashed_locometal"
+										}
+										{
+											Name: "create:cut_deepslate"
+										}
+										{
+											Name: "create:polished_cut_calcite"
+										}
+										{
+											Name: "vs_eureka:floater"
+											Properties: {
+												power: "0"
+											}
+										}
+										{
+											Name: "create:cut_andesite_wall"
+											Properties: {
+												east: "tall"
+												north: "none"
+												south: "tall"
+												up: "true"
+												waterlogged: "false"
+												west: "none"
+											}
+										}
+										{
+											Name: "create:cut_diorite"
+										}
+										{
+											Name: "create:polished_cut_andesite_wall"
+											Properties: {
+												east: "tall"
+												north: "none"
+												south: "tall"
+												up: "true"
+												waterlogged: "false"
+												west: "none"
+											}
+										}
+										{
+											Name: "create:cut_andesite_wall"
+											Properties: {
+												east: "none"
+												north: "none"
+												south: "tall"
+												up: "true"
+												waterlogged: "false"
+												west: "tall"
+											}
+										}
+										{
+											Name: "minecraft:oak_planks"
+										}
+										{
+											Name: "create:polished_cut_andesite_wall"
+											Properties: {
+												east: "none"
+												north: "none"
+												south: "tall"
+												up: "true"
+												waterlogged: "false"
+												west: "tall"
+											}
+										}
+										{
+											Name: "minecraft:barrel"
+											Properties: {
+												facing: "east"
+												open: "false"
+											}
+										}
+										{
+											Name: "create:cut_andesite_wall"
+											Properties: {
+												east: "low"
+												north: "none"
+												south: "low"
+												up: "true"
+												waterlogged: "false"
+												west: "none"
+											}
+										}
+										{
+											Name: "create:cut_andesite_wall"
+											Properties: {
+												east: "none"
+												north: "none"
+												south: "low"
+												up: "true"
+												waterlogged: "false"
+												west: "low"
+											}
+										}
+										{
+											Name: "create:polished_cut_deepslate_stairs"
+											Properties: {
+												facing: "south"
+												half: "bottom"
+												shape: "straight"
+												waterlogged: "false"
+											}
+										}
+										{
+											Name: "create:white_sail"
+											Properties: {
+												facing: "north"
+											}
+										}
+										{
+											Name: "minecraft:torch"
+										}
+										{
+											Name: "create:polished_cut_andesite_wall"
+											Properties: {
+												east: "low"
+												north: "none"
+												south: "low"
+												up: "true"
+												waterlogged: "false"
+												west: "none"
+											}
+										}
+										{
+											Name: "create:polished_cut_andesite_wall"
+											Properties: {
+												east: "none"
+												north: "none"
+												south: "low"
+												up: "true"
+												waterlogged: "false"
+												west: "low"
+											}
+										}
+										{
+											Name: "create:radial_chassis"
+											Properties: {
+												axis: "z"
+												sticky_east: "false"
+												sticky_north: "false"
+												sticky_south: "false"
+												sticky_west: "false"
+											}
+										}
+										{
+											Name: "create:andesite_casing"
+										}
+										{
+											Name: "vs_clockwork:propeller_bearing"
+											Properties: {
+												direction: "push"
+												facing: "north"
+											}
+										}
+										{
+											Name: "create:large_cogwheel"
+											Properties: {
+												axis: "z"
+												waterlogged: "false"
+											}
+										}
+										{
+											Name: "create:redstone_link"
+											Properties: {
+												facing: "up"
+												powered: "false"
+												receiver: "false"
+											}
+										}
+										{
+											Name: "create:polished_cut_andesite_wall"
+											Properties: {
+												east: "tall"
+												north: "tall"
+												south: "none"
+												up: "true"
+												waterlogged: "false"
+												west: "none"
+											}
+										}
+										{
+											Name: "create:polished_cut_andesite_wall"
+											Properties: {
+												east: "none"
+												north: "tall"
+												south: "none"
+												up: "true"
+												waterlogged: "false"
+												west: "tall"
+											}
+										}
+										{
+											Name: "create:rotation_speed_controller"
+											Properties: {
+												axis: "x"
+											}
+										}
+										{
+											Name: "create_connected:inverted_clutch"
+											Properties: {
+												axis: "x"
+												powered: "false"
+											}
+										}
+										{
+											Name: "create:gearbox"
+											Properties: {
+												axis: "y"
+											}
+										}
+										{
+											Name: "create:polished_cut_andesite_wall"
+											Properties: {
+												east: "low"
+												north: "low"
+												south: "none"
+												up: "true"
+												waterlogged: "false"
+												west: "none"
+											}
+										}
+										{
+											Name: "create:polished_cut_andesite_wall"
+											Properties: {
+												east: "none"
+												north: "low"
+												south: "none"
+												up: "true"
+												waterlogged: "false"
+												west: "low"
+											}
+										}
+										{
+											Name: "minecraft:glass"
+										}
+										{
+											Name: "create:polished_cut_andesite_wall"
+											Properties: {
+												east: "tall"
+												north: "tall"
+												south: "none"
+												up: "true"
+												waterlogged: "false"
+												west: "tall"
+											}
+										}
+										{
+											Name: "create:shaft"
+											Properties: {
+												axis: "z"
+												waterlogged: "false"
+											}
+										}
+										{
+											Name: "create:fluid_tank"
+											Properties: {
+												bottom: "false"
+												shape: "plain"
+												top: "true"
+											}
+										}
+										{
+											Name: "create:fluid_tank"
+											Properties: {
+												bottom: "true"
+												shape: "plain"
+												top: "false"
+											}
+										}
+										{
+											Name: "create:polished_cut_andesite_wall"
+											Properties: {
+												east: "tall"
+												north: "tall"
+												south: "tall"
+												up: "false"
+												waterlogged: "false"
+												west: "tall"
+											}
+										}
+										{
+											Name: "create:polished_cut_andesite_wall"
+											Properties: {
+												east: "none"
+												north: "tall"
+												south: "tall"
+												up: "true"
+												waterlogged: "false"
+												west: "tall"
+											}
+										}
+										{
+											Name: "create:blaze_burner"
+											Properties: {
+												blaze: "smouldering"
+												facing: "east"
+											}
+										}
+										{
+											Name: "minecraft:lever"
+											Properties: {
+												face: "wall"
+												facing: "west"
+												powered: "false"
+											}
+										}
+										{
+											Name: "createbigcannons:cannon_mount"
+											Properties: {
+												assembly_powered: "false"
+												facing: "east"
+												fire_powered: "false"
+											}
+										}
+										{
+											Name: "create:clutch"
+											Properties: {
+												axis: "z"
+												powered: "false"
+											}
+										}
+										{
+											Name: "create:brass_door"
+											Properties: {
+												facing: "west"
+												half: "lower"
+												hinge: "right"
+												open: "false"
+												powered: "false"
+												visible: "false"
+											}
+										}
+										{
+											Name: "create:andesite_ladder"
+											Properties: {
+												facing: "east"
+												waterlogged: "false"
+											}
+										}
+										{
+											Name: "create:fluid_pipe"
+											Properties: {
+												down: "false"
+												east: "false"
+												north: "true"
+												south: "true"
+												up: "false"
+												waterlogged: "false"
+												west: "false"
+											}
+										}
+										{
+											Name: "create:brass_door"
+											Properties: {
+												facing: "west"
+												half: "upper"
+												hinge: "right"
+												open: "false"
+												powered: "false"
+												visible: "false"
+											}
+										}
+										{
+											Name: "create:polished_cut_andesite_wall"
+											Properties: {
+												east: "tall"
+												north: "none"
+												south: "tall"
+												up: "true"
+												waterlogged: "false"
+												west: "tall"
+											}
+										}
+										{
+											Name: "minecraft:spruce_trapdoor"
+											Properties: {
+												facing: "east"
+												half: "bottom"
+												open: "true"
+												powered: "false"
+												waterlogged: "false"
+											}
+										}
+										{
+											Name: "minecraft:spruce_fence"
+											Properties: {
+												east: "true"
+												north: "true"
+												south: "false"
+												waterlogged: "false"
+												west: "false"
+											}
+										}
+										{
+											Name: "create:copycat_panel"
+											Properties: {
+												facing: "up"
+												waterlogged: "false"
+											}
+										}
+										{
+											Name: "create:cut_andesite_wall"
+											Properties: {
+												east: "tall"
+												north: "tall"
+												south: "none"
+												up: "true"
+												waterlogged: "false"
+												west: "none"
+											}
+										}
+										{
+											Name: "create:cut_andesite_wall"
+											Properties: {
+												east: "none"
+												north: "tall"
+												south: "none"
+												up: "true"
+												waterlogged: "false"
+												west: "tall"
+											}
+										}
+										{
+											Name: "minecraft:spruce_trapdoor"
+											Properties: {
+												facing: "south"
+												half: "bottom"
+												open: "true"
+												powered: "false"
+												waterlogged: "false"
+											}
+										}
+										{
+											Name: "create:cut_andesite_wall"
+											Properties: {
+												east: "low"
+												north: "low"
+												south: "none"
+												up: "true"
+												waterlogged: "false"
+												west: "none"
+											}
+										}
+										{
+											Name: "create:cut_andesite_wall"
+											Properties: {
+												east: "none"
+												north: "low"
+												south: "none"
+												up: "true"
+												waterlogged: "false"
+												west: "low"
+											}
+										}
+										{
+											Name: "create:cut_andesite_wall"
+											Properties: {
+												east: "none"
+												north: "none"
+												south: "none"
+												up: "true"
+												waterlogged: "false"
+												west: "none"
+											}
+										}
+										{
+											Name: "create:polished_cut_deepslate_stairs"
+											Properties: {
+												facing: "north"
+												half: "bottom"
+												shape: "straight"
+												waterlogged: "false"
+											}
+										}
+										{
+											Name: "create:copycat_panel"
+											Properties: {
+												facing: "north"
+												waterlogged: "false"
+											}
+										}
+										{
+											Name: "create:polished_cut_deepslate_stairs"
+											Properties: {
+												facing: "east"
+												half: "bottom"
+												shape: "straight"
+												waterlogged: "false"
+											}
+										}
+										{
+											Name: "create:polished_cut_deepslate_stairs"
+											Properties: {
+												facing: "west"
+												half: "bottom"
+												shape: "straight"
+												waterlogged: "false"
+											}
+										}
+										{
+											Name: "create:redstone_link"
+											Properties: {
+												facing: "north"
+												powered: "false"
+												receiver: "false"
+											}
+										}
+										{
+											Name: "create:gearshift"
+											Properties: {
+												axis: "z"
+												powered: "false"
+											}
+										}
+										{
+											Name: "create:encased_chain_drive"
+											Properties: {
+												axis: "z"
+												axis_along_first: "true"
+												part: "end"
+											}
+										}
+										{
+											Name: "create:encased_chain_drive"
+											Properties: {
+												axis: "z"
+												axis_along_first: "true"
+												part: "middle"
+											}
+										}
+										{
+											Name: "create:encased_chain_drive"
+											Properties: {
+												axis: "y"
+												axis_along_first: "true"
+												part: "middle"
+											}
+										}
+										{
+											Name: "create_connected:encased_chain_cogwheel"
+											Properties: {
+												axis: "z"
+												axis_along_first: "true"
+												part: "start"
+											}
+										}
+										{
+											Name: "create:clutch"
+											Properties: {
+												axis: "y"
+												powered: "false"
+											}
+										}
+										{
+											Name: "create:mechanical_pump"
+											Properties: {
+												facing: "north"
+												waterlogged: "false"
+											}
+										}
+										{
+											Name: "create_connected:encased_chain_cogwheel"
+											Properties: {
+												axis: "y"
+												axis_along_first: "true"
+												part: "none"
+											}
+										}
+										{
+											Name: "create:andesite_ladder"
+											Properties: {
+												facing: "north"
+												waterlogged: "false"
+											}
+										}
+										{
+											Name: "minecraft:spruce_fence"
+											Properties: {
+												east: "true"
+												north: "false"
+												south: "true"
+												waterlogged: "false"
+												west: "true"
+											}
+										}
+										{
+											Name: "minecraft:spruce_trapdoor"
+											Properties: {
+												facing: "west"
+												half: "bottom"
+												open: "true"
+												powered: "false"
+												waterlogged: "false"
+											}
+										}
+									]
+								}
+								BottomlessSupply: 0b
+								BoundsFront: [
+									-31.0f
+									0.0f
+									-31.0f
+									32.0f
+									18.0f
+									32.0f
+								]
+								CapturedMultiblocks: [{
+									Controller: {
+										X: 4
+										Y: 2
+										Z: -7
+									}
+									Parts: [
+										{
+											X: 4
+											Y: 2
+											Z: -6
+										}
+										{
+											X: 4
+											Y: 2
+											Z: -7
+										}
+										{
+											X: 4
+											Y: 3
+											Z: -6
+										}
+										{
+											X: 5
+											Y: 2
+											Z: -6
+										}
+										{
+											X: 4
+											Y: 3
+											Z: -7
+										}
+										{
+											X: 5
+											Y: 2
+											Z: -7
+										}
+										{
+											X: 5
+											Y: 3
+											Z: -6
+										}
+										{
+											X: 5
+											Y: 3
+											Z: -7
+										}
+									]
+								}]
+								DisabledActors: [ ]
+								FluidFuelStorage: [ ]
+								FluidStorage: [{
+									Data: {
+										Amount: 0
+										Capacity: 64000
+										FluidName: "minecraft:empty"
+									}
+									Pos: {
+										X: 4
+										Y: 2
+										Z: -7
+									}
+								}]
+								InitialOrientation: "SOUTH"
+								Interactors: [
+									{
+										Pos: {
+											X: 3
+											Y: 2
+											Z: -2
+										}
+									}
+									{
+										Pos: {
+											X: 11
+											Y: 4
+											Z: 9
+										}
+									}
+									{
+										Pos: {
+											X: 5
+											Y: 1
+											Z: -6
+										}
+									}
+									{
+										Pos: {
+											X: 5
+											Y: 1
+											Z: -7
+										}
+									}
+									{
+										Pos: {
+											X: 3
+											Y: 6
+											Z: 9
+										}
+									}
+									{
+										Pos: {
+											X: 3
+											Y: 5
+											Z: 9
+										}
+									}
+									{
+										Pos: {
+											X: 4
+											Y: 2
+											Z: -1
+										}
+									}
+									{
+										Pos: {
+											X: 5
+											Y: 2
+											Z: -2
+										}
+									}
+									{
+										Pos: {
+											X: 6
+											Y: 2
+											Z: -3
+										}
+									}
+								]
+								Passengers: [ ]
+								RotationMode: "ROTATE"
+								Seats: [ ]
+								Stalled: 0b
+								Storage: [{
+									Data: {
+										Items: [{
+											Count: 2b
+											Slot: 0
+											id: "create:steam_engine"
+										}]
+										Size: 27
+									}
+									Pos: {
+										X: 5
+										Y: 1
+										Z: 0
+									}
+								}]
+								SubContraptions: [ ]
+								Superglue: [
+									{
+										From: [
+											1.0d
+											0.0d
+											-7.0d
+										]
+										To: [
+											13.0d
+											9.0d
+											13.0d
+										]
+									}
+									{
+										From: [
+											0.0d
+											1.0d
+											0.0d
+										]
+										To: [
+											2.0d
+											2.0d
+											1.0d
+										]
+									}
+									{
+										From: [
+											1.0d
+											8.0d
+											2.0d
+										]
+										To: [
+											4.0d
+											18.0d
+											11.0d
+										]
+									}
+									{
+										From: [
+											1.0d
+											0.0d
+											-28.0d
+										]
+										To: [
+											12.0d
+											5.0d
+											-6.0d
+										]
+									}
+									{
+										From: [
+											1.0d
+											0.0d
+											12.0d
+										]
+										To: [
+											12.0d
+											9.0d
+											29.0d
+										]
+									}
+									{
+										From: [
+											6.0d
+											4.0d
+											28.0d
+										]
+										To: [
+											7.0d
+											5.0d
+											30.0d
+										]
+									}
+								]
+								Type: "mounted"
+							}
+							display: {
+								Lore: [
+									"{\"italic\":false,\"color\":\"white\",\"extra\":[{\"text\":\"\"},{\"color\":\"gray\",\"text\":\"位于左侧\"}],\"text\":\"\"}"
+									"{\"italic\":false,\"color\":\"white\",\"extra\":[{\"text\":\"\"},{\"color\":\"gray\",\"text\":\"Abandoned CV, place to the left\"}],\"text\":\"\"}"
+								]
+								Name: "{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"color\":\"aqua\",\"text\":\"破旧的航空母舰\"}],\"text\":\"\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "78E4C888028A2FAD"
+					item: "immersive_aircraft:biplane"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "46CB05A318BBF38C"
+					item: "immersive_aircraft:bomb_bay"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "0591766A46985690"
+					item: {
+						Count: 1
+						id: "createbigcannons:he_shell"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			subtitle: "这也是一种航空"
+			tasks: [{
+				id: "7D2AD9EBA98CC01D"
+				item: "immersive_aircraft:biplane"
+				type: "item"
+			}]
+			title: "另一种选择？"
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["20BB44E0D9137A54"]
+			icon: "vs_clockwork:physics_infuser"
+			id: "7E67B1D3E4322C6C"
+			rewards: [{
+				auto: "enabled"
+				description: ""
+				icon: "minecraft:writable_book"
+				id: "015470F3C1D9F8C4"
+				title: "开启瓦尔基里基础教程"
+				type: "toast"
+			}]
+			subtitle: "女武神的脾气比代码还难猜"
+			tasks: [{
+				id: "642BC55C7AC8D36E"
+				type: "checkmark"
+			}]
+			title: "瓦尔基里安全使用指南"
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["762AAA4EADA35B79"]
+			description: [
+				"达到世界等级3以后，会刷出一些概率生成&b火控磁盘&r的怪"
+				"这些磁盘会对火炮的效率产生质的飞跃"
+				""
+				"火光号上有概率刷新&6用于炮座的副炮火控磁盘&r，请击败并寻找。"
+				""
+				"&6[开启火控磁盘教程]&r"
+			]
+			icon: {
+				Count: 1
+				id: "computercraft:disk"
+				tag: {
+					Color: 5744206
+				}
+			}
+			id: "00D85C6FD29172C2"
+			rewards: [{
+				id: "53D1D25A1BD9C0C4"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			tasks: [{
+				id: "01A5516A7E7DDAED"
+				item: "warshiparise:firestreak_proof"
+				type: "item"
+			}]
+			title: "副炮火控"
+			x: 13.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0720CC22285BDBA6"]
+			description: [
+				"控制工艺添加了大量瓦尔基里的零件，包括轴承，活塞，空间锚等。"
+				"轴承和活塞可以使用工具枪手动拆装，空间锚可以搬运瓦尔基里结构。"
+				"更多内容可以参考教程章节"
+				""
+				"&6[开启控制学教程章节]&r"
+			]
+			hide: true
+			icon: "vscontrolcraft:servo"
+			id: "762AAA4EADA35B79"
+			tasks: [{
+				id: "7C5C056AEA1E5006"
+				type: "checkmark"
+			}]
+			title: "更好的控制元件"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["20BB44E0D9137A54"]
+			icon: "minecraft:heart_of_the_sea"
+			id: "040BBD119AA9F7A7"
+			rewards: [{
+				command: "/gamestage add @a 1"
+				elevate_perms: true
+				icon: "minecraft:heart_of_the_sea"
+				id: "7BCF37A76E5DEDF1"
+				title: "开启世界等级1"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "21C1C6DCF20DCD76"
+					type: "checkmark"
+				}
+				{
+					count: 5L
+					id: "628C48FE76FDE544"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			title: "集体开启世界等级1"
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4A9BA84BB9D9625C"]
+			icon: "minecraft:heart_of_the_sea"
+			id: "1D72713E401AE5C6"
+			rewards: [{
+				command: "/gamestage add @a 2"
+				icon: "minecraft:heart_of_the_sea"
+				id: "529A55E25EBA43FD"
+				title: "开启世界等级2"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "4D3D99AEB0B5A89A"
+					type: "checkmark"
+				}
+				{
+					consume_items: true
+					count: 18L
+					id: "18DC8D0BE93FF3F3"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			title: "集体开启世界等级2"
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0720CC22285BDBA6"]
+			icon: "minecraft:heart_of_the_sea"
+			id: "7F1E6AC0E5C24DBB"
+			rewards: [{
+				command: "/gamestage add @a 3"
+				elevate_perms: true
+				icon: "minecraft:heart_of_the_sea"
+				id: "382BF664ADA7543E"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "2B91B39BB49E00C8"
+					type: "checkmark"
+				}
+				{
+					consume_items: true
+					count: 34L
+					id: "553051F18565A5FA"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			title: "集体开启世界等级3"
+			x: 11.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["762AAA4EADA35B79"]
+			description: [
+				"想拆装炮塔么？看这里"
+				""
+				"&6[开启吊机教程]&r"
+			]
+			icon: "vscontrolcraft:spatial_anchor"
+			id: "73C43D75C3978145"
+			tasks: [{
+				id: "0A4E6A04D3367E69"
+				type: "checkmark"
+			}]
+			title: "可拆装炮塔"
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"298DE07E8661EA47"
+				"1758C63994CE13FA"
+			]
+			description: [
+				"到达初始岛以后，请跟随FTB中的&e地图&r探索，并找到火炮安装在战舰上。"
+				""
+				"需要安装："
+				"-大炮"
+				"-机炮"
+				""
+				"安装方法可以查阅&e火炮教程章节&r（已经解锁）"
+				""
+				"*注意，如果先安装主炮再物理化，需要重新安装火炮才能使用。建议先进行物理化，再安装主炮。"
+				""
+				"&6*需要先完成火炮的设计与安全生产才能开启任务&r"
+				""
+				"&6[本任务中的物品不需要提交，仅获得就能完成]&r"
+			]
+			icon: "createbigcannons:cast_iron_quickfiring_breech"
+			id: "065892F3BAF1F154"
+			rewards: [
+				{
+					id: "08A78ADF8888AA4D"
+					item: "create:linked_controller"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "49218ADCCF3080FB"
+					item: "railways:white_flat_riveted_locometal"
+					type: "item"
+				}
+			]
+			subtitle: "既然来了，就把主炮安装好吧"
+			tasks: [
+				{
+					consume_items: false
+					id: "52B2468D30A43837"
+					item: "createbigcannons:cast_iron_quickfiring_breech"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "72EFB13BB5DC8FDC"
+					item: "createbigcannons:cast_iron_cannon_chamber"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "42B099E328530147"
+					item: "createbigcannons:cast_iron_cannon_barrel"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "318FEAC8EA388326"
+					item: "createbigcannons:steel_autocannon_breech"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "02BC9BFB4DD6597D"
+					item: "createbigcannons:steel_autocannon_recoil_spring"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "1DEA650F0AA750BD"
+					item: "createbigcannons:steel_autocannon_barrel"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6473B0EC97F6A121"
+					item: "createbigcannons:cannon_mount"
+					type: "item"
+				}
+				{
+					id: "6E15ACD832AA05A9"
+					title: "请完成火炮教程章节"
+					type: "checkmark"
+				}
+			]
+			title: "既来之，则安之"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["20BB44E0D9137A54"]
+			description: [
+				"请使用&6浮石手杖&r将船只物理化，再放上&6船舵&r使船只上浮。"
+				""
+				"物理化方法：实用手杖右键第一个点，再右键对角的点，你会看到一个选中框，再放入物理注入器中，等待动画结束就可以完成物理化"
+				""
+				"注：船舵也可以物理化少量方块，按下shift+右键打开界面然后选择物理化。用于直接在上面使用预制结构（以后会遇到）"
+				""
+				"&6[本任务无须提交物品]&r"
+			]
+			hide: true
+			icon: "vs_clockwork:wanderwand"
+			id: "298DE07E8661EA47"
+			rewards: [{
+				id: "37780AAD811E8FD4"
+				item: "createbigcannons:cannon_mount"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "393CF8F4A192B069"
+					item: "vs_clockwork:wanderwand"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "2182ED54D0C40BCB"
+					item: "vs_eureka:oak_ship_helm"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "4064BEE5AFB06874"
+					item: "vs_clockwork:physics_infuser"
+					type: "item"
+				}
+			]
+			title: "维修船只"
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["065892F3BAF1F154"]
+			description: [
+				"修好船以后，你就能使用船舵和遥控器操作船只。"
+				""
+				"右键船舵可以坐上去，然后使用WASD控制船只移动。使用船舶引擎或者动力船舶引擎可以增加机动性。"
+				""
+				"遥控器用于操控火炮，需要完成配置（详细教程前往火炮章节的传动部分）"
+			]
+			id: "70F24848AC1659A7"
+			tasks: [{
+				id: "0A27B399B3620DF6"
+				type: "checkmark"
+			}]
+			title: "船只操作"
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["065892F3BAF1F154"]
+			description: [
+				"大炮的瞄准是一个技术活。炮弹和机炮都带有&6下坠&r，因此需要抬高炮管以瞄准远处的目标。顶尖的炮手往往需要充足的练习。"
+				""
+				"游戏中的火炮都具有基础的散步，每一发炮弹的落点都会有所差别，提升火炮材质可以改善精度。"
+				"&0铸铁&r<&6青铜&r<&8钢&r<&4合金钢&r"
+				"同时，需要足够长的炮管以达到材料提供的最佳精度（一般3-4节炮腔+炮筒）。更加优秀的材料会随着游戏进程出现。"
+				""
+				"*在游戏初期，只能使用经典的传动方式瞄准目标，随着游戏的进程，会解锁一些&6辅助装置&r，能够大大增加瞄准的效率。"
+			]
+			id: "0C957116C3196B02"
+			rewards: [{
+				id: "106290DAFF02ADC6"
+				type: "xp"
+				xp: 200
+			}]
+			tasks: [{
+				consume_items: false
+				id: "301FD4FC3CA9D0D3"
+				item: "create:linked_controller"
+				type: "item"
+			}]
+			title: "火炮瞄准"
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["31792916E802B549"]
+			description: [
+				"你已经做好了实战的准备了，是时候出发了。"
+				"请击毁一艘雷霆号和一艘飞马号并从战利品中拿到击毁勋章。"
+				""
+				"*注意，火力过剩会损坏战利品，战利品一旦被摧毁会导致其中的内容一并消失，请重点攻击火炮部分。"
+			]
+			id: "21EBD76DFD7AC77B"
+			rewards: [{
+				id: "564A605060DB0CC8"
+				item: "warshiparise:mysterious_snicker"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1E191E736B3A7B1F"
+					item: "warshiparise:thunder_proof"
+					type: "item"
+				}
+				{
+					id: "1C50F435275264A4"
+					item: "warshiparise:pegasus_proof"
+					type: "item"
+				}
+			]
+			title: "需要一些实战经验"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["681CAE20B3F0A013"]
+			description: [
+				"在解锁世界等级2之前，击败伊利吉亚号！"
+				""
+				"新的世界等级会解锁更多游戏内容，海面也会更加的危险，船只的数量会变多"
+			]
+			id: "2D2CE96B1DA43C31"
+			rewards: [{
+				count: 32
+				id: "0F995F3F0AA2E347"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			tasks: [{
+				id: "63CD448DE173F4B5"
+				item: "warshiparise:illagia_proof"
+				type: "item"
+			}]
+			title: "一次试炼"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2FF010E495FBCD58"
+				"1AE05B212ED6C90D"
+			]
+			description: [
+				"&6物理轴承&r可以让上面的方块旋转并保持全部交互，可以用于制造炮塔。"
+				""
+				"使用胶水连接轴承上方的方块，再空手右键轴承即可组装炮塔，注意检查胶水连接是否完整！"
+				"组装的炮塔是一个新的物理结构，因此需要重新放置火炮以使用。"
+			]
+			id: "3110EB632223CE41"
+			rewards: [{
+				id: "46F1D58B102E15FB"
+				item: {
+					Count: 1
+					id: "create:schematic"
+					tag: {
+						Anchor: {
+							X: 0
+							Y: 0
+							Z: 0
+						}
+						Bounds: [
+							7
+							4
+							3
+						]
+						Deployed: 0b
+						File: "uploaded/double_turret_a.nbt"
+						HideFlags: 32
+						Mirror: "NONE"
+						Owner: "Cainiao1053"
+						Reward: 1
+						Rotation: "NONE"
+						display: {
+							Lore: ["{\"italic\":false,\"color\":\"white\",\"extra\":[{\"text\":\"\"},{\"color\":\"green\",\"text\":\"[Premade]\"},{\"text\":\"Twin Turret Type A\"}],\"text\":\"\"}"]
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"color\":\"green\",\"text\":\"[预制零件]\"},{\"text\":\"双联装炮塔A型\"}],\"text\":\"\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "0D51A73F167B64E3"
+				item: "vs_clockwork:phys_bearing"
+				type: "item"
+			}]
+			title: "物理炮塔"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["35A43FB264A8386C"]
+			description: [
+				"维修包是一种特殊的预制结构，它可以在造船厂蓝图加农炮中最多投射指定数量的方块，其余使用方式和预制结构一致。"
+				""
+				"维修包通常搭配&e特定船只&r使用，每一个维修包只能修指定的预制船。使用前需要先在船上部署并和船体本身&6重合&r，加农炮完成打印以后会生成一个&9部署信息记录&r，使用这个物品和新的维修包合成可以&6继承之前的部署结果&r，因此合成后可以直接投入加农炮中使用，&6无须重新部署&r。"
+				""
+				"维修包只能&e修复部分方块&r，包括船壳和一部分传动，对于动力臂等核心方块不具备修复能力。"
+			]
+			icon: "create:empty_schematic"
+			id: "314066D86576CA60"
+			subtitle: "一劳永逸"
+			tasks: [{
+				id: "23A4EC586C11787D"
+				type: "checkmark"
+			}]
+			title: "维修包"
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["35A43FB264A8386C"]
+			description: [
+				"战舰研发局中有一系列任务，包括提交各种资源，击毁指定敌船等。"
+				""
+				"完成这些任务后可以解锁特殊的预制船。这些预制船有一整个系列，需要按顺序解锁才能获得。船只的强度和规格也会逐渐提高。"
+				""
+				"在此之前，打个巴巴博一先。"
+				""
+				"&e[解锁战舰研发局]&r"
+			]
+			id: "1AE05B212ED6C90D"
+			rewards: [{
+				id: "5CFD739FC17642F3"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			subtitle: "你给我干哪来了？"
+			tasks: [{
+				id: "089F281129633AC6"
+				item: "warshiparise:admiral_bababoi_proof"
+				type: "item"
+			}]
+			title: "战舰研发局"
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6D92CBEA18052F70"]
+			description: ["海底会少量生成船只残骸，带有少量战利品资源。如果在前期难以从活的敌舰上获取物资，打捞也是一个不错的选择。"]
+			id: "4194944C39059320"
+			subtitle: "绝对不是打不过"
+			tasks: [{
+				id: "6A8AE40F3D508893"
+				type: "checkmark"
+			}]
+			title: "海上拾荒者"
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6D92CBEA18052F70"]
+			description: [
+				"当船只出现严重损坏的时候，修复往往非常困难，因此需要了解船只的整体构造。"
+				"整合包提供了船只结构的教程参考。"
+				""
+				"&2[开启船舶构造教程]&r"
+			]
+			icon: "create:wrench"
+			id: "31792916E802B549"
+			rewards: [{
+				count: 64
+				id: "55CD06B2BD81D7C2"
+				item: "railways:white_flat_riveted_locometal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "48A7CC048FAC0128"
+				type: "checkmark"
+			}]
+			title: "改造船只"
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["762AAA4EADA35B79"]
+			description: [
+				"世界等级3中，会出现一些舰种从水下发动攻击，并使用鱼雷造成巨大伤害，这会给船只造成不小的困扰。这些教程能帮助水上君子们更好地了解鱼雷的机制。"
+				""
+				"你应该是的，对吧？？？"
+				""
+				"&6[开启鱼雷教程]&r"
+			]
+			icon: {
+				Count: 1
+				id: "cbcmoreshells:medium_range_torpedo"
+				tag: { }
+			}
+			id: "3BBF86A7C1A7D848"
+			rewards: [{
+				command: "/tellraw @p {\"text\": \"你想啥呢\",\"color\": \"aqua\"}"
+				elevate_perms: true
+				icon: {
+					Count: 1
+					id: "cbcmoreshells:medium_range_torpedo"
+					tag: { }
+				}
+				id: "1F764F164831F23E"
+				title: "超级无敌中程鱼雷"
+				type: "command"
+			}]
+			tasks: [{
+				id: "500F75312259359F"
+				type: "checkmark"
+			}]
+			title: "水上君子的自我认知"
+			x: 13.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6EDFE0637BF0AD5A"]
+			description: ["在前往三级之前，击败少量强力船只吧"]
+			id: "581A369C4CB18F5A"
+			rewards: [{
+				count: 3
+				id: "6A7D536558D496CC"
+				item: "createendertransmission:energy_transmitter"
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "0FC55EDC8DDAA243"
+				item: "warshiparise:atlas_proof"
+				type: "item"
+			}]
+			title: "[可选]二级船只质检(A)"
+			x: 9.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6EDFE0637BF0AD5A"]
+			description: ["在前往三级之前，击毁大量普通船只吧"]
+			id: "1E16C9EC0B4D9EC5"
+			rewards: [{
+				count: 2
+				id: "13F65811E5E482AF"
+				item: "createendertransmission:energy_transmitter"
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 3L
+					id: "76E2E2260E7556F8"
+					item: "warshiparise:thunder_proof"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "2C970AD88DA6DEAE"
+					item: "warshiparise:pegasus_proof"
+					type: "item"
+				}
+			]
+			title: "[可选]二级船只质检(B)"
+			x: 9.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6EDFE0637BF0AD5A"]
+			description: [
+				"整合包没有下界，但是依然有办法获取下界的物资。"
+				"如果你遇到了那艘船，可以使用下界之星跳过繁琐的击毁任务。"
+			]
+			id: "39C1D347E4D64197"
+			tasks: [{
+				id: "4FB3E983E2A62BF6"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			title: "[可选]本不该存在的下界之心"
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3BBF86A7C1A7D848"]
+			description: [
+				"一些水上船只会投机取巧使用鱼雷对玩家造成伤害，请击败他们"
+				""
+				"请注意，鱼雷会对船只造成大量伤害，且没有装甲可以完全防御"
+				""
+				"鱼雷的速度较慢，可以使用灵活的机动进行躲避"
+			]
+			id: "136194342FF76DE9"
+			rewards: [
+				{
+					count: 16
+					id: "2A23235E76EBC934"
+					item: {
+						Count: 1
+						id: "cbcmoreshells:sharpnel_torpedo"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "4231B2956DF80B41"
+					item: {
+						Count: 1
+						id: "cbcmoreshells:airdropped_shrapnel_torpedo"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "049390C723967376"
+					item: "warshiparise:affinity_proof"
+					type: "item"
+				}
+				{
+					id: "14865C2A8539AD53"
+					item: "warshiparise:taurus_proof"
+					type: "item"
+				}
+			]
+			title: "水上庸才的投机取巧"
+			x: 15.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"136194342FF76DE9"
+				"351DA5882C19E08E"
+			]
+			description: [
+				"如果你在海面上看到几根冒出水面的天线状物体，请保持警惕，可能有潜艇。"
+				"潜艇会在水下发射威力巨大的深水鱼雷，同时不会通知玩家被发现。"
+				"飞行载具对潜艇拥有天然的优势，如果你发现了潜艇但不适合冒险，可以使用瓦尔基里的飞机进行开罐处理。"
+			]
+			id: "29732A1946CFDAD1"
+			rewards: [{
+				id: "082DD35E70C6FE73"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "7C5F6F8842911704"
+				item: "warshiparise:eridanus_proof"
+				type: "item"
+			}]
+			title: "水下小人的垂死挣扎"
+			x: 16.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"00D85C6FD29172C2"
+				"435E02B0A91D1D1A"
+			]
+			description: [
+				"天闪号上会概率刷新&6用于炮塔的主炮火控&r，请击败这种船并尝试获取。"
+				""
+				"主炮和副炮火控可以共享同一个控制电脑，但是最大控制数量也会共享。"
+			]
+			id: "5E85FF336FD96600"
+			rewards: [{
+				id: "0DE4F2CAD6740296"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			tasks: [{
+				id: "4417BEFDB79A4DC3"
+				item: "warshiparise:skyflash_proof"
+				type: "item"
+			}]
+			title: "主炮火控"
+			x: 15.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["125BB5748214038D"]
+			description: ["请击败更多具有远程机制的敌人，这些敌人会更棘手"]
+			id: "0BC5FCC52B7DD553"
+			rewards: [{
+				count: 64
+				id: "3D914A8AD4C60960"
+				item: {
+					Count: 1
+					id: "createbigcannons:big_cartridge"
+					tag: {
+						Power: 5
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "19A7D90F39E34CB6"
+					item: "warshiparise:meteor_proof"
+					type: "item"
+				}
+				{
+					id: "7AE61A50D9607592"
+					item: "warshiparise:circo_proof"
+					type: "item"
+				}
+			]
+			title: "我将从远处发动攻击"
+			x: 16.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["762AAA4EADA35B79"]
+			description: [
+				"世界等级3中，前进号商船会刷新控制学零件商人（作者亲自出售）"
+				"请寻找这种船，控制学零件会在以后有很大的用处"
+			]
+			id: "435E02B0A91D1D1A"
+			tasks: [{
+				id: "6FBB1FD5B5770D00"
+				structure: "warshiparise:progression"
+				title: "寻找前进号"
+				type: "structure"
+			}]
+			title: "获取控制学零件"
+			x: 13.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["435E02B0A91D1D1A"]
+			description: [
+				"世界等级3中，会生成非敌对的航母，上面会出售飞机的预制载具"
+				""
+				"目前有两种飞机："
+				"-鱼雷机"
+				"-火炮机"
+				""
+				"鱼雷机可以在低速时投送鱼雷，但伤害有限"
+				"火炮机可以使用大炮在近距离对敌船造成伤害"
+				""
+				"飞机对&9水下目标&r有天然的克制，但请注意，有东西在盯着你"
+				""
+				"请寻找天琴座航母。"
+			]
+			id: "351DA5882C19E08E"
+			tasks: [{
+				id: "296AE96E4B6D3150"
+				structure: "warshiparise:lyra"
+				title: "寻找天琴座"
+				type: "structure"
+			}]
+			title: "水下无法触及之物"
+			x: 15.0d
+			y: 0.0d
+		}
+	]
+	title: "瓦尔基里的大冒险"
+}

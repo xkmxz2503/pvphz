@@ -1,0 +1,185 @@
+{
+	consume_items: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "05624893E3694EF2"
+	group: "7B14CD2B3339D3C6"
+	hide_quest_until_deps_visible: true
+	icon: "minecraft:emerald"
+	id: "05624893E3694EF2"
+	images: [
+		{
+			height: 4.0d
+			image: "pictures:textures/quests/fair.png"
+			rotation: 0.0d
+			width: 7.2d
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			height: 4.0d
+			image: "pictures:textures/quests/villagia.png"
+			rotation: 0.0d
+			width: 7.45d
+			x: 9.0d
+			y: -2.5d
+		}
+		{
+			height: 4.0d
+			image: "pictures:textures/quests/progression.png"
+			rotation: 0.0d
+			width: 6.0d
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			height: 4.0d
+			image: "pictures:textures/quests/lyra.png"
+			rotation: 0.0d
+			width: 7.05d
+			x: 9.0d
+			y: 2.0d
+		}
+	]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			can_repeat: true
+			dependencies: ["2FF010E495FBCD58"]
+			description: [
+				"普通的小型商船，需求世界等级：1"
+				"有4只随机货物村民"
+			]
+			icon: "minecraft:compass"
+			id: "286FD99EC99C253E"
+			rewards: [{
+				command: "/locate structure warshiparise:fair"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				icon: "minecraft:compass"
+				id: "4F882B5001A66F03"
+				type: "command"
+			}]
+			shape: "diamond"
+			subtitle: "公平交易"
+			tasks: [
+				{
+					id: "569FAB47A46B80CC"
+					title: "\"集市\""
+					type: "checkmark"
+				}
+				{
+					id: "4831D064176A5485"
+					points: false
+					type: "xp"
+					value: 6L
+				}
+			]
+			title: "寻找集市号"
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2FF010E495FBCD58"]
+			description: [
+				"由沉没的某战列舰改装的运输船，需求世界等级：2"
+				"内含大量随机集装箱物资"
+				"有4位商人"
+				"似乎还有一些&5奇怪&r的东西"
+				"由于原战舰的信号系统完全损毁，定位不可用"
+			]
+			hide: true
+			icon: "createdeco:white_shipping_container"
+			id: "00518BD4E2139730"
+			shape: "diamond"
+			subtitle: "看着眼熟"
+			tasks: [{
+				id: "7B469E8F50D62C40"
+				type: "checkmark"
+			}]
+			title: "维利吉亚号"
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2FF010E495FBCD58"]
+			description: [
+				"带有控制学零件和高级弹药商人的货船"
+				"需求世界等级：3"
+			]
+			icon: "minecraft:emerald"
+			id: "10D0EA796E81E1FC"
+			rewards: [{
+				command: "/locate structure warshiparise:progression"
+				elevate_perms: true
+				icon: "minecraft:compass"
+				id: "32A471CD7CCB19DE"
+				title: "寻找前进号"
+				type: "command"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "1EF774396547A0E6"
+					type: "checkmark"
+				}
+				{
+					id: "1CAEB78AAED34625"
+					points: false
+					type: "xp"
+					value: 8L
+				}
+			]
+			title: "\"前进号\""
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2FF010E495FBCD58"]
+			description: [
+				"带有飞机商人的航空母舰，需求世界等级：3"
+				"船上带有一些配套设施，可作为中转基地"
+			]
+			icon: "immersive_aircraft:biplane"
+			id: "0202942CD3367111"
+			rewards: [{
+				command: "/locate structure warshiparise:lyra"
+				elevate_perms: true
+				icon: "minecraft:compass"
+				id: "7F9B52489191DF2F"
+				title: "寻找天琴座"
+				type: "command"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "30BFA3770B500577"
+					type: "checkmark"
+				}
+				{
+					count: 57L
+					id: "6F8544BB21FD0689"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					count: 43L
+					id: "7F8F6C65651BF2D7"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					id: "60C6720DA81545ED"
+					points: false
+					type: "xp"
+					value: 10L
+				}
+			]
+			title: "\"天琴座\""
+			x: 9.0d
+			y: 3.5d
+		}
+	]
+	title: "民用船"
+}

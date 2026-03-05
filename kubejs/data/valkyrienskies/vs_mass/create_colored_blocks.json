@@ -1,0 +1,82 @@
+[
+    {
+        "block": "create:white_seat",
+        "mass": 50,
+        "friction": 0.5
+    },
+    {
+        "block": "create:orange_seat",
+        "mass": 50,
+        "friction": 0.5
+    },
+    {
+        "block": "create:magenta_seat",
+        "mass": 50,
+        "friction": 0.5
+    },
+    {
+        "block": "create:light_blue_seat",
+        "mass": 50,
+        "friction": 0.5
+    },
+    {
+        "block": "create:yellow_seat",
+        "mass": 50,
+        "friction": 0.5
+    },
+    {
+        "block": "create:lime_seat",
+        "mass": 50,
+        "friction": 0.5
+    },
+    {
+        "block": "create:pink_seat",
+        "mass": 50,
+        "friction": 0.5
+    },
+    {
+        "block": "create:gray_seat",
+        "mass": 50,
+        "friction": 0.5
+    },
+    {
+        "block": "create:light_gray_seat",
+        "mass": 50,
+        "friction": 0.5
+    },
+    {
+        "block": "create:cyan_seat",
+        "mass": 50,
+        "friction": 0.5
+    },
+    {
+        "block": "create:purple_seat",
+        "mass": 50,
+        "friction": 0.5
+    },
+    {
+        "block": "create:blue_seat",
+        "mass": 50,
+        "friction": 0.5
+    },
+    {
+        "block": "create:brown_seat",
+        "mass": 50,
+        "friction": 0.5
+    },
+    {
+        "block": "create:green_seat",
+        "mass": 50,
+        "friction": 0.5
+    },
+    {
+        "block": "create:red_seat",
+        "mass": 50,
+        "friction": 0.5
+    },
+    {
+        "block": "create:black_seat",
+        "mass": 50,
+        "friction": 0.5
+    }
+]

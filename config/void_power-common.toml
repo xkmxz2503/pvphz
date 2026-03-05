@@ -1,0 +1,31 @@
+#Engine cost stress per rpm.
+#Range: 0.0 ~ 3.4028234663852886E38
+EngineStressPerRPM = 4.0
+#The weight that can be driven of per stress*rpm cost.
+#Range: 0.0 ~ 3.4028234663852886E38
+EngineMassPerStress = 1.0
+#Time factor of CC‘s Computer can run max per time(default time is 5ms). If your CPU's clock speed is not high enough, don't change this
+#Range: 0.5 ~ 8.0
+CC_DEFAULT_MIN_PERIOD_FACTOR = 1.0
+#Force glass screen render use vanilla shader. If you use shader pack and has some render issue with glass screen, try turn on this.
+SCREEN_FORCED_USE_VANILLA_SHADER = false
+#Reset input state of tweaked controller block after player left.
+RESET_CONTROLLER_WHEN_LEFT = true
+#Max width can set for a hologram.
+#Range: 128 ~ 2048
+HOLOGRAM_WIDTH_MAX = 1024
+#Max height can set for a hologram..
+#Range: 128 ~ 2048
+HOLOGRAM_HEIGHT_MAX = 1024
+#Max count of frame buffer in a hologram.
+#Range: 2 ~ 32
+HOLOGRAM_BUFFER_COUNT = 8
+#Remove wireless peripheral hub distance limited.
+WIRELESS_HUB_UNLIMITED = true
+#Max count of font for a hologram.
+#Range: 0 ~ 8
+HOLOGRAM_FONT_COUNT = 2
+#The max ticks between two force full sync(a tick after a call of 'hologram.Flush(true)') of hologram. set zero to disable forced full update.
+#Range: -1 ~ 400
+HOLOGRAM_FORCE_FULL_UPDATE_TICK = 20
+

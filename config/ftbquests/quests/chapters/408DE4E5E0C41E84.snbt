@@ -1,0 +1,1050 @@
+{
+	consume_items: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "408DE4E5E0C41E84"
+	group: "7B14CD2B3339D3C6"
+	hide_quest_until_deps_visible: true
+	id: "408DE4E5E0C41E84"
+	images: [
+		{
+			height: 6.0d
+			image: "pictures:textures/quests/illagia.png"
+			rotation: 0.0d
+			width: 12.3d
+			x: -7.5d
+			y: -5.0d
+		}
+		{
+			height: 6.0d
+			image: "pictures:textures/quests/perseus.png"
+			rotation: 0.0d
+			width: 11.4d
+			x: 5.5d
+			y: -5.0d
+		}
+		{
+			height: 6.0d
+			image: "pictures:textures/quests/comparable.png"
+			rotation: 0.0d
+			width: 11.1d
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			height: 6.0d
+			image: "pictures:textures/quests/stclem.png"
+			rotation: 0.0d
+			width: 11.34d
+			x: -7.5d
+			y: 8.5d
+		}
+		{
+			height: 6.0d
+			image: "pictures:textures/quests/admiral_lauda.png"
+			rotation: 0.0d
+			width: 11.78d
+			x: 5.5d
+			y: 8.5d
+		}
+		{
+			height: 5.0d
+			image: "pictures:textures/quests/pareidolia.png"
+			rotation: 0.0d
+			width: 11.7d
+			x: -7.5d
+			y: 15.5d
+		}
+		{
+			height: 6.0d
+			image: "pictures:textures/quests/admiral_bababoi.png"
+			rotation: 0.0d
+			width: 11.47d
+			x: -7.5d
+			y: 1.5d
+		}
+		{
+			height: 6.0d
+			image: "pictures:textures/quests/aurora.png"
+			rotation: 0.0d
+			width: 11.9d
+			x: 5.5d
+			y: 15.5d
+		}
+		{
+			height: 6.0d
+			image: "pictures:textures/quests/meteor.png"
+			rotation: 0.0d
+			width: 12.0d
+			x: 18.0d
+			y: -5.0d
+		}
+		{
+			height: 6.0d
+			image: "pictures:textures/quests/firestreak.png"
+			rotation: 0.0d
+			width: 10.2d
+			x: 18.0d
+			y: 1.5d
+		}
+		{
+			height: 6.0d
+			image: "pictures:textures/quests/circus.png"
+			rotation: 0.0d
+			width: 10.44d
+			x: 18.0d
+			y: 8.5d
+		}
+		{
+			height: 6.0d
+			image: "pictures:textures/quests/taurus.png"
+			rotation: 0.0d
+			width: 9.73d
+			x: 18.0d
+			y: 15.5d
+		}
+		{
+			height: 6.0d
+			image: "pictures:textures/quests/affinity.png"
+			rotation: 0.0d
+			width: 10.71d
+			x: 30.5d
+			y: -5.0d
+		}
+		{
+			height: 6.0d
+			image: "pictures:textures/quests/skyflash.png"
+			rotation: 0.0d
+			width: 10.5d
+			x: 30.5d
+			y: 1.5d
+		}
+		{
+			height: 6.0d
+			image: "pictures:textures/quests/starburst.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: 30.5d
+			y: 8.5d
+		}
+		{
+			height: 6.0d
+			image: "pictures:textures/quests/horologium.png"
+			rotation: 0.0d
+			width: 10.2d
+			x: 30.5d
+			y: 15.5d
+		}
+		{
+			height: 5.0d
+			image: "pictures:textures/quests/eridanus.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: -7.5d
+			y: 21.5d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			can_repeat: true
+			dependencies: ["681CAE20B3F0A013"]
+			description: [
+				"标准的精英级船只，所需世界等级：1"
+				"&a强度参考系数&r：82"
+				"主炮："
+				"- 三座双联装大炮（HE）射程320m"
+				"副炮："
+				"- 单侧各一座单装大炮（葡萄弹）"
+				"主炮具有一定横向防护"
+				"具有防登船机制"
+				"带有5个疲劳方块"
+				"更多的小怪"
+				"特殊战利品："
+				"- &e飞机&r"
+			]
+			icon: "minecraft:compass"
+			id: "0D4F0D33B3BD3C1B"
+			rewards: [{
+				command: "/locate structure warshiparise:illagia"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				icon: "minecraft:compass"
+				id: "7EF341C5E4E2BE17"
+				title: "寻找伊利吉亚号"
+				type: "command"
+			}]
+			shape: "diamond"
+			subtitle: "这也是一种村庄"
+			tasks: [
+				{
+					id: "59874C7F89519CF4"
+					title: "伊利吉亚"
+					type: "checkmark"
+				}
+				{
+					consume_items: true
+					count: 18L
+					id: "7D2EDD46365AA96F"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			x: -7.5d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["681CAE20B3F0A013"]
+			description: [
+				"火力强化的精英战舰，所需世界等级：2"
+				"&a强度参考系数&r：88"
+				"主炮："
+				"- 三座双联装大炮（AP）射程320m"
+				"副炮："
+				"- 单侧各一座单装大炮（葡萄） 射程250m"
+				"整体防护较好"
+				"具有防登船机制"
+				"带有3个疲劳方块"
+				"数量更多的小怪"
+				"该船由&6@二文鱼不会画画&r 提供"
+			]
+			icon: "minecraft:compass"
+			id: "0ED8E10789B90DE5"
+			rewards: [{
+				command: "/locate structure warshiparise:admiral_bababoi"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				icon: "minecraft:compass"
+				id: "66402CE5961CAE19"
+				title: "寻找巴巴博一海军上将号"
+				type: "command"
+			}]
+			shape: "diamond"
+			subtitle: "我们巴巴博一"
+			tasks: [
+				{
+					id: "52EDAF3C04CCB854"
+					title: "巴巴博一海军上将"
+					type: "checkmark"
+				}
+				{
+					consume_items: true
+					count: 20L
+					id: "015BFEFCE38759CA"
+					item: { Count: 20, id: "minecraft:emerald" }
+					type: "item"
+				}
+				{
+					id: "172745FD7C67A6D3"
+					points: false
+					type: "xp"
+					value: 1L
+				}
+			]
+			x: -7.5d
+			y: 4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["681CAE20B3F0A013"]
+			description: [
+				"对空火力特化的精英级战舰，所需世界等级：4"
+				"&e强度参考系数&r：122"
+				"主炮："
+				"- 两座双联装大炮（AP）"
+				"- 一座双联装大炮（HE）"
+				"副炮："
+				"- 单侧各两座双联装防空炮（高爆）"
+				"特殊机制："
+				"&5- 对空火力特化 （防空炮射速和威力随目标高度增高而增加）&r"
+				"具有增强的防登船机制"
+				"带有4个疲劳方块，1个驱逐方块"
+				"大量战利品"
+				"特殊战利品:"
+				"- &b尤里卡气球&r"
+				"- &e飞机&r"
+				"该船由&6@我不是柠檬精&r 提供"
+			]
+			icon: "minecraft:compass"
+			id: "5958DBD0940D99DA"
+			rewards: [{
+				command: "/locate structure warshiparise:perseus"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				icon: "minecraft:compass"
+				id: "010AF8F1DF8E2019"
+				title: "寻找英仙座号"
+				type: "command"
+			}]
+			shape: "diamond"
+			subtitle: "这东西为什么会在这里？"
+			tasks: [
+				{
+					id: "013FF2D890DD6E87"
+					title: "\"英仙座\""
+					type: "checkmark"
+				}
+				{
+					consume_items: true
+					count: 16L
+					id: "568A14C70091AFFB"
+					item: { Count: 16, id: "minecraft:emerald" }
+					type: "item"
+				}
+				{
+					id: "4B4730A2EB49B49A"
+					points: false
+					type: "xp"
+					value: 2L
+				}
+			]
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["681CAE20B3F0A013"]
+			description: [
+				"火力特化的战列巡洋舰，所需世界等级：4"
+				"&e强度参考系数&r：137"
+				"主炮："
+				"- 三座双联装&66装药&r主炮（AP） 射程350m"
+				"- 单侧各一座三联装鱼雷 射程250m"
+				"副炮："
+				"- 每侧一座双联装防空炮（HE）"
+				"特殊机制："
+				"&5- 对空火力特化 （防空炮射速和威力随目标高度增高而增加）&r"
+				"- &6远距离射速衰竭 （主炮射速从距离目标50m开始衰竭，250m达到最慢射速）&r"
+				"&9炮雷合击&r"
+				"具有非常强的&e穿透能力&r和&e综合火力&r"
+				"炮塔防护比较薄弱"
+				"核心区位于&b水下&r"
+				"核心区顶部&4防护薄弱&r"
+				"增强的防偷跑机制"
+				"带有3个疲劳方块，2个驱逐方块"
+				"特殊战利品："
+				"- &e飞机&r"
+				"- &e鱼雷&r"
+			]
+			hide: true
+			icon: "minecraft:compass"
+			id: "1299FE0200EA1C9C"
+			rewards: [{
+				command: "/locate structure warshiparise:comparable"
+				elevate_perms: true
+				icon: "minecraft:compass"
+				id: "22A1C27B596367B8"
+				title: "寻找可比号"
+				type: "command"
+			}]
+			shape: "diamond"
+			subtitle: "男人！什么罐头我说？"
+			tasks: [
+				{
+					id: "00CDF3D7708B12C2"
+					type: "checkmark"
+				}
+				{
+					consume_items: true
+					count: 24L
+					id: "11E9EA2AD5D64FA4"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			title: "\"可比\""
+			x: 5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["681CAE20B3F0A013"]
+			description: ["旧时代海军风帆战舰圣克莱姆号，因不明原因失踪，尚未发现任何踪迹"]
+			hide: true
+			icon: "minecraft:oak_boat"
+			id: "69F3D8694D872907"
+			rewards: [{
+				auto: "enabled"
+				description: ""
+				id: "2E79E9A852B627C7"
+				title: "去哪了呢？"
+				type: "toast"
+			}]
+			shape: "square"
+			subtitle: "我们有一艘船走丢了，你有看见嘛？"
+			tasks: [{
+				id: "139A207282844341"
+				type: "checkmark"
+			}]
+			title: "圣克莱号"
+			x: -9.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["69F3D8694D872907"]
+			description: ["你发现了一艘受到侵蚀的船，经过鉴定，其曾经为圣克莱姆号"]
+			hide: true
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:netherrack"
+			id: "41BDDAF324BE813D"
+			invisible: true
+			rewards: [{
+				auto: "enabled"
+				description: ""
+				id: "75A3023420B4AC74"
+				title: "可以使用图鉴和定位"
+				type: "toast"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "51A8FDE847DA48E2"
+				structure: "warshiparise:scarlet"
+				title: "侵蚀"
+				type: "structure"
+			}]
+			title: "遗失之船"
+			x: -7.5d
+			y: 11.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["41BDDAF324BE813D"]
+			description: [
+				"{image:pictures:textures/quests/scarlet.png width:189 height:100 align:center}"
+				"受到&5下界&r侵蚀的精英战舰，所需世界等级：2"
+				"强度参考系数：??"
+				"主炮："
+				"- 四门双联装大炮（HE） 射程320m"
+				"副炮："
+				"- 四门单装&6燃烧弹&r"
+				"具有防登船机制"
+				"船员看起来&0有点奇怪&r"
+				"核心区位于&b水下&r"
+				"核心区防护薄弱"
+				"具有大量&5下界&r特色战利品"
+				"该船由&6@CIemmmmmmm&r 提供"
+			]
+			hide: true
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:compass"
+			id: "2C524A86919A9303"
+			rewards: [{
+				command: "/locate structure warshiparise:scarlet"
+				elevate_perms: true
+				icon: "minecraft:compass"
+				id: "19096CF0B3B38251"
+				title: "寻找\"猩红\""
+				type: "command"
+			}]
+			shape: "diamond"
+			subtitle: "依然是他们"
+			tasks: [
+				{
+					count: 33L
+					id: "35E5BCD2BCA759A9"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "16411420B836D35B"
+					type: "checkmark"
+				}
+			]
+			title: "\"猩红\""
+			x: -5.5d
+			y: 11.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["681CAE20B3F0A013"]
+			description: [
+				"强大的精英战舰，所需世界等级：3"
+				"&e强度参考系数&r：145"
+				"主炮："
+				"- 四座双联装6药大炮（&eSAP&r） 射程350m"
+				"副炮："
+				"- 单侧各一门单装炮（葡萄） 射程250m"
+				"正头尾方向的装甲&4非常厚&r"
+				"综合能力&4很强&r"
+				"核心区防护很强"
+				"增强的防偷跑机制"
+				"带有4个疲劳方块，1个驱逐方块"
+				"没有&d近距离&r防空"
+				"&e远距离&r穿透能力不足"
+				"特殊战利品："
+				"- &6电脑&r"
+			]
+			hide: true
+			icon: "minecraft:compass"
+			id: "19B2F4FC72F0A8FF"
+			rewards: [{
+				command: "/locate structure warshiparise:admiral_lauda"
+				elevate_perms: true
+				icon: "minecraft:compass"
+				id: "4D56D5C024160370"
+				title: "寻找劳达海军上将"
+				type: "command"
+			}]
+			shape: "diamond"
+			subtitle: "耐爆王"
+			tasks: [
+				{
+					id: "04897DE72ABC30C3"
+					type: "checkmark"
+				}
+				{
+					consume_items: true
+					count: 24L
+					id: "14DE3150A0D31DF8"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			title: "劳达海军上将"
+			x: 5.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["681CAE20B3F0A013"]
+			description: [
+				"精英轻型巡洋舰，所需世界等级：2"
+				"&b强度参考系数&r：75"
+				"主炮："
+				"- 8门单装大炮（HE） 射程250m"
+				"&6投射量&r较高"
+				"船体和主炮防护&b非常脆弱&r"
+				"核心区防护正常"
+				"具有防登船机制"
+				"带有3个疲劳方块"
+				"来自&eAP&r和&eSAP&r的攻击容易&2过度击穿&r"
+				"特殊战利品："
+				"- &6弹道数据表&r"
+				"- &e飞机&r"
+			]
+			icon: "minecraft:compass"
+			id: "1AD4F89AEF960F2D"
+			rewards: [{
+				command: "/locate structure warshiparise:pareidolia"
+				elevate_perms: true
+				icon: "minecraft:compass"
+				id: "65A0A4BAFB78ADE4"
+				title: "寻找幻象号"
+				type: "command"
+			}]
+			shape: "diamond"
+			subtitle: "喜欢开驱逐舰的小盆友你们好"
+			tasks: [
+				{
+					id: "1B6A950C03A2227B"
+					type: "checkmark"
+				}
+				{
+					count: 19L
+					id: "7D107639C2243B60"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			title: "\"幻象\""
+			x: -7.5d
+			y: 17.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["681CAE20B3F0A013"]
+			description: [
+				"&e火力布局合理&r的精英巡洋舰，所需世界等级：2"
+				"&b强度参考系数&r：91"
+				"主炮："
+				"- 一座三联装（AP） 射程310m"
+				"- 一座双联装（AP） 射程310m"
+				"- 两座防空炮（HE）"
+				"特殊机制："
+				"&5- 对空火力特化 （防空炮射速和威力随目标高度增高而增加）&r"
+				"整体属性比较均衡"
+				"核心舱具有穹甲结构"
+				"具有增强的防登船机制"
+				"带有4个疲劳方块"
+				"有概率掉落&6弹道数据表&r"
+				"该船由 &6@小北宅Luck&r 提供"
+			]
+			icon: "minecraft:compass"
+			id: "666445E453B0E4F7"
+			rewards: [{
+				command: "/locate structure warshiparise:aurora"
+				elevate_perms: true
+				icon: "minecraft:compass"
+				id: "7D41D56F77EFCEC1"
+				title: "寻找极光号"
+				type: "command"
+			}]
+			shape: "diamond"
+			subtitle: "布局合理"
+			tasks: [
+				{
+					id: "4F015FF028EE237B"
+					type: "checkmark"
+				}
+				{
+					consume_items: true
+					count: 17L
+					id: "6F3539F719DC0B03"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			title: "\"极光\""
+			x: 5.5d
+			y: 18.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["681CAE20B3F0A013"]
+			description: [
+				"射程远的精英巡洋舰，需求世界等级：3"
+				"&b强度参考系数&r: 84"
+				"主炮："
+				"- 四座单装大炮（HE） &6射程500m&r"
+				"特殊机制："
+				"- &6远距离射速衰竭 （主炮射速从距离目标50m开始衰竭，250m达到最慢射速）&r"
+				"副炮："
+				"- 每侧一座单装大炮（葡萄）"
+				"装甲对&4高爆&r抗性略好"
+				"主炮射程&6很远&r"
+				"火力在近距离很强，&6随距离衰竭&r严重"
+				"内部结构&c复杂&r"
+				"具有防登船机制"
+				"带有3个疲劳方块"
+				"核心区有&c两处&r"
+				"一处核心区防护很强"
+				"特殊战利品："
+				"- 小型船舶推进器"
+				"该船由 &6@小北宅Luck&r 提供"
+			]
+			hide: true
+			icon: "minecraft:compass"
+			id: "5BFB9DEC26B75AD5"
+			rewards: [{
+				command: "/locate structure warshiparise:meteor"
+				icon: "minecraft:compass"
+				id: "12E7B109AE25E702"
+				title: "寻找流星号"
+				type: "command"
+			}]
+			shape: "diamond"
+			subtitle: "最好不要迷路了"
+			tasks: [
+				{
+					id: "1722210A4F958D08"
+					type: "checkmark"
+				}
+				{
+					consume_items: true
+					count: 21L
+					id: "5C5B3112B729B9FC"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			title: "\"流星\""
+			x: 18.0d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["681CAE20B3F0A013"]
+			description: [
+				"具有远程机制的精英袖珍战列舰,所需世界等级:3"
+				"&b参考强度系数&r:118"
+				"主炮："
+				"-两座三联装大炮（AP）&6射程500m&r"
+				"特殊机制："
+				"- &6远距离射速衰竭 （主炮射速从距离目标50m开始衰竭，250m达到最慢射速）&r"
+				"副炮："
+				"-两座双联装防空炮（HE）"
+				"-每侧一座单装大炮（葡萄）"
+				"特殊机制："
+				"&5- 对空火力特化 （防空炮射速和威力随目标高度增高而增加）&r"
+				"&b近距离&r火力极强，火力随距离衰竭明显"
+				"射程很远"
+				"装甲对高爆的抗性较好"
+				"主炮塔有额外传动结构，容易被瘫痪"
+				"具有防登船机制"
+				"带有3个疲劳方块，1个驱逐方块"
+				"有两处核心区"
+				"特殊战利品："
+				"-&e副炮火控磁盘（概率）&r"
+				"该船由 &6@小北宅Luck&r 提供"
+			]
+			icon: "minecraft:compass"
+			id: "48885314D2FEAD29"
+			rewards: [{
+				command: "/locate structure warshiparise:firestreak"
+				elevate_perms: true
+				icon: "minecraft:compass"
+				id: "03D8BF293B9FE07C"
+				title: "寻找火光号"
+				type: "command"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "3DD5B154F45559DE"
+					type: "checkmark"
+				}
+				{
+					consume_items: true
+					count: 28L
+					id: "39C2BDAF7E3AD1FE"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			title: "\"火光\""
+			x: 18.0d
+			y: 4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["681CAE20B3F0A013"]
+			description: [
+				"多重特色机制的精英巡洋舰，需要世界等级：3"
+				"&e强度参考系数&r：123"
+				"主炮："
+				"-三座双联装大炮（AP）&6射程500m&r"
+				"特殊机制："
+				"- &6远距离射速衰竭 （主炮射速从距离目标50m开始衰竭，250m达到最慢射速）&r"
+				"副炮："
+				"-每侧两座双联装&23药无壳大炮&r（SAP）射程210m"
+				"-每侧一座单装大炮（葡萄）"
+				"&b副炮&r火力很强"
+				"近距离综合火力很强"
+				"主炮射程很远"
+				"主炮结构容易被摧毁"
+				"核心区防护很强"
+				"有三个核心区"
+				"具有防登船机制"
+				"带有3个疲劳方块，1个驱逐方块"
+				"特殊战利品："
+				"-&6电脑&r"
+			]
+			icon: "minecraft:compass"
+			id: "7217CDE12D42FAE2"
+			rewards: [{
+				command: "/locate structure warshiparise:circo"
+				elevate_perms: true
+				icon: "minecraft:compass"
+				id: "6CFD8487ECB07433"
+				title: "寻找马戏团号"
+				type: "command"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "5D308697F576CD67"
+					type: "checkmark"
+				}
+				{
+					count: 22L
+					id: "0420DE8C58AC88C0"
+					item: { Count: 22, id: "minecraft:emerald" }
+					type: "item"
+				}
+			]
+			title: "\"马戏团\""
+			x: 18.0d
+			y: 11.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["681CAE20B3F0A013"]
+			description: [
+				"精英轻型巡洋舰，所需世界等级：3"
+				"&b强度参考系数&r：101"
+				"主炮："
+				"- 6门单装大炮（SAP） 射程250m"
+				"- 单侧各一座双联装鱼雷 射程250m"
+				"幻象级轻巡洋舰的二号舰"
+				"&9炮雷合击&r"
+				"船体和主炮防护&b非常脆弱&r"
+				"核心区防护正常"
+				"具有防登船机制"
+				"带有2个疲劳方块"
+				"来自&eAP&r和&eSAP&r的攻击容易&2过度击穿&r"
+				"特殊战利品："
+				"- &6鱼雷&r"
+			]
+			icon: "minecraft:compass"
+			id: "4D5325944D1206C3"
+			rewards: [{
+				command: "/locate structure warshiparise:taurus"
+				elevate_perms: true
+				icon: "minecraft:compass"
+				id: "404B5242CD7601A5"
+				title: "寻找金牛座"
+				type: "command"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "1EC6187A008D9F75"
+					type: "checkmark"
+				}
+				{
+					count: 21L
+					id: "43DC89F873395A3F"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			title: "\"金牛座\""
+			x: 18.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["681CAE20B3F0A013"]
+			description: [
+				"带有鱼雷的精英驱逐舰，需求世界等级:3"
+				"&b强度参考系数&r：102"
+				"主武器："
+				"- 两座双联装防空炮"
+				"- 两座中置三联装鱼雷 射程250m"
+				"特殊机制："
+				"&5- 对空火力特化 （防空炮射速和威力随目标高度增高而增加）&r"
+				"没有专用平射火炮"
+				"鱼雷投射量较高"
+				"装甲防护较弱"
+				"具有防登船机制"
+				"带有2个疲劳方块"
+				"战利品集中"
+				"特殊战利品："
+				"- &6鱼雷&r"
+			]
+			icon: "minecraft:compass"
+			id: "7D5F89673345652A"
+			rewards: [{
+				command: "/locate structure warshiparise:affinity"
+				elevate_perms: true
+				icon: "minecraft:compass"
+				id: "7D1B48B3CCEC3DD1"
+				title: "寻找亲和力"
+				type: "command"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "7C7403C90DB3D475"
+					type: "checkmark"
+				}
+				{
+					count: 18L
+					id: "64FC8CB4BCA7929A"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			title: "\"亲和力\""
+			x: 30.5d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["681CAE20B3F0A013"]
+			description: [
+				"具有多类武器的精英巡洋舰，需求世界等级：3"
+				"&e强度参考系数&r：139"
+				"主武器："
+				"-两座双联装大炮（AP）&6射程500m&r"
+				"特殊机制："
+				"- &6远距离射速衰竭 （主炮射速从距离目标50m开始衰竭，250m达到最慢射速）&r"
+				"-单侧各两座双联装鱼雷 射程250m"
+				"副炮："
+				"-两座防空炮"
+				"特殊机制："
+				"&5- 对空火力特化 （防空炮射速和威力随目标高度增高而增加）&r"
+				"武器种类比较多"
+				"&9炮雷合击&r"
+				"中距离综合火力强"
+				"具有防登船机制"
+				"带有3个疲劳方块，1个驱逐方块"
+				"内部结构复杂"
+				"特殊战利品："
+				"-&e主炮火控磁盘（概率）&r"
+				"该船由 &6@小北宅Luck&r 提供"
+			]
+			icon: "minecraft:compass"
+			id: "1221AA9C5C6199E1"
+			rewards: [{
+				command: "/locate structure warshiparise:skyflash"
+				elevate_perms: true
+				icon: "minecraft:compass"
+				id: "03C7AF9C4B919AC7"
+				title: "寻找天闪号"
+				type: "command"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "3A44D6512A02DDAC"
+					type: "checkmark"
+				}
+				{
+					count: 23L
+					id: "16B7528580CF8ACE"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			title: "\"天闪\""
+			x: 30.5d
+			y: 4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["681CAE20B3F0A013"]
+			description: [
+				"以鱼雷为主的精英驱逐舰，需求世界等级：3"
+				"&b强度参考系数&r：126"
+				"主武器："
+				"-三座单装大炮（AP）射程500m"
+				"-两座双向三联装鱼雷 射程250m"
+				"-每侧各一座单侧双联装鱼雷 射程250m"
+				"特殊机制："
+				"- &6远距离射速衰竭 （主炮射速从距离目标50m开始衰竭，250m达到最慢射速）&r"
+				"鱼雷投射量很大"
+				"对空能力薄弱"
+				"武器防护薄弱"
+				"具有防登船机制"
+				"带有3个疲劳方块，1个驱逐方块"
+				"特殊战利品："
+				"-&6控制组件&r"
+				"该船由 &6@小北宅Luck&r 提供"
+			]
+			icon: "minecraft:compass"
+			id: "13A0E2BD3F3A2E5E"
+			rewards: [{
+				command: "/locate structure warshiparise:starburst"
+				elevate_perms: true
+				icon: "minecraft:compass"
+				id: "5F46B5C37D718EC5"
+				title: "寻找星爆号"
+				type: "command"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "06321776DD80E420"
+					type: "checkmark"
+				}
+				{
+					count: 21L
+					id: "63DE0747F9104D01"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			title: "\"星爆\""
+			x: 30.5d
+			y: 11.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["681CAE20B3F0A013"]
+			description: [
+				"专注火力的巡洋舰，需求世界等级：4"
+				"&e强度参考系数&r：145"
+				"主武器："
+				"-三座三联装大炮（AP）射程500m"
+				"-单侧各两座三联装鱼雷 射程250m"
+				"特殊机制："
+				"- &6远距离射速衰竭 （主炮射速从距离目标50m开始衰竭，250m达到最慢射速）&r"
+				"&9炮雷合击&r"
+				"&c火力投射量较大&r"
+				"炮塔防护很弱"
+				"对空能力较弱"
+				"&6射程较远&r"
+				"有两个核心区"
+				"具有防登船机制"
+				"带有4个疲劳方块，2个驱逐方块"
+				"特殊战利品："
+				"-&6鱼雷&r"
+			]
+			icon: "minecraft:compass"
+			id: "550B9893220CA06D"
+			rewards: [{
+				command: "/locate structure warshiparise:horologium"
+				elevate_perms: true
+				icon: "minecraft:compass"
+				id: "5F67B39AE55B87D6"
+				title: "寻找时钟座"
+				type: "command"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "026154F52C62EA25"
+					type: "checkmark"
+				}
+				{
+					count: 25L
+					id: "4007D17F54CA110D"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			title: "\"时钟座\""
+			x: 30.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["681CAE20B3F0A013"]
+			description: [
+				"精英等级的潜艇，需求世界等级：3"
+				"&b强度参考系数&r：93"
+				"主武器："
+				"-4座双联装深水鱼雷（射程300m）"
+				""
+				"&9位于水下，难以发现&r"
+				"&c不会通知玩家被发现&r"
+				"对水面和水下目标有强大的打击能力"
+				"&c完全没有对空能力&r"
+				"主炮结构紧凑"
+				"具有加强的防登船系统"
+				"带有3个疲劳方块，1个驱逐方块"
+				"整条船都是核心区"
+				"特殊战利品："
+				"&e-击毁勋章（随机获得部分其他水面船只的击毁勋章）&r"
+			]
+			icon: "minecraft:compass"
+			id: "5B72FA43D61EFFEE"
+			rewards: [{
+				command: "/locate structure warshiparise:eridanus"
+				icon: "minecraft:compass"
+				id: "486519E074F09841"
+				title: "寻找波江座"
+				type: "command"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "39B8AC7922E96054"
+					type: "checkmark"
+				}
+				{
+					count: 41L
+					id: "2BCA54A896E25C6B"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			title: "波江座"
+			x: -7.5d
+			y: 23.5d
+		}
+	]
+	subtitle: ["昂贵的定位服务"]
+	title: "精英军舰"
+}

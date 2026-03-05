@@ -1,0 +1,342 @@
+[
+  {
+    "block":"railways:slashed_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:riveted_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:locometal_pillar",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:locometal_smokebox",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:white_slashed_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:white_riveted_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:white_locometal_smokebox",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:white_locometal_pillar",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:light_gray_slashed_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:light_gray_riveted_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:light_gray_locometal_pillar",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:light_gray_locometal_smokebox",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:gray_slashed_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:gray_riveted_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:gray_locometal_pillar",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:gray_locometal_smokebox",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:black_slashed_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:black_riveted_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:black_locometal_pillar",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:black_locometal_smokebox",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:brown_slashed_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:brown_riveted_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:brown_locometal_pillar",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:brown_locometal_smokebox",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:red_slashed_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:red_riveted_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:red_locometal_pillar",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:red_locometal_smokebox",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:orange_slashed_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:orange_riveted_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:orange_locometal_pillar",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:orange_locometal_smokebox",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:yellow_slashed_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:yellow_riveted_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:yellow_locometal_pillar",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:yellow_locometal_smokebox",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:lime_slashed_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:lime_riveted_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:lime_locometal_pillar",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:lime_locometal_smokebox",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:green_slashed_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:green_riveted_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:green_locometal_pillar",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:green_locometal_smokebox",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:cyan_slashed_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:cyan_riveted_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:cyan_locometal_pillar",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:cyan_locometal_smokebox",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:light_blue_slashed_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:light_blue_riveted_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:light_blue_locometal_pillar",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:light_blue_locometal_smokebox",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:blue_slashed_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:blue_riveted_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:blue_locometal_pillar",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:blue_locometal_smokebox",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:purple_slashed_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:purple_riveted_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:purple_locometal_pillar",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:purple_locometal_smokebox",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:magenta_slashed_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:magenta_riveted_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:magenta_locometal_pillar",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:magenta_locometal_smokebox",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:pink_slashed_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:pink_riveted_locometal",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:pink_locometal_pillar",
+    "mass": 1500,
+    "friction": 0.3
+   },
+   {
+    "block":"railways:pink_locometal_smokebox",
+    "mass": 1500,
+    "friction": 0.3
+   }
+]

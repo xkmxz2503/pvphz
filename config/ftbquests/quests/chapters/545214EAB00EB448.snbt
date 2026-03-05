@@ -1,0 +1,163 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "545214EAB00EB448"
+	group: "0588C05ED77E8B81"
+	id: "545214EAB00EB448"
+	order_index: 11
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3BBF86A7C1A7D848"]
+			description: [
+				"CBC More Shells 给游戏添加了鱼雷"
+				"鱼雷可以使用专门的鱼雷发射管进行发射，并且支持机械手装填或类似速射炮闩的装填，但装填时间更长。鱼雷发射管的组装需要一个&e装填口&r和至少一个&e发射管&r"
+				"鱼雷没有固定的深度，大部分鱼雷在发射后会先下潜再上浮，沿一个方向以固定速度前进，并服从如下动力学规则："
+				"-&e鱼雷不在水中时，仅受到正常的重力&r"
+				"-&e鱼雷在水中时，受到浮力和重力方向上的阻尼，水平方向无影响&r"
+				"因此，鱼雷的上浮时间或者定深取决于发射时的状态，包括初始俯仰角和距水面高差"
+				"鱼雷在发射后的威力很低，在&e进入水中一段时间后&r威力大幅增加"
+			]
+			icon: "cbcmoreshells:steel_torpedo_quickfiring_breech"
+			id: "5295EA47BC8A40BF"
+			tasks: [{
+				id: "3F86AC4A7AD93709"
+				type: "checkmark"
+			}]
+			title: "从水下发动攻击不是巨人行为"
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5295EA47BC8A40BF"]
+			description: [
+				"普通机制的鱼雷，发射下潜后会自然上浮"
+				"射程和浮力系数等参数会略有不同"
+			]
+			icon: {
+				Count: 1
+				id: "cbcmoreshells:medium_range_torpedo"
+				tag: { }
+			}
+			id: "7DB375A7250657BD"
+			rewards: [{
+				id: "173DDB65A7BAC11C"
+				item: {
+					Count: 1
+					id: "cbcmoreshells:medium_range_torpedo"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 5L
+				id: "37C499E42EB89EB8"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "普通鱼雷"
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7DB375A7250657BD"]
+			dependency_requirement: "one_completed"
+			description: ["这种鱼雷在水中不会自然上浮，但依然受到纵向阻尼的影响"]
+			icon: {
+				Count: 1
+				id: "cbcmoreshells:medium_range_deepwater_torpedo"
+				tag: { }
+			}
+			id: "0F7905E57E780C28"
+			rewards: [{
+				id: "5CF8105FB3FDF960"
+				item: {
+					Count: 1
+					id: "cbcmoreshells:medium_range_deepwater_torpedo"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 5L
+				id: "35394F414AA9FD93"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "深水鱼雷"
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7DB375A7250657BD"]
+			description: ["这种鱼雷上浮速度更快，并且在爆炸威力提升生效之前完全没有伤害"]
+			icon: {
+				Count: 1
+				id: "cbcmoreshells:airdropped_torpedo"
+				tag: { }
+			}
+			id: "40AF9974522B992B"
+			rewards: [{
+				id: "5B38563C02B93E14"
+				item: {
+					Count: 1
+					id: "cbcmoreshells:airdropped_torpedo"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 5L
+				id: "56100C99795FDD84"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "空投鱼雷"
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7DB375A7250657BD"]
+			description: [
+				"这些鱼雷使用另一种破坏机制，能够无视水破坏方块"
+				"威力可能低一些"
+			]
+			icon: {
+				Count: 1
+				id: "cbcmoreshells:sharpnel_torpedo"
+				tag: { }
+			}
+			id: "0693279FDA1E8E53"
+			rewards: [
+				{
+					id: "7F71E4E5BCF156EB"
+					item: {
+						Count: 1
+						id: "cbcmoreshells:sharpnel_torpedo"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "25DCBEC0815A88C5"
+					item: {
+						Count: 1
+						id: "cbcmoreshells:airdropped_shrapnel_torpedo"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 5L
+				id: "6B09205C56DE4108"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "爆破鱼雷"
+			x: 1.0d
+			y: 1.5d
+		}
+	]
+	title: "鱼雷的机制与使用"
+}

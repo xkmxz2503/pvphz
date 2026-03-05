@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "warshiparise:trading_isle",
+      "required": false
+    },
+    {
+      "id": "warshiparise:sea_pickle_harbor",
+      "required": false
+    },
+    {
+      "id": "warshiparise:festland",
+      "required": false
+    }
+  ]
+}

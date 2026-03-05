@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "create:brass_door",
+"create:copper_door",
+"create:train_door",
+"create:train_trapdoor",
+"create:andesite_door",
+"copycats:copycat_trapdoor",
+"copycats:copycat_door"
+  ]
+}

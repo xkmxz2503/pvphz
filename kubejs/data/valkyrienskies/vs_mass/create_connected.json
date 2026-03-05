@@ -1,0 +1,107 @@
+[
+  {
+    "block": "create_connected:copycat_block",
+    "mass": 114.0,
+    "friction": 0.4
+  },
+  {
+    "block": "create_connected:copycat_slab",
+    "mass": 57.0,
+    "friction": 0.4
+  },
+  {
+    "block": "create_connected:copycat_beam",
+    "mass": 28.5,
+    "friction": 0.4
+  },
+  {
+    "block": "create_connected:copycat_vertical_step",
+    "mass": 28.5,
+    "friction": 0.4
+  },
+  {
+    "block": "create_connected:copycat_stairs",
+    "mass": 85.5,
+    "friction": 0.4
+  },
+  {
+    "block": "create_connected:copycat_fence",
+    "mass": 28.5,
+    "friction": 0.4
+  },
+  {
+    "block": "create_connected:copycat_fence_gate",
+    "mass": 14.0,
+    "friction": 0.4
+  },
+  {
+    "block": "create_connected:copycat_wall",
+    "mass": 57.0,
+    "friction": 0.4
+  },
+  {
+    "block": "create_connected:copycat_board",
+    "mass": 14.0,
+    "friction": 0.4
+  },
+  {
+    "block": "create_connected:encased_chain_cogwheel",
+    "mass": 125.0,
+    "friction": 0.4
+  },
+  {
+    "block": "create_connected:inverted_clutch",
+    "mass": 107.5,
+    "friction": 0.4
+  },
+  {
+    "block": "create_connected:inverted_gearshift",
+    "mass": 107.5,
+    "friction": 0.4
+  },
+  {
+    "block": "create_connected:overstress_clutch",
+    "mass": 107.5,
+    "friction": 0.4
+  },
+  {
+    "block": "create_connected:centrifugal_clutch",
+    "mass": 107.5,
+    "friction": 0.4
+  },
+  {
+    "block": "create_connected:brake",
+    "mass": 107.5,
+    "friction": 0.4
+  },
+  {
+    "block": "create_connected:parallel_gearbox",
+    "mass": 121.0,
+    "friction": 0.4
+  },
+  {
+    "block": "create_connected:brass_gearbox",
+    "mass": 121.0,
+    "friction": 0.4
+  },
+  {
+    "block": "create_connected:six_way_gearbox",
+    "mass": 125.0,
+    "friction": 0.4
+  },
+  {
+    "block": "create_connected:shear_pin",
+    "mass": 10.0,
+    "friction": 0.4
+  },
+  {
+    "block": "create_connected:sequenced_pulse_generator",
+    "mass": 55.0,
+    "friction": 0.3
+  },
+  {
+    "block": "create_connected:item_silo",
+    "mass": 102.5,
+    "friction": 0.1
+  }
+]

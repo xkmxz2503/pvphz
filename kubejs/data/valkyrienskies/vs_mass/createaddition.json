@@ -1,0 +1,72 @@
+[
+    {
+        "block": "createaddition:connector",
+        "mass": 1.0,
+        "friction": 0.1
+    },
+    {
+        "block": "createaddition:large_connector",
+        "mass": 5.0,
+        "friction": 0.1
+    },
+    {
+        "block": "createaddition:redstone_relay",
+        "mass": 25.0,
+        "friction": 0.4
+    },
+    {
+        "block": "createaddition:electric_motor",
+        "mass": 87.5,
+        "friction": 0.3
+    },
+    {
+        "block": "createaddition:alternator",
+        "mass": 87.5,
+        "friction": 0.3
+    },
+    {
+        "block": "createaddition:modular_accumulator",
+        "mass": 215.0,
+        "friction": 0.2
+    },
+    {
+        "block": "createaddition:tesla_coil",
+        "mass": 187.5,
+        "friction": 0.3
+    },
+    {
+        "block": "createaddition:portable_energy_interface",
+        "mass": 125.0,
+        "friction": 0.4
+    },
+    {
+        "block": "createaddition:rolling_mill",
+        "mass": 117.5,
+        "friction": 0.4
+    },
+    {
+        "block": "createaddition:creative_energy",
+        "mass": 10.0,
+        "friction": 0.4
+    },
+    {
+        "block": "createaddition:digital_adapter",
+        "mass": 115.0,
+        "friction": 0.4
+    },
+    {
+        "block": "createaddition:barbed_wire",
+        "mass": 50.0,
+        "friction": 0.8
+    },
+    {
+        "block": "createaddition:chocolate_cake",
+        "mass": 5.0,
+        "friction": 0.1
+    },
+    {
+        "block": "createaddition:honey_cake",
+        "mass": 5.0,
+        "friction": 0.1
+    }
+]

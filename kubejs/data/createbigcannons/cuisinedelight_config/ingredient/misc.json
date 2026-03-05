@@ -1,0 +1,84 @@
+{
+  "entries": [
+    {
+      "type": "CARB",
+      "effects": [
+        {
+          "effect": "minecraft:resistance",
+          "level": 0,
+          "time": 1200
+        }
+      ],
+      "ingredient": {
+        "item": "createbigcannons:ap_shot"
+      },
+      "max_time": 200,
+      "min_time": 100,
+      "nutrition": 3,
+      "overcook_penalty": 0.3,
+      "raw_penalty": 0.4,
+      "size": 1,
+      "stir_time": 50
+    },
+    {
+      "type": "MEAT",
+      "effects": [
+        {
+          "effect": "minecraft:strength",
+          "level": 0,
+          "time": 1200
+        }
+      ],
+      "ingredient": {
+        "item": "createbigcannons:he_shell"
+      },
+      "max_time": 40,
+      "min_time": 20,
+      "nutrition": 3,
+      "overcook_penalty": 0.8,
+      "raw_penalty": 0.3,
+      "size": 1,
+      "stir_time": 30
+    },
+    {
+      "type": "VEG",
+      "effects": [
+        {
+          "effect": "minecraft:levitation",
+          "level": 0,
+          "time": 100
+        }
+      ],
+      "ingredient": {
+        "item": "createbigcannons:bag_of_grapeshot"
+      },
+      "max_time": 100,
+      "min_time": 50,
+      "nutrition": 3,
+      "overcook_penalty": 0.4,
+      "raw_penalty": 0.4,
+      "size": 1,
+      "stir_time": 60
+    },
+    {
+      "type": "VEG",
+      "effects": [
+        {
+          "effect": "minecraft:night_vision",
+          "level": 0,
+          "time": 1200
+        }
+      ],
+      "ingredient": {
+        "item": "createbigcannons:machine_gun_round"
+      },
+      "max_time": 80,
+      "min_time": 40,
+      "nutrition": 3,
+      "overcook_penalty": 0.3,
+      "raw_penalty": 0.1,
+      "size": 1,
+      "stir_time": 40
+    }
+  ]
+}

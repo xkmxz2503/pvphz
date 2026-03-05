@@ -1,0 +1,22 @@
+[
+    {
+        "block": "createendertransmission:chunk_loader",
+        "mass": 493,
+        "friction": 0.2
+    },
+    {
+        "block": "createendertransmission:energy_transmitter",
+        "mass": 3325,
+        "friction": 0.4
+    },
+    {
+        "block": "createendertransmission:item_transmitter",
+        "mass": 3325,
+        "friction": 0.4
+    },
+    {
+        "block": "createendertransmission:fluid_transmitter",
+        "mass": 3325,
+        "friction": 0.4
+    }
+]

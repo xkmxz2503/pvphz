@@ -1,0 +1,5 @@
+#.
+#The height at which wires should be placed above the train tracks
+#Range: > -2147483648
+wire_track_placement_height = 5
+

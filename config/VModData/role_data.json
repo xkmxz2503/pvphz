@@ -1,0 +1,393 @@
+{
+  "rolesPermissions" : {
+    "default" : [ "Allow RopeMode", "Allow ScaleMode", "Allow StripMode", "Allow SchemMode", "Allow GravChangerMode", "Allow SyncRotation", "Allow ShipRemoverMode", "Allow ConnectionMode", "Allow HydraulicsMode", "Allow SliderMode", "Allow ThrusterMode", "Allow DisableCollisionsMode", "Allow PhysRopeMode" ]
+  },
+  "playersRoles" : {
+    "821991d1-eff9-45ff-a285-39cb510b6b6c" : {
+      "uuid" : "821991d1-eff9-45ff-a285-39cb510b6b6c",
+      "nickname" : "Cainiao1053",
+      "role" : "default"
+    },
+    "fcd18ffe-3d0a-4870-b001-acedab6a4484" : {
+      "uuid" : "fcd18ffe-3d0a-4870-b001-acedab6a4484",
+      "nickname" : "xkmxz2503",
+      "role" : "default"
+    },
+    "44017ec3-1044-30cc-95e1-086246c040b4" : {
+      "uuid" : "44017ec3-1044-30cc-95e1-086246c040b4",
+      "nickname" : "xkmxz2503",
+      "role" : "default"
+    },
+    "fb41c6f9-0a75-317c-b774-f76f15502585" : {
+      "uuid" : "fb41c6f9-0a75-317c-b774-f76f15502585",
+      "nickname" : "YFao",
+      "role" : "default"
+    },
+    "56960aab-119d-30d8-930c-f867045709e3" : {
+      "uuid" : "56960aab-119d-30d8-930c-f867045709e3",
+      "nickname" : "liquiHg",
+      "role" : "default"
+    },
+    "a58884ec-a9b2-3246-bec4-ed7e3ee7835e" : {
+      "uuid" : "a58884ec-a9b2-3246-bec4-ed7e3ee7835e",
+      "nickname" : "012tongzhi",
+      "role" : "default"
+    },
+    "6c03ec95-36b9-385c-b358-28d2fe101bc8" : {
+      "uuid" : "6c03ec95-36b9-385c-b358-28d2fe101bc8",
+      "nickname" : "114514",
+      "role" : "default"
+    },
+    "d6667202-8148-3150-a6ec-e178d26ab04d" : {
+      "uuid" : "d6667202-8148-3150-a6ec-e178d26ab04d",
+      "nickname" : "D95700",
+      "role" : "default"
+    },
+    "b613d606-72d8-326e-b45a-a1fc4003cc21" : {
+      "uuid" : "b613d606-72d8-326e-b45a-a1fc4003cc21",
+      "nickname" : "Anrieal",
+      "role" : "default"
+    },
+    "de8dfaf5-db8a-379d-88e2-be5dce9eb961" : {
+      "uuid" : "de8dfaf5-db8a-379d-88e2-be5dce9eb961",
+      "nickname" : "Peterin1880",
+      "role" : "default"
+    },
+    "61331958-6ba6-3603-8e9d-619946c286c6" : {
+      "uuid" : "61331958-6ba6-3603-8e9d-619946c286c6",
+      "nickname" : "Minidish",
+      "role" : "default"
+    },
+    "a409095d-4676-3dad-9a4f-2eff02c25507" : {
+      "uuid" : "a409095d-4676-3dad-9a4f-2eff02c25507",
+      "nickname" : "panchen",
+      "role" : "default"
+    },
+    "baa2e68a-5b5d-3a96-8082-94c62810e0d1" : {
+      "uuid" : "baa2e68a-5b5d-3a96-8082-94c62810e0d1",
+      "nickname" : "biaoge09",
+      "role" : "default"
+    },
+    "8c71dd2c-aa14-3550-ae67-4bb8359a1889" : {
+      "uuid" : "8c71dd2c-aa14-3550-ae67-4bb8359a1889",
+      "nickname" : "chenxu116",
+      "role" : "default"
+    },
+    "b3c738d5-cb22-3e81-be88-dfd37d2c2841" : {
+      "uuid" : "b3c738d5-cb22-3e81-be88-dfd37d2c2841",
+      "nickname" : "xiaociba",
+      "role" : "default"
+    },
+    "9ee669ef-846c-3404-b5a7-447eca9ac8df" : {
+      "uuid" : "9ee669ef-846c-3404-b5a7-447eca9ac8df",
+      "nickname" : "wotu",
+      "role" : "default"
+    },
+    "6e007cf8-2ea4-36c5-b9a6-f4f839fe8a16" : {
+      "uuid" : "6e007cf8-2ea4-36c5-b9a6-f4f839fe8a16",
+      "nickname" : "Eternitzzy",
+      "role" : "default"
+    },
+    "fbf4e9b4-26bc-349f-932b-6488459395e2" : {
+      "uuid" : "fbf4e9b4-26bc-349f-932b-6488459395e2",
+      "nickname" : "HidnadoDeya",
+      "role" : "default"
+    },
+    "cc05b357-39a9-3ff9-bf8d-7f881f52d5ca" : {
+      "uuid" : "cc05b357-39a9-3ff9-bf8d-7f881f52d5ca",
+      "nickname" : "mcyydsa",
+      "role" : "default"
+    },
+    "05eac401-f205-3bcd-975d-e0bd2a6ef524" : {
+      "uuid" : "05eac401-f205-3bcd-975d-e0bd2a6ef524",
+      "nickname" : "Cainiao1053",
+      "role" : "default"
+    },
+    "a86882fd-40b4-3073-814d-fc2299263fca" : {
+      "uuid" : "a86882fd-40b4-3073-814d-fc2299263fca",
+      "nickname" : "FreeEpic",
+      "role" : "default"
+    },
+    "b5cc2d52-9ace-3364-82c0-9d2330ab0996" : {
+      "uuid" : "b5cc2d52-9ace-3364-82c0-9d2330ab0996",
+      "nickname" : "san",
+      "role" : "default"
+    },
+    "f32f199b-3efa-300a-9f1e-e2208b918f73" : {
+      "uuid" : "f32f199b-3efa-300a-9f1e-e2208b918f73",
+      "nickname" : "Von_Tirpitz",
+      "role" : "default"
+    },
+    "5e46eef4-07b6-3bca-af42-cac063645538" : {
+      "uuid" : "5e46eef4-07b6-3bca-af42-cac063645538",
+      "nickname" : "War_Fish",
+      "role" : "default"
+    },
+    "a17129f7-2f8b-369f-b3ad-5232fa0f27d9" : {
+      "uuid" : "a17129f7-2f8b-369f-b3ad-5232fa0f27d9",
+      "nickname" : "Nan1Chen",
+      "role" : "default"
+    },
+    "085c6ebe-9928-315b-9f42-a94c5b91dc9b" : {
+      "uuid" : "085c6ebe-9928-315b-9f42-a94c5b91dc9b",
+      "nickname" : "zyxzx",
+      "role" : "default"
+    },
+    "a90bfe2e-32ef-37e0-bae1-db486f4c1494" : {
+      "uuid" : "a90bfe2e-32ef-37e0-bae1-db486f4c1494",
+      "nickname" : "wotukojian",
+      "role" : "default"
+    },
+    "8aab82ea-6dbd-399e-9834-617a76e07408" : {
+      "uuid" : "8aab82ea-6dbd-399e-9834-617a76e07408",
+      "nickname" : "Kai_Ban",
+      "role" : "default"
+    },
+    "8819be36-5ef4-3e1c-a043-c86bb1343eb9" : {
+      "uuid" : "8819be36-5ef4-3e1c-a043-c86bb1343eb9",
+      "nickname" : "Cong_Xin_Sui_Yi",
+      "role" : "default"
+    },
+    "90c14155-9309-3e8d-8388-9cebb646cb47" : {
+      "uuid" : "90c14155-9309-3e8d-8388-9cebb646cb47",
+      "nickname" : "eason",
+      "role" : "default"
+    },
+    "33dd176d-635f-3824-b21d-9a024a6b8ecb" : {
+      "uuid" : "33dd176d-635f-3824-b21d-9a024a6b8ecb",
+      "nickname" : "Langzai__",
+      "role" : "default"
+    },
+    "75f41576-c9ae-3be1-9e5a-f6091a7fa867" : {
+      "uuid" : "75f41576-c9ae-3be1-9e5a-f6091a7fa867",
+      "nickname" : "123",
+      "role" : "default"
+    },
+    "e3c3e582-3361-3780-89f4-0ee6722b17e8" : {
+      "uuid" : "e3c3e582-3361-3780-89f4-0ee6722b17e8",
+      "nickname" : "AlexJiang",
+      "role" : "default"
+    },
+    "3aaea842-7c9e-3936-97fa-d2b500e69148" : {
+      "uuid" : "3aaea842-7c9e-3936-97fa-d2b500e69148",
+      "nickname" : "X219756",
+      "role" : "default"
+    },
+    "5a4d6d77-449f-344b-a61e-257280969384" : {
+      "uuid" : "5a4d6d77-449f-344b-a61e-257280969384",
+      "nickname" : "Zelaiyizi",
+      "role" : "default"
+    },
+    "f3a45d02-c2db-3c01-bb6c-7ea8ada9899e" : {
+      "uuid" : "f3a45d02-c2db-3c01-bb6c-7ea8ada9899e",
+      "nickname" : "jc112233",
+      "role" : "default"
+    },
+    "e7dc3942-a81e-3473-8d82-2f80d5a89979" : {
+      "uuid" : "e7dc3942-a81e-3473-8d82-2f80d5a89979",
+      "nickname" : "peigens",
+      "role" : "default"
+    },
+    "adbe0dfc-b390-3b9b-ba4b-8256985c02c0" : {
+      "uuid" : "adbe0dfc-b390-3b9b-ba4b-8256985c02c0",
+      "nickname" : "6666ying",
+      "role" : "default"
+    },
+    "e023f783-efb2-3af9-8723-62459b0ded76" : {
+      "uuid" : "e023f783-efb2-3af9-8723-62459b0ded76",
+      "nickname" : "xiaoxv2333",
+      "role" : "default"
+    },
+    "549f35fd-c789-3df4-ba30-c0e81898dbbd" : {
+      "uuid" : "549f35fd-c789-3df4-ba30-c0e81898dbbd",
+      "nickname" : "ElseLaba",
+      "role" : "default"
+    },
+    "4cfdd4aa-602c-37f5-be38-dc6e77d742d7" : {
+      "uuid" : "4cfdd4aa-602c-37f5-be38-dc6e77d742d7",
+      "nickname" : "2170216906",
+      "role" : "default"
+    },
+    "d4d7397b-2061-318b-8094-0cd962fbd90a" : {
+      "uuid" : "d4d7397b-2061-318b-8094-0cd962fbd90a",
+      "nickname" : "xzcvzc",
+      "role" : "default"
+    },
+    "8b5b2004-d0a5-3698-88ce-a5f0f0b80802" : {
+      "uuid" : "8b5b2004-d0a5-3698-88ce-a5f0f0b80802",
+      "nickname" : "C_long_17565",
+      "role" : "default"
+    },
+    "77bc1594-2dc6-3c9d-9452-9d7b97ce5bf4" : {
+      "uuid" : "77bc1594-2dc6-3c9d-9452-9d7b97ce5bf4",
+      "nickname" : "jianye0011",
+      "role" : "default"
+    },
+    "bb879308-f08a-31bb-8887-c67499c86dac" : {
+      "uuid" : "bb879308-f08a-31bb-8887-c67499c86dac",
+      "nickname" : "baibai_15",
+      "role" : "default"
+    },
+    "6a78dd80-c057-3595-90bc-684b2abd5f1f" : {
+      "uuid" : "6a78dd80-c057-3595-90bc-684b2abd5f1f",
+      "nickname" : "CCTT",
+      "role" : "default"
+    },
+    "cb3013aa-267a-356e-bd4d-d7582faf8306" : {
+      "uuid" : "cb3013aa-267a-356e-bd4d-d7582faf8306",
+      "nickname" : "0d000721",
+      "role" : "default"
+    },
+    "7e2a1efa-e316-3a41-b237-c7b73ee3f5ff" : {
+      "uuid" : "7e2a1efa-e316-3a41-b237-c7b73ee3f5ff",
+      "nickname" : "x219756",
+      "role" : "default"
+    },
+    "c2a2afe1-d600-3747-a8af-217ba7209040" : {
+      "uuid" : "c2a2afe1-d600-3747-a8af-217ba7209040",
+      "nickname" : "91",
+      "role" : "default"
+    },
+    "73f811f4-6a88-3e2e-980d-25b925e191d8" : {
+      "uuid" : "73f811f4-6a88-3e2e-980d-25b925e191d8",
+      "nickname" : "xkmxz25031",
+      "role" : "default"
+    },
+    "92a86786-1521-3a1b-88e5-edc5794557de" : {
+      "uuid" : "92a86786-1521-3a1b-88e5-edc5794557de",
+      "nickname" : "xkmxz25032",
+      "role" : "default"
+    },
+    "052e56f8-c7c2-3a87-b9ca-bab7524879cd" : {
+      "uuid" : "052e56f8-c7c2-3a87-b9ca-bab7524879cd",
+      "nickname" : "akaLings",
+      "role" : "default"
+    },
+    "934e174a-b860-3625-9535-17cadaabe410" : {
+      "uuid" : "934e174a-b860-3625-9535-17cadaabe410",
+      "nickname" : "Ciallo",
+      "role" : "default"
+    },
+    "830e4634-3f51-34df-b08b-93eb212654ae" : {
+      "uuid" : "830e4634-3f51-34df-b08b-93eb212654ae",
+      "nickname" : "bill",
+      "role" : "default"
+    },
+    "00fc0195-007d-3306-8f90-74d87871612e" : {
+      "uuid" : "00fc0195-007d-3306-8f90-74d87871612e",
+      "nickname" : "seedingfirst",
+      "role" : "default"
+    },
+    "6f3140de-6e1d-308c-884d-f9d9533e8f35" : {
+      "uuid" : "6f3140de-6e1d-308c-884d-f9d9533e8f35",
+      "nickname" : "seedingsecond",
+      "role" : "default"
+    },
+    "b1c40a29-34b3-34fe-8f95-a809b9bdeafc" : {
+      "uuid" : "b1c40a29-34b3-34fe-8f95-a809b9bdeafc",
+      "nickname" : "TakanashiHoshino",
+      "role" : "default"
+    },
+    "a28b6d96-82c5-3a82-8405-cf8ff00df747" : {
+      "uuid" : "a28b6d96-82c5-3a82-8405-cf8ff00df747",
+      "nickname" : "PRTS",
+      "role" : "default"
+    },
+    "41f87b9b-9805-3884-92df-437aed70ba1f" : {
+      "uuid" : "41f87b9b-9805-3884-92df-437aed70ba1f",
+      "nickname" : "AZMH",
+      "role" : "default"
+    },
+    "bf16019a-705e-30c6-8ae6-7733d9338e49" : {
+      "uuid" : "bf16019a-705e-30c6-8ae6-7733d9338e49",
+      "nickname" : "White_Basil",
+      "role" : "default"
+    },
+    "cbdd5702-f9fa-31e2-86b3-e335cb52bdc1" : {
+      "uuid" : "cbdd5702-f9fa-31e2-86b3-e335cb52bdc1",
+      "nickname" : "MCmaomao",
+      "role" : "default"
+    },
+    "2adf6042-68b5-3a8f-8a1c-76e7167e9ded" : {
+      "uuid" : "2adf6042-68b5-3a8f-8a1c-76e7167e9ded",
+      "nickname" : "AOFEILIYA",
+      "role" : "default"
+    },
+    "d225785b-3956-3bcb-a961-db6bde17ce13" : {
+      "uuid" : "d225785b-3956-3bcb-a961-db6bde17ce13",
+      "nickname" : "yi474",
+      "role" : "default"
+    },
+    "2721b70a-9bad-339c-8af5-e0d657496b1f" : {
+      "uuid" : "2721b70a-9bad-339c-8af5-e0d657496b1f",
+      "nickname" : "FolksyOrc412932",
+      "role" : "default"
+    },
+    "721bbd18-6504-3fc1-bf16-004ff8b43af5" : {
+      "uuid" : "721bbd18-6504-3fc1-bf16-004ff8b43af5",
+      "nickname" : "zhen_jia",
+      "role" : "default"
+    },
+    "5c617989-6499-31e5-a62d-47b428e44c41" : {
+      "uuid" : "5c617989-6499-31e5-a62d-47b428e44c41",
+      "nickname" : "WLo_oLW1",
+      "role" : "default"
+    },
+    "96e47f66-e4af-3d0e-9bc8-d7bbf0648392" : {
+      "uuid" : "96e47f66-e4af-3d0e-9bc8-d7bbf0648392",
+      "nickname" : "boy1145141919810",
+      "role" : "default"
+    },
+    "4c58a5ca-9711-3e08-8afa-ed72b087ca66" : {
+      "uuid" : "4c58a5ca-9711-3e08-8afa-ed72b087ca66",
+      "nickname" : "Breads11",
+      "role" : "default"
+    },
+    "bd98ab00-cb5c-3e3f-97c7-11d77ff664d8" : {
+      "uuid" : "bd98ab00-cb5c-3e3f-97c7-11d77ff664d8",
+      "nickname" : "sretreat",
+      "role" : "default"
+    },
+    "4272aa3a-4cc8-3993-8d91-18d8a08e0509" : {
+      "uuid" : "4272aa3a-4cc8-3993-8d91-18d8a08e0509",
+      "nickname" : "Torches233",
+      "role" : "default"
+    },
+    "f0077643-0d3f-374f-8a86-fa9ae60768c7" : {
+      "uuid" : "f0077643-0d3f-374f-8a86-fa9ae60768c7",
+      "nickname" : "Rigakey",
+      "role" : "default"
+    },
+    "0e81affd-5fb4-35fb-9683-27149ea64312" : {
+      "uuid" : "0e81affd-5fb4-35fb-9683-27149ea64312",
+      "nickname" : "FNDYSL",
+      "role" : "default"
+    },
+    "0fa2a8c2-9db8-3a3d-b762-90659d6f7fb5" : {
+      "uuid" : "0fa2a8c2-9db8-3a3d-b762-90659d6f7fb5",
+      "nickname" : "YMRSL",
+      "role" : "default"
+    },
+    "37f71a4c-cccb-32bd-acc5-1c145f6a35bb" : {
+      "uuid" : "37f71a4c-cccb-32bd-acc5-1c145f6a35bb",
+      "nickname" : "Amiya39",
+      "role" : "default"
+    },
+    "d546c263-5e04-3832-9694-b9a8600b0952" : {
+      "uuid" : "d546c263-5e04-3832-9694-b9a8600b0952",
+      "nickname" : "Mutsumichan114",
+      "role" : "default"
+    },
+    "1165774a-8bc5-3c28-8ff0-34bab37b5695" : {
+      "uuid" : "1165774a-8bc5-3c28-8ff0-34bab37b5695",
+      "nickname" : "yudkt",
+      "role" : "default"
+    },
+    "336422cb-06b3-3e19-ac18-95bf3eac9e32" : {
+      "uuid" : "336422cb-06b3-3e19-ac18-95bf3eac9e32",
+      "nickname" : "stgcjgtgj",
+      "role" : "default"
+    }
+  },
+  "allRoles" : [ "default" ]
+}

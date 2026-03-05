@@ -1,0 +1,82 @@
+[
+  {
+    "block":"copycats:copycat_block",
+    "mass": 400,
+    "friction": 0.05
+   },
+   {
+    "block":"copycats:copycat_slab",
+    "mass": 400,
+    "friction": 0.05
+   },
+   {
+    "block":"copycats:copycat_stairs",
+    "mass": 400,
+    "friction": 0.05
+   },
+   {
+    "block":"copycats:copycat_vertical_stairs",
+    "mass": 400,
+    "friction": 0.05
+   },
+   {
+    "block":"copycats:copycat_fence",
+    "mass": 400,
+    "friction": 0.05
+   },
+   {
+    "block":"copycats:copycat_wall",
+    "mass": 400,
+    "friction": 0.05
+   },
+   {
+    "block":"copycats:copycat_vertical_step",
+    "mass": 400,
+    "friction": 0.05
+   },
+   {
+    "block":"copycats:copycat_beam",
+    "mass": 400,
+    "friction": 0.05
+   },
+   {
+    "block":"copycats:copycat_slice",
+    "mass": 400,
+    "friction": 0.05
+   },
+   {
+    "block":"copycats:copycat_half_layer",
+    "mass": 400,
+    "friction": 0.05
+   },
+   {
+    "block":"copycats:copycat_layer",
+    "mass": 400,
+    "friction": 0.05
+   },
+   {
+    "block":"copycats:copycat_slope",
+    "mass": 400,
+    "friction": 0.05
+   },
+   {
+    "block":"copycats:copycat_slope_layer",
+    "mass": 400,
+    "friction": 0.05
+   },
+   {
+    "block":"copycats:copycat_byte",
+    "mass": 400,
+    "friction": 0.05
+   },
+   {
+    "block":"copycats:copycat_half_panel",
+    "mass": 400,
+    "friction": 0.05
+   },
+   {
+    "block":"copycats:copycat_vertical_slice",
+    "mass": 400,
+    "friction": 0.05
+   }
+]

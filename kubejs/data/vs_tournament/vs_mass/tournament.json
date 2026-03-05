@@ -1,0 +1,52 @@
+[
+  {
+    "block": "vs_tournament:spinner",
+    "mass": 90.0
+  },
+  {
+    "block": "vs_tournament:thruster",
+    "mass": 40.0
+  },
+  {
+    "block": "vs_tournament:tiny_thruster",
+    "mass": 30.0
+  },
+  {
+    "block": "vs_tournament:ship_assembler",
+    "mass": 90.0
+  },
+  {
+    "block": "vs_tournament:seat",
+    "mass": 50.0
+  },
+  {
+    "block": "vs_tournament:rope_hook",
+    "mass": 80.0
+  },
+  {
+    "block": "vs_tournament:sensor",
+    "mass": 80.0
+  },
+  {
+    "block": "vs_tournament:floater",
+    "mass": 20.0
+  },
+  {
+    "block": "vs_tournament:prop_small",
+    "mass": 120.0
+  },
+  {
+    "block": "vs_tournament:prop_big",
+    "mass": 520.0
+  },
+  {
+    "tag": "vs_tournament:balloons",
+    "mass": 45.0,
+    "friction": 0.6,
+    "elasticity": 0.5
+  },
+  {
+    "tag": "vs_tournament:explosives",
+    "mass": 120.0
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "block": "cbcmodernwarfare:carbon_steel_block",
+    "mass": 1000.0,
+    "friction": 0.3
+  },
+  {
+    "block": "cbcmodernwarfare:composite_block",
+    "mass": 950.0,
+    "friction": 0.3
+  }
+]

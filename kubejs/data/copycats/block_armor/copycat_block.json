@@ -1,0 +1,6 @@
+{
+  "default_toughness": 6,
+  "material_toughness_multiplier": 0.9,
+  "default_hardness": 1,
+  "material_hardness_multiplier": 1
+}

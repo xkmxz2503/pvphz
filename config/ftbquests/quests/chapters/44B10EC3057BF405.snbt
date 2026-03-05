@@ -1,0 +1,201 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "44B10EC3057BF405"
+	group: "7B14CD2B3339D3C6"
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_visible: true
+	icon: "minecraft:emerald"
+	id: "44B10EC3057BF405"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6790F150C800D745"]
+			description: [
+				"普通的商人"
+				"低价出售一些常规金属"
+			]
+			id: "00AD77CF2CD9300F"
+			tasks: [{
+				id: "4975DEAA06BC3AE4"
+				type: "checkmark"
+			}]
+			title: "金属商人"
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6790F150C800D745"]
+			description: [
+				"常见的商人"
+				"出售怪物掉落物"
+				"特殊物品："
+				"- &5末影随机箱子&r"
+			]
+			id: "55E8E8CF5BC664AF"
+			subtitle: "Luck as a Constant"
+			tasks: [{
+				id: "1A5476B0DA6B4365"
+				type: "checkmark"
+			}]
+			title: "怪物资源商人"
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6790F150C800D745"]
+			description: [
+				"较为常见的商人"
+				"出售电器相关部件"
+				"特殊物品："
+				"- &e一次性干电池&r"
+				"- &b带有电力的蓄电池背包&r"
+			]
+			id: "47D20F5981FA1157"
+			subtitle: "装不下了"
+			tasks: [{
+				id: "4580478E9157BB64"
+				type: "checkmark"
+			}]
+			title: "电器商人"
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6790F150C800D745"]
+			description: [
+				"略为稀有的商人，出售一些矿车预制组件"
+				"包括："
+				"- 预制双联装炮塔结构（不包括炮）"
+			]
+			id: "570DDE06C31031B0"
+			subtitle: "谨慎放入背包"
+			tasks: [{
+				id: "49AB2F082B25E6F2"
+				type: "checkmark"
+			}]
+			title: "零件商人"
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6790F150C800D745"]
+			description: [
+				"较为稀有的商人"
+				"出售一些军火"
+				"特殊物品："
+				"- &b6装药弹壳&r"
+				"- &40距离近炸引信HE&r"
+			]
+			id: "413301C48E1D7742"
+			subtitle: "真便宜"
+			tasks: [{
+				id: "26A5DED4A3486920"
+				type: "checkmark"
+			}]
+			title: "军火商人"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6790F150C800D745"]
+			description: [
+				"稀有的商人"
+				"这个商人是谁呢？好难猜啊！首先排除&b整合包作者&r"
+				"特殊物品："
+				"- &6一些你发现难以获取或者无法合成的物品&r"
+			]
+			id: "50F498DF06F914CA"
+			subtitle: "对部分物品献出最大的敬意"
+			tasks: [{
+				id: "475E56AF3A5E83F2"
+				type: "checkmark"
+			}]
+			title: "奇怪的商人"
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6790F150C800D745"]
+			description: [
+				"稀有的商人"
+				"出售一些小型预制船只"
+				"包括："
+				"-&a飞屋级驱逐舰&r"
+				"-&aSKY-1级驱逐舰&r"
+				"-&aSkylight-1级巡洋舰&r"
+				"-&aSkylight-2级驱逐舰&r"
+				"-&bStar Starry级巡洋舰&r"
+				"-&b曙光级巡洋舰&r"
+			]
+			id: "310CA1CD0EADE93B"
+			tasks: [{
+				id: "6BE1F3EE4AF2E69B"
+				type: "checkmark"
+			}]
+			title: "船只设计师"
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6790F150C800D745"]
+			description: ["这个商人会出售一些更强力的炮弹，以及研发局补给箱，这个补给箱有很低的概率开出测试中的战舰"]
+			id: "186EB0D1002B0AAC"
+			tasks: [{
+				id: "1202651FBD0FF575"
+				type: "checkmark"
+			}]
+			title: "高级炮弹商人"
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6790F150C800D745"]
+			description: ["出售控制学的零件"]
+			id: "5DAA53FFBB3012CD"
+			tasks: [{
+				id: "29A0C666B7A6478B"
+				type: "checkmark"
+			}]
+			title: "控制学商人"
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6790F150C800D745"]
+			description: ["出售鱼雷管和鱼雷"]
+			id: "7B996463575DC2D7"
+			tasks: [{
+				id: "53DB9D0A2D0DF068"
+				type: "checkmark"
+			}]
+			title: "鱼雷商人"
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["186EB0D1002B0AAC"]
+			description: [
+				"部分商人会出售这种特殊的补给箱，这个箱子中包含大量常规的战利品和少量特色物品。"
+				"这些物品包括："
+				"-本体已完成但获取途径未做完的&6预制船&r"
+				"-&6实验机制&r中的物品"
+				"-&e特色过于鲜明&r的物品或预制船"
+				"-部分彩蛋"
+				"箱子的内容和价格可能随着版本更新变化"
+			]
+			icon: "minecraft:barrel"
+			id: "37946D28102277F3"
+			shape: "gear"
+			tasks: [{
+				id: "72B72B92F0D80C4E"
+				type: "checkmark"
+			}]
+			title: "研发局补给箱"
+			x: 3.5d
+			y: 2.0d
+		}
+	]
+	title: "村民图鉴"
+}

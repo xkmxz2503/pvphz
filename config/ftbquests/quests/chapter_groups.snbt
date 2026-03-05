@@ -1,0 +1,8 @@
+{
+	chapter_groups: [
+		{ id: "70922F0CC7743118", title: "战舰研发局" }
+		{ id: "57EB382317465E5C", title: "造船厂" }
+		{ id: "0588C05ED77E8B81", title: "克里埃特工程学院" }
+		{ id: "7B14CD2B3339D3C6", title: "图鉴" }
+	]
+}

@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#minecraft:buttons",
+      "required": false
+    },
+    "minecraft:redstone",
+    "minecraft:lever",
+    "minecraft:repeater",
+    "minecraft:redstone_torch",
+    "minecraft:comparator",
+    "create:redstone_link",
+    "create:analog_lever",
+    "create:pulse_repeater",
+    "create:pulse_extender",
+    "create:powered_latch",
+    "create:powered_toggle_latch",
+    "minecraft:lectern"
+  ]
+}
