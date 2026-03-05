@@ -1,0 +1,13 @@
+这是海战地图的服务端
+请解压运行 start.bat 文件（WINDOWS）start.ps1 和 start.bat 的作用是一样的
+Linux上请运行 start.sh 文件
+注意，尽量不要使用管理员权限运行 
+特别警告：上面说的文件只需要启动一次，重复启动会重新安装服务器核心（你也不想再下一遍吧）
+server.properties文件一定要带上（地图需要某些特定的服务端设置）
+
+/function team_monitor:btaem 平衡队伍
+/function team_monitor:old 初始化（不要乱用）
+/function a:blue_team_victory 蓝队胜利
+/function a:red_team_victory 红队胜利
+/tag @s add op 给自己加OP标签
+
