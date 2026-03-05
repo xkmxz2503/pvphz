@@ -1,0 +1,9 @@
+# 开发环境文件
+.env.local
+.env.development
+# 测试文件
+*.test.js
+__tests__/
+# 日志
+logs/
+*.log

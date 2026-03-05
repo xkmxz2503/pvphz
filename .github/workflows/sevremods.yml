@@ -1,22 +1,207 @@
-# This workflow will triage pull requests and apply a label based on the
-# paths that are modified in the pull request.
-#
-# To use this workflow, you will need to set up a .github/labeler.yml
-# file with configuration.  For more information, see:
-# https://github.com/actions/labeler
+name: Labeler and Release Packager
 
-name: Labeler
-on: [pull_request_target]
+on:
+  # 手动触发，可输入版本号
+  workflow_dispatch:
+    inputs:
+      version:
+        description: '版本号 (例如: 1.0.0)'
+        required: true
+        default: '1.0.0'
+      release_name:
+        description: '发布名称'
+        required: false
+        default: ''
+  
+  # 当创建标签时自动触发 (标签格式: v* 或 数字开头)
+  push:
+    tags:
+      - 'v*'
+      - '[0-9]+.*'
 
 jobs:
   label:
-
     runs-on: ubuntu-latest
     permissions:
       contents: read
       pull-requests: write
-
     steps:
-    - uses: actions/labeler@v4
-      with:
-        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+      - uses: actions/labeler@v4
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+
+  package-and-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # 需要写入权限来创建 Release
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Determine version
+        id: get_version
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            # 手动触发，使用输入的版本号
+            VERSION="${{ github.event.inputs.version }}"
+            RELEASE_NAME="${{ github.event.inputs.release_name }}"
+            # 如果发布名称为空，使用默认格式
+            if [ -z "$RELEASE_NAME" ]; then
+              RELEASE_NAME="Release v${VERSION}"
+            fi
+          else
+            # 标签触发，从标签名提取版本号
+            VERSION=${GITHUB_REF#refs/tags/}
+            # 去掉 v 前缀（如果有）
+            VERSION=${VERSION#v}
+            RELEASE_NAME="Release ${{ github.ref_name }}"
+          fi
+          
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "release_name=$RELEASE_NAME" >> $GITHUB_OUTPUT
+          echo "zip_name=server${VERSION}.zip" >> $GITHUB_OUTPUT
+          
+          echo "版本号: $VERSION"
+          echo "发布名称: $RELEASE_NAME"
+          echo "ZIP文件名: server${VERSION}.zip"
+
+      - name: Read file lists
+        id: file_lists
+        run: |
+          # 检查 fill.txt 是否存在
+          if [ ! -f "fill.txt" ]; then
+            echo "错误: fill.txt 不存在"
+            exit 1
+          fi
+          
+          echo "=== fill.txt 内容 ==="
+          cat fill.txt
+          echo ""
+          
+          # 读取 fill.txt 中的文件/文件夹列表
+          FILL_FILES=$(cat fill.txt | grep -v '^#' | grep -v '^$' | tr '\n' ' ')
+          echo "fill_files=$FILL_FILES" >> $GITHUB_OUTPUT
+          
+          # 检查并读取 nofill.txt
+          NOFILL_FILES=""
+          if [ -f "nofill.txt" ]; then
+            echo "=== nofill.txt 内容 ==="
+            cat nofill.txt
+            echo ""
+            NOFILL_FILES=$(cat nofill.txt | grep -v '^#' | grep -v '^$' | tr '\n' ' ')
+          else
+            echo "警告: nofill.txt 不存在，将打包所有 fill.txt 中的内容"
+          fi
+          echo "nofill_files=$NOFILL_FILES" >> $GITHUB_OUTPUT
+
+      - name: Prepare package directory
+        run: |
+          VERSION="${{ steps.get_version.outputs.version }}"
+          ZIP_NAME="${{ steps.get_version.outputs.zip_name }}"
+          TEMP_DIR="temp_package_${VERSION}"
+          
+          # 创建临时目录
+          mkdir -p "$TEMP_DIR"
+          
+          echo "=== 开始复制文件 ==="
+          
+          # 读取 fill.txt 并复制文件
+          while IFS= read -r line || [[ -n "$line" ]]; do
+            # 跳过空行和注释行
+            [[ -z "$line" || "$line" =~ ^# ]] && continue
+            
+            # 移除首尾空格
+            line=$(echo "$line" | xargs)
+            [ -z "$line" ] && continue
+            
+            if [ -e "$line" ]; then
+              echo "复制: $line"
+              # 如果是目录，使用 -r 递归复制
+              if [ -d "$line" ]; then
+                cp -r "$line" "$TEMP_DIR/"
+              else
+                # 确保目标目录存在
+                target_dir=$(dirname "$TEMP_DIR/$line")
+                mkdir -p "$target_dir"
+                cp "$line" "$TEMP_DIR/$line"
+              fi
+            else
+              echo "警告: $line 不存在，跳过"
+            fi
+          done < fill.txt
+          
+          echo ""
+          echo "=== 应用 nofill.txt 过滤 ==="
+          
+          # 读取 nofill.txt 并删除不需要的文件
+          if [ -f "nofill.txt" ]; then
+            while IFS= read -r line || [[ -n "$line" ]]; do
+              [[ -z "$line" || "$line" =~ ^# ]] && continue
+              
+              line=$(echo "$line" | xargs)
+              [ -z "$line" ] && continue
+              
+              # 在临时目录中查找并删除匹配的文件
+              if [ -e "$TEMP_DIR/$line" ]; then
+                echo "剔除: $line"
+                rm -rf "$TEMP_DIR/$line"
+              fi
+              
+              # 也尝试作为模式匹配删除
+              find "$TEMP_DIR" -name "$line" -type f -delete 2>/dev/null || true
+              find "$TEMP_DIR" -name "$line" -type d -exec rm -rf {} + 2>/dev/null || true
+            done < nofill.txt
+          fi
+          
+          echo ""
+          echo "=== 最终打包内容 ==="
+          find "$TEMP_DIR" -type f | head -20
+          FILE_COUNT=$(find "$TEMP_DIR" -type f | wc -l)
+          echo "文件总数: $FILE_COUNT"
+          
+          # 打包成 zip
+          zip -r "$ZIP_NAME" "$TEMP_DIR"/*
+          
+          # 显示结果
+          echo ""
+          echo "=== 打包完成 ==="
+          ls -lh "$ZIP_NAME"
+          
+          # 保存临时目录名供后续步骤使用
+          echo "temp_dir=$TEMP_DIR" >> $GITHUB_ENV
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.event_name == 'workflow_dispatch' && format('v{0}', steps.get_version.outputs.version) || github.ref_name }}
+          release_name: ${{ steps.get_version.outputs.release_name }}
+          draft: false
+          prerelease: false
+          body: |
+            ## 发布版本 ${{ steps.get_version.outputs.version }}
+            
+            ### 打包内容说明
+            - 根据 `fill.txt` 选择的文件/文件夹
+            - 根据 `nofill.txt` 过滤后的最终结果
+            
+            ### 文件信息
+            - 文件名: `${{ steps.get_version.outputs.zip_name }}`
+            - 生成时间: ${{ github.event.head_commit.timestamp || github.event.inputs.version }}
+
+      - name: Upload Release Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./${{ steps.get_version.outputs.zip_name }}
+          asset_name: ${{ steps.get_version.outputs.zip_name }}
+          asset_content_type: application/zip
+
+      - name: Cleanup
+        run: |
+          rm -rf ${{ env.temp_dir }}
+          rm -f ${{ steps.get_version.outputs.zip_name }}

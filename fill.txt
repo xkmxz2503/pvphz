@@ -1,0 +1,6 @@
+# 这是注释
+src/
+config/
+README.md
+package.json
+# 支持具体文件和文件夹
